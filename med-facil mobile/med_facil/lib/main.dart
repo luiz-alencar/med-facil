@@ -130,7 +130,9 @@ body: Center(
 
     child: Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Column(children: [
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
         TextField(
           decoration: InputDecoration(
               border: OutlineInputBorder(),
@@ -145,6 +147,7 @@ body: Center(
               filled: true,
               fillColor: Colors.white),
         ),
+        ElevatedButton(onPressed: () {}, child: Text("Entrar")),
       ]),
     ),
 )
