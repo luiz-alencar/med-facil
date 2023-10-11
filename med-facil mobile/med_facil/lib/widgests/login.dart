@@ -50,7 +50,7 @@ class _LoginPageState extends State<LoginPage> {
                 ElevatedButton(onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MainApp()),
+                    MaterialPageRoute(builder: (context) => const MenuPage()),
                   );
                 }, child: const Text("Entrar")),
                 const SizedBox(height: 10),

@@ -84,6 +84,7 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
                   labelText: "Senha",
                 ),
               ),
+              const SizedBox(height: 10),
               ElevatedButton(onPressed: () {
                   Navigator.push(
                     context,
@@ -96,3 +97,14 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
     );
   }
 }
+
+
+
+
+
+
+/*
+
+
+
+*/
