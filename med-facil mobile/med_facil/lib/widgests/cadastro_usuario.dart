@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:brasil_fields/brasil_fields.dart';
+import 'package:flutter/services.dart';
 import 'package:med_facil/widgests/login.dart';
 
 class CadastroUsuarioPage extends StatefulWidget {
@@ -9,6 +11,8 @@ class CadastroUsuarioPage extends StatefulWidget {
 }
 
 class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
+  Object? valueEscolhido;
+  List lista = ["Ceres", "Itapaci", "Se lascou"];
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -35,8 +39,14 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
                 ),
               ),
               const SizedBox(height: 10),
-              const TextField(
-                decoration: InputDecoration(
+              TextFormField(
+                inputFormatters: [
+                  // obrigatório
+                  FilteringTextInputFormatter.digitsOnly,
+                  CpfInputFormatter(),
+                ],
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: "CPF",
                 ),
@@ -50,24 +60,50 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
                 ),
               ), 
               const SizedBox(height: 10),
-              const TextField(
-                decoration: InputDecoration(
+              TextFormField(
+                inputFormatters: [
+                  // obrigatório
+                  FilteringTextInputFormatter.digitsOnly,
+                  TelefoneInputFormatter(),
+                ],
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: "Telefone",
                 ),
               ), 
               const SizedBox(height: 10),
-              const TextField(
-                decoration: InputDecoration(
+              TextFormField(
+                inputFormatters: [
+                  // obrigatório
+                  FilteringTextInputFormatter.digitsOnly,
+                  DataInputFormatter(),
+                ],
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: "Data de Nascimento",
                 ),
               ), 
               const SizedBox(height: 10),
-              const TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "Cidade",
+              SizedBox(
+                child: DropdownButtonFormField(
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: "Cidade",
+                  ),
+                  hint: const Text("Selecione a Cidade "),
+                  value: valueEscolhido,
+                  onChanged: (newValue){
+                    setState(() {
+                      valueEscolhido = newValue;
+                    });
+                  },
+                  items: lista.map((valueItem) {
+                    return DropdownMenuItem(
+                      value: valueItem,
+                      child: Text(valueItem));
+                  }).toList(),
                 ),
               ), 
               const SizedBox(height: 10),
@@ -79,18 +115,21 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
               ), 
               const SizedBox(height: 10),
               const TextField(
+                obscureText: true,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: "Senha",
                 ),
               ),
               const SizedBox(height: 10),
-              ElevatedButton(onPressed: () {
+              SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  child: ElevatedButton(onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const LoginPage()),
                   );
-                }, child: const Text("Voltar")), 
+                }, child: const Text("Voltar", style: TextStyle(fontSize: 18)))), 
             ]),
         ), 
         ),

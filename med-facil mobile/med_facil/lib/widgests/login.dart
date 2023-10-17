@@ -47,21 +47,25 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 const SizedBox(height: 15),
-                ElevatedButton(onPressed: () {
+                SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  child: ElevatedButton(onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const MenuPage()),
                   );
-                }, child: const Text("Entrar")),
+                }, child: const Text("Entrar", style: TextStyle(fontSize: 18)))),
                 const SizedBox(height: 10),
-                const Text("ou", style: TextStyle(fontSize: 16)),
+                const Text("ou", style: TextStyle(fontSize: 18)),
                 const SizedBox(height: 10),
-                ElevatedButton(onPressed: () {
+                SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  child: ElevatedButton(onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const CadastroUsuarioPage()),
                   );
-                }, child: const Text("Cadastre-se")),
+                }, child: const Text("Cadastre-se", style: TextStyle(fontSize: 18)))),
               ],
             ),
         ),
