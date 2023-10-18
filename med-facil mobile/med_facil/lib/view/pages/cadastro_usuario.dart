@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:brasil_fields/brasil_fields.dart';
 import 'package:flutter/services.dart';
-import 'package:med_facil/widgests/login.dart';
+import 'package:med_facil/view/pages/login.dart';
 
 class CadastroUsuarioPage extends StatefulWidget {
   const CadastroUsuarioPage({super.key});
@@ -12,7 +12,7 @@ class CadastroUsuarioPage extends StatefulWidget {
 
 class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
   Object? valueEscolhido;
-  List lista = ["Ceres", "Itapaci", "Se lascou"];
+  List lista = ["Ceres", "Itapaci", "Rialma"];
   @override
   Widget build(BuildContext context) {
     return Material(

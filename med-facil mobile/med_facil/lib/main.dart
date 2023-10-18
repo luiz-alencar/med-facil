@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:med_facil/widgests/login.dart';
+import 'package:med_facil/view/pages/login.dart';
 
 void main(){
   runApp(MyApp());

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:med_facil/widgests/cadastro_usuario.dart';
-import 'package:med_facil/widgests/menu.dart';
+import 'package:med_facil/view/pages/cadastro_usuario.dart';
+import 'package:med_facil/view/pages/menu.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
