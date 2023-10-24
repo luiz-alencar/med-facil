@@ -31,41 +31,102 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(height: 10),
                 const Text("Remédios na medida certa", style: TextStyle(fontSize: 18)),           
                 const SizedBox(height: 10),
-                const TextField(
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: "Login",
+                const SizedBox(
+                  width: 344,
+                  child: TextField(
+                    keyboardType: TextInputType.emailAddress,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: "Login",
+                    ),
                   ),
                 ),
                 const SizedBox(height: 10),
-                const TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: "Senha",
+                const SizedBox(
+                  width: 344,
+                  child: TextField(
+                    keyboardType: TextInputType.emailAddress,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: "Senha",
+                    ),
                   ),
                 ),
                 const SizedBox(height: 15),
                 SizedBox(
-                  width: MediaQuery.of(context).size.width,
+                  height: 44,
+                  width: 344,
                   child: ElevatedButton(onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const MenuPage()),
                   );
-                }, child: const Text("Entrar", style: TextStyle(fontSize: 18)))),
+                }, child: const Text("Entrar", style: TextStyle(fontSize:20)))),
                 const SizedBox(height: 10),
-                const Text("ou", style: TextStyle(fontSize: 18)),
+                Container(
+                  width: 324,
+                  height: 20,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        top: 12,
+                        child: Container(
+                          width: 147,
+                          decoration: ShapeDecoration(
+                            shape: RoundedRectangleBorder(
+                              side: BorderSide(
+                                width: 1,
+                                strokeAlign: BorderSide.strokeAlignCenter,
+                                color: Color(0xFF304D63),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 177,
+                        top: 12,
+                        child: Container(
+                          width: 147,
+                          decoration: ShapeDecoration(
+                            shape: RoundedRectangleBorder(
+                              side: BorderSide(
+                                width: 1,
+                                strokeAlign: BorderSide.strokeAlignCenter,
+                                color: Color(0xFF304D63),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 154,
+                        top: 0,
+                        child: Text(
+                          'ou',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                            fontFamily: 'Quicksand',
+                            fontWeight: FontWeight.w500,
+                            height: 0,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
                 const SizedBox(height: 10),
                 SizedBox(
-                  width: MediaQuery.of(context).size.width,
+                  height: 44,
+                  width: 344,
                   child: ElevatedButton(onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const CadastroUsuarioPage()),
                   );
-                }, child: const Text("Cadastre-se", style: TextStyle(fontSize: 18)))),
+                }, child: const Text("Cadastre-se", style: TextStyle(fontSize: 20)))),
               ],
             ),
         ),

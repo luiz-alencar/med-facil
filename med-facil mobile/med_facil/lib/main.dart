@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:med_facil/view/pages/login.dart';
+import 'package:med_facil/view/pages/requisicao_medicamentos.dart';
 
 void main(){
   runApp(MyApp());
 }
 class MyApp extends StatelessWidget {
-  @override
+  @override 
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Tela Login',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const LoginPage(),
+      home: const RequisicaoMedicamentoPage(),
     );
   }
 }
