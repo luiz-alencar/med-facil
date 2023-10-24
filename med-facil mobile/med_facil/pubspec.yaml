@@ -31,6 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   brasil_fields: ^1.14.0
+  non_uniform_border: ^1.0.0
 
 
   # The following adds the Cupertino Icons font to your application.

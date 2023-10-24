@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:non_uniform_border/non_uniform_border.dart';
 import 'package:med_facil/view/pages/login.dart';
 import 'package:med_facil/view/pages/menu.dart';
 
@@ -11,6 +12,15 @@ class RequisicaoMedicamentoPage extends StatefulWidget {
 
 class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
   List lista = ["Ceres", "Itapaci", "Rialma"];
+  final shapeBorder = NonUniformBorder(
+    leftWidth: 1,
+    rightWidth: 1,
+    topWidth: 1,
+    bottomWidth: 4,
+    color: Color.fromRGBO(48, 77, 99, 100),
+    strokeAlign: BorderSide.strokeAlignCenter,
+    borderRadius: BorderRadius.circular(12)
+  );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,11 +94,14 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                 ),
               ),
             ),
-            SizedBox(
+            Container(
                 width: 328,
+                decoration: ShapeDecoration(
+                  shape: shapeBorder,
+                ),
                 child: DropdownButtonFormField(
                   decoration: const InputDecoration(
-                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
                   ),
                   onChanged: (newValue){
                     setState(() {
@@ -117,8 +130,11 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                   ),
                 ),
               ),
-              SizedBox(
+              Container(
                   width: 328,
+                  decoration: ShapeDecoration(
+                    shape: shapeBorder,
+                  ),
                   child: DropdownButtonFormField(
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
@@ -177,7 +193,8 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                     context,
                     MaterialPageRoute(builder: (context) => const MenuPage()),
                   );
-                }, child: const Text("Cadastre-se", style: TextStyle(fontSize: 20)))),
+                }, child: const Text("Enviar", style: TextStyle(fontSize: 20))
+                )),
           ],
         )
       ),

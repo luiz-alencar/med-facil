@@ -78,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
                               side: BorderSide(
                                 width: 1,
                                 strokeAlign: BorderSide.strokeAlignCenter,
-                                color: Color(0xFF304D63),
+                                color: Color.fromARGB(255, 0, 0, 0),
                               ),
                             ),
                           ),
@@ -94,7 +94,7 @@ class _LoginPageState extends State<LoginPage> {
                               side: BorderSide(
                                 width: 1,
                                 strokeAlign: BorderSide.strokeAlignCenter,
-                                color: Color(0xFF304D63),
+                                color: Color.fromARGB(255, 0, 0, 0),
                               ),
                             ),
                           ),
