@@ -166,8 +166,11 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                   ),
                 ),
               ),
-              SizedBox(
+              Container(
                   width: 328,
+                  decoration: ShapeDecoration(
+                    shape: shapeBorder,
+                  ),
                   child: DropdownButtonFormField(
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
