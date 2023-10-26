@@ -1,17 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:med_facil/view/pages/login.dart';
+import 'package:med_facil/view/pages/menu.dart';
+import 'package:non_uniform_border/non_uniform_border.dart';
 
-class Relatorio_socioeconomico extends StatefulWidget {
-  const Relatorio_socioeconomico({super.key});
+class Relatorio_socioeconomicoPage extends StatefulWidget {
+  const Relatorio_socioeconomicoPage({super.key});
 
   @override
-  State<Relatorio_socioeconomico> createState() =>
+  State<Relatorio_socioeconomicoPage> createState() =>
       _Relatorio_socioeconomicoState();
 }
 
-class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomico> {
+class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage> {
   Object? teste;
   List lista = ["1", "2", "3"];
+  final shapeBorder = NonUniformBorder(
+    leftWidth: 1,
+    rightWidth: 1,
+    topWidth: 1,
+    bottomWidth: 4,
+    color: Color.fromRGBO(48, 77, 99, 100),
+    strokeAlign: BorderSide.strokeAlignCenter,
+    borderRadius: BorderRadius.circular(12)
+  );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,8 +87,11 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomico> {
             ),
           ),
           const SizedBox(height: 35),
-          SizedBox(
+          Container(
             width: 328,
+            decoration: ShapeDecoration(
+              shape: shapeBorder,
+            ),
             child: DropdownButtonFormField(
               decoration: const InputDecoration(
                 border: OutlineInputBorder(
@@ -131,6 +145,18 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomico> {
                 labelText: "Sua profissão",
               ),
             ),
+          ),
+          const SizedBox(height: 50),
+          SizedBox(
+              height: 44,
+              width: 344,
+              child: ElevatedButton(onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const MenuPage()),
+              );
+            }, child: const Text("Voltar", style: TextStyle(fontSize: 20))
+            )
           ),
         ]),
       ),

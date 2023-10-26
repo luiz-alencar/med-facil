@@ -197,7 +197,20 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                     MaterialPageRoute(builder: (context) => const MenuPage()),
                   );
                 }, child: const Text("Enviar", style: TextStyle(fontSize: 20))
-                )),
+                )
+              ),
+              const SizedBox(height: 10),
+              SizedBox(
+                  height: 44,
+                  width: 344,
+                  child: ElevatedButton(onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const MenuPage()),
+                  );
+                }, child: const Text("Voltar", style: TextStyle(fontSize: 20))
+                )
+              ),
           ],
         )
       ),

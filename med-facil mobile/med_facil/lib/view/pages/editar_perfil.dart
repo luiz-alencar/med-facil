@@ -3,14 +3,14 @@ import 'package:brasil_fields/brasil_fields.dart';
 import 'package:flutter/services.dart';
 import 'package:med_facil/view/pages/login.dart';
 
-class CadastroUsuarioPage extends StatefulWidget {
-  const CadastroUsuarioPage({super.key});
+class EditarPerfilPage extends StatefulWidget {
+  const EditarPerfilPage({super.key});
 
   @override
-  State<CadastroUsuarioPage> createState() => _CadastroUsuarioPageState();
+  State<EditarPerfilPage> createState() => _EditarPerfilState();
 }
 
-class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
+class _EditarPerfilState extends State<EditarPerfilPage> {
   Object? valueEscolhido;
   List lista = ["Ceres", "Itapaci", "Rialma"];
   @override
@@ -30,7 +30,7 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
                   child: Image.asset('assets/images/logo.png'),
                 ),
               const SizedBox(height: 10),
-              const Text("Informe seus dados:", style: TextStyle(fontSize: 30)),
+              const Text("Edite seus dados:", style: TextStyle(fontSize: 30)),
               const SizedBox(height: 10),
               const TextField(
                 decoration: InputDecoration(
