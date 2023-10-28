@@ -35,7 +35,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
             context,
             MaterialPageRoute(builder: (context) => const MenuPage()),
           );
-        }, icon: const Icon(Icons.logout, color: Colors.white))],  //Podemos utilizar a ação onPressed para chamar uma função
+        }, icon: const Icon(Icons.house, color: Colors.white))],  //Podemos utilizar a ação onPressed para chamar uma função
       ),
       body: Center(
         child: Column(
@@ -149,28 +149,32 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                   ),
               ), 
               const SizedBox(height: 50),
-              SizedBox(
-                  height: 44,
-                  width: 344,
-                  child: ElevatedButton(onPressed: () {
+              Container(
+              width: 344,
+              height: 44,
+                child: TextButton(
+                onPressed: () {
                   Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const MenuPage()),
-                  );
-                }, child: const Text("Enviar", style: TextStyle(fontSize: 20))
-                )
+                context,
+                MaterialPageRoute(builder: (context) => const MenuPage()),
+              );}, child: Text('Enviar', style: TextStyle(fontSize: 20, color: Colors.white)),),
+              decoration: ShapeDecoration(
+                color: Color(0xFF304D63),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
               ),
               const SizedBox(height: 10),
-              SizedBox(
-                  height: 44,
-                  width: 344,
-                  child: ElevatedButton(onPressed: () {
+              Container(
+              width: 344,
+              height: 44,
+                child: TextButton(
+                onPressed: () {
                   Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const MenuPage()),
-                  );
-                }, child: const Text("Voltar", style: TextStyle(fontSize: 20))
-                )
+                context,
+                MaterialPageRoute(builder: (context) => const MenuPage()),
+              );}, child: Text('Voltar', style: TextStyle(fontSize: 20, color: Colors.white)),),
+              decoration: ShapeDecoration(
+                color: Color(0xFF304D63),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
               ),
           ],
         )

@@ -53,15 +53,19 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 const SizedBox(height: 15),
-                SizedBox(
-                  height: 44,
-                  width: 344,
-                  child: ElevatedButton(onPressed: () {
+                Container(
+              width: 344,
+              height: 44,
+                child: TextButton(
+                onPressed: () {
                   Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const MenuPage()),
-                  );
-                }, child: const Text("Entrar", style: TextStyle(fontSize:20)))),
+                context,
+                MaterialPageRoute(builder: (context) => const MenuPage()),
+              );}, child: Text('Entrar', style: TextStyle(fontSize: 20, color: Colors.white)),),
+              decoration: ShapeDecoration(
+                color: Color(0xFF304D63),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
+              ),
                 const SizedBox(height: 10),
                 Container(
                   width: 324,
@@ -118,15 +122,19 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 const SizedBox(height: 10),
-                SizedBox(
-                  height: 44,
-                  width: 344,
-                  child: ElevatedButton(onPressed: () {
+                Container(
+              width: 344,
+              height: 44,
+                child: TextButton(
+                onPressed: () {
                   Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const CadastroUsuarioPage()),
-                  );
-                }, child: const Text("Cadastre-se", style: TextStyle(fontSize: 20)))),
+                context,
+                MaterialPageRoute(builder: (context) => const CadastroUsuarioPage()),
+              );}, child: Text('Cadastre-se', style: TextStyle(fontSize: 20, color: Colors.white)),),
+              decoration: ShapeDecoration(
+                color: Color(0xFF304D63),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
+              ),
               ],
             ),
         ),

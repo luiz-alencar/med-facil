@@ -185,15 +185,19 @@ class _EditarPerfilState extends State<EditarPerfilPage> {
                 ),
               ),
               const SizedBox(height: 10),
-              SizedBox(
-                  height: 44,
-                  width: 344,
-                  child: ElevatedButton(onPressed: () {
+              Container(
+              width: 344,
+              height: 44,
+                child: TextButton(
+                onPressed: () {
                   Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const MenuPage()),
-                  );
-                }, child: const Text("Voltar", style: TextStyle(fontSize: 18)))), 
+                context,
+                MaterialPageRoute(builder: (context) => const MenuPage()),
+              );}, child: Text('Salvar', style: TextStyle(fontSize: 20, color: Colors.white)),),
+              decoration: ShapeDecoration(
+                color: Color(0xFF304D63),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
+              ), 
             ]),
       ),
     );

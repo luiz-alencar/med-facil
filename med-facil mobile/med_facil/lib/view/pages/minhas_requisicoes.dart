@@ -2,17 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:med_facil/view/pages/menu.dart';
 import 'package:non_uniform_border/non_uniform_border.dart';
 
-class Relatorio_socioeconomicoPage extends StatefulWidget {
-  const Relatorio_socioeconomicoPage({super.key});
+class MinhasRequisicoesPage extends StatefulWidget {
+  const MinhasRequisicoesPage({super.key});
 
   @override
-  State<Relatorio_socioeconomicoPage> createState() =>
-      _Relatorio_socioeconomicoState();
+  State<MinhasRequisicoesPage> createState() => _MinhasRequisicoesPageState();
 }
 
-class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage> {
-  Object? teste;
-  List lista = ["1", "2", "3"];
+class _MinhasRequisicoesPageState extends State<MinhasRequisicoesPage> {
+    Object? teste;
+  List lista = ["remedio", "dipirona", "continuo"];
   final shapeBorder = NonUniformBorder(
     leftWidth: 1,
     rightWidth: 1,
@@ -43,23 +42,23 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
                   MaterialPageRoute(builder: (context) => const MenuPage()),
                 );
               },
-              icon: const Icon(Icons.house, color: Colors.white))
-        ], //Podemos utilizar a ação onPressed para chamar uma função
+          icon: const Icon(Icons.house, color: Colors.white))
+        ],
       ),
-      body: Center(
-        child: Column(children: [
-          Text(
-            'Relatório Socioeconômico',
+      body: Center
+      (child: Column(children: [
+        Text(
+            'Minhas Requisições',
             style: TextStyle(
               color: Color(0xFF304D63),
-              fontSize: 28,
+              fontSize: 32,
               fontFamily: 'Palanquin Dark',
               fontWeight: FontWeight.w700,
-              height: 2.5,
+              height: 2,
             ),
           ),
           Container(
-            width: 328,
+            width: 318,
             decoration: ShapeDecoration(
               shape: RoundedRectangleBorder(
                 side: BorderSide(
@@ -71,10 +70,10 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
           ),
           const SizedBox(height: 35),
           SizedBox(
-            width: 318,
-            height: 49,
+            width: 221,
+            height: 24,
             child: Text(
-              'Informe seus dados socieconômicos para que possamos entender a sua realiade!',
+              'Acompanhe suas requisições',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.black,
@@ -99,7 +98,7 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
                   ),
                 ),
               ),
-              hint: const Text("Quantas pessoas moram na sua casa"),
+              hint: const Text("Requisição 1"),
               value: teste,
               onChanged: (newValue) {
                 setState(() {
@@ -126,7 +125,7 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
                   ),
                 ),
               ),
-              hint: const Text("Renda familiar mensal"),
+              hint: const Text("Requisição 2"),
               value: teste,
               onChanged: (newValue) {
                 setState(() {
@@ -153,34 +152,7 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
                   ),
                 ),
               ),
-              hint: const Text("Renda idividual"),
-              value: teste,
-              onChanged: (newValue) {
-                setState(() {
-                  teste = newValue;
-                });
-              },
-              items: lista.map((valueItem) {
-                return DropdownMenuItem(
-                    value: valueItem, child: Text(valueItem));
-              }).toList(),
-            ),
-          ),
-          const SizedBox(height: 35),
-          Container(
-            width: 328,
-            decoration: ShapeDecoration(
-              shape: shapeBorder,
-            ),
-            child: DropdownButtonFormField(
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(12),
-                  ),
-                ),
-              ),
-              hint: const Text("Sua profissão"),
+              hint: const Text("Requisição 3"),
               value: teste,
               onChanged: (newValue) {
                 setState(() {
@@ -194,19 +166,7 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
             ),
           ),
           const SizedBox(height: 50),
-          SizedBox(
-              height: 44,
-              width: 344,
-              child: ElevatedButton(onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const MenuPage()),
-              );
-            }, child: const Text("Salvar", style: TextStyle(fontSize: 20))
-            )
-          ),
-          const SizedBox(height: 22),
-          Container(
+            Container(
               width: 344,
               height: 44,
                 child: TextButton(
@@ -219,8 +179,8 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
                 color: Color(0xFF304D63),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
               ),
-        ]),
-      ),
-    );
+        ]
+      )
+    ),);
   }
 }
