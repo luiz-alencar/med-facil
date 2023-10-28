@@ -193,7 +193,7 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
               }).toList(),
             ),
           ),
-          const SizedBox(height: 50),
+          const SizedBox(height: 35),
           Container(
             width: 344,
             height: 44,
@@ -207,7 +207,7 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
               color: Color(0xFF304D63),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
           ),
-          const SizedBox(height: 22),
+          const SizedBox(height: 10),
           Container(
             width: 344,
             height: 44,
