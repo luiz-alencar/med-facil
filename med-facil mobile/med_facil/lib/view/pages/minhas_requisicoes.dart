@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:med_facil/view/pages/menu.dart';
 import 'package:non_uniform_border/non_uniform_border.dart';
@@ -90,25 +92,40 @@ class _MinhasRequisicoesPageState extends State<MinhasRequisicoesPage> {
             decoration: ShapeDecoration(
               shape: shapeBorder,
             ),
-            child: DropdownButtonFormField(
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(12),
-                  ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  child: Text(
+                    "Requisição 01"
+                  )
                 ),
-              ),
-              hint: const Text("Requisição 1"),
-              value: teste,
-              onChanged: (newValue) {
-                setState(() {
-                  teste = newValue;
-                });
-              },
-              items: lista.map((valueItem) {
-                return DropdownMenuItem(
-                    value: valueItem, child: Text(valueItem));
-              }).toList(),
+                SizedBox(width: 170), // Espaço entre o ícone e o texto
+                IconButton(
+                  icon: Icon(Icons.add),
+                  onPressed: () {
+                    // Mostrar um AlertDialog quando o ícone de adição for pressionado
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          title: Text('Alerta'),
+                          content: Text('Requsição 01'),
+                          actions: <Widget>[
+                            TextButton(
+                              child: Text('Fechar'),
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                  },
+                ),
+              ],
             ),
           ),
           const SizedBox(height: 35),
@@ -117,25 +134,40 @@ class _MinhasRequisicoesPageState extends State<MinhasRequisicoesPage> {
             decoration: ShapeDecoration(
               shape: shapeBorder,
             ),
-            child: DropdownButtonFormField(
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(12),
-                  ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  child: Text(
+                    "Requisição 02"
+                  )
                 ),
-              ),
-              hint: const Text("Requisição 2"),
-              value: teste,
-              onChanged: (newValue) {
-                setState(() {
-                  teste = newValue;
-                });
-              },
-              items: lista.map((valueItem) {
-                return DropdownMenuItem(
-                    value: valueItem, child: Text(valueItem));
-              }).toList(),
+                SizedBox(width: 170), // Espaço entre o ícone e o texto
+                IconButton(
+                  icon: Icon(Icons.add),
+                  onPressed: () {
+                    // Mostrar um AlertDialog quando o ícone de adição for pressionado
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          title: Text('Alerta'),
+                          content: Text('Requsição 02'),
+                          actions: <Widget>[
+                            TextButton(
+                              child: Text('Fechar'),
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                  },
+                ),
+              ],
             ),
           ),
           const SizedBox(height: 35),
@@ -144,25 +176,40 @@ class _MinhasRequisicoesPageState extends State<MinhasRequisicoesPage> {
             decoration: ShapeDecoration(
               shape: shapeBorder,
             ),
-            child: DropdownButtonFormField(
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(12),
-                  ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  child: Text(
+                    "Requisição 03"
+                  )
                 ),
-              ),
-              hint: const Text("Requisição 3"),
-              value: teste,
-              onChanged: (newValue) {
-                setState(() {
-                  teste = newValue;
-                });
-              },
-              items: lista.map((valueItem) {
-                return DropdownMenuItem(
-                    value: valueItem, child: Text(valueItem));
-              }).toList(),
+                SizedBox(width: 170), // Espaço entre o ícone e o texto
+                IconButton(
+                  icon: Icon(Icons.add),
+                  onPressed: () {
+                    // Mostrar um AlertDialog quando o ícone de adição for pressionado
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          title: Text('Alerta'),
+                          content: Text('Requsição 03'),
+                          actions: <Widget>[
+                            TextButton(
+                              child: Text('Fechar'),
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                  },
+                ),
+              ],
             ),
           ),
           const SizedBox(height: 50),

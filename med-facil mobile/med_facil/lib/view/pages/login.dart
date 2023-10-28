@@ -36,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: TextField(
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
                       labelText: "Login",
                     ),
                   ),
@@ -45,9 +45,10 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(
                   width: 344,
                   child: TextField(
+                    obscureText: true,
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
                       labelText: "Senha",
                     ),
                   ),

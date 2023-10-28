@@ -32,64 +32,80 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
               const SizedBox(height: 10),
               const Text("Informe seus dados:", style: TextStyle(fontSize: 30)),
               const SizedBox(height: 10),
-              const TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "Nome Completo",
+              SizedBox(
+                width: 344,
+                child: const TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                    labelText: "Nome Completo",
+                  ),
                 ),
               ),
               const SizedBox(height: 10),
-              TextFormField(
-                inputFormatters: [
-                  // obrigatório
-                  FilteringTextInputFormatter.digitsOnly,
-                  CpfInputFormatter(),
-                ],
-                keyboardType: TextInputType.number,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "CPF",
+              SizedBox(
+                width: 344,
+                child: TextFormField(
+                  inputFormatters: [
+                    // obrigatório
+                    FilteringTextInputFormatter.digitsOnly,
+                    CpfInputFormatter(),
+                  ],
+                  keyboardType: TextInputType.number,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                    labelText: "CPF",
+                  ),
                 ),
               ),
               const SizedBox(height: 10),
-              const TextField(
-                keyboardType: TextInputType.emailAddress,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "E-mail",
-                ),
-              ), 
-              const SizedBox(height: 10),
-              TextFormField(
-                inputFormatters: [
-                  // obrigatório
-                  FilteringTextInputFormatter.digitsOnly,
-                  TelefoneInputFormatter(),
-                ],
-                keyboardType: TextInputType.number,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "Telefone",
-                ),
-              ), 
-              const SizedBox(height: 10),
-              TextFormField(
-                inputFormatters: [
-                  // obrigatório
-                  FilteringTextInputFormatter.digitsOnly,
-                  DataInputFormatter(),
-                ],
-                keyboardType: TextInputType.number,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "Data de Nascimento",
+              SizedBox(
+                width: 344,
+                child: const TextField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                    labelText: "E-mail",
+                  ),
                 ),
               ), 
               const SizedBox(height: 10),
               SizedBox(
+                width: 344,
+                child: TextFormField(
+                  inputFormatters: [
+                    // obrigatório
+                    FilteringTextInputFormatter.digitsOnly,
+                    TelefoneInputFormatter(),
+                  ],
+                  keyboardType: TextInputType.number,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                    labelText: "Telefone",
+                  ),
+                ),
+              ), 
+              const SizedBox(height: 10),
+              SizedBox(
+                width: 344,
+                child: TextFormField(
+                  inputFormatters: [
+                    // obrigatório
+                    FilteringTextInputFormatter.digitsOnly,
+                    DataInputFormatter(),
+                  ],
+                  keyboardType: TextInputType.number,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                    labelText: "Data de Nascimento",
+                  ),
+                ),
+              ), 
+              const SizedBox(height: 10),
+              SizedBox(
+                width: 344,
                 child: DropdownButtonFormField(
                   decoration: const InputDecoration(
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
                     labelText: "Cidade",
                   ),
                   hint: const Text("Selecione a Cidade "),
@@ -107,18 +123,24 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
                 ),
               ), 
               const SizedBox(height: 10),
-              const TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "Login",
+              SizedBox(
+                width: 344,
+                child: const TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                    labelText: "Login",
+                  ),
                 ),
               ), 
               const SizedBox(height: 10),
-              const TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "Senha",
+              SizedBox(
+                width: 344,
+                child: const TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                    labelText: "Senha",
+                  ),
                 ),
               ),
               const SizedBox(height: 10),

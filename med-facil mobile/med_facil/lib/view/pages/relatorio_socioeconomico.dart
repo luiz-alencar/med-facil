@@ -99,7 +99,7 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
                   ),
                 ),
               ),
-              hint: const Text("Quantas pessoas moram na sua casa"),
+              hint: const Text("Quantas pessoas moram na sua casa", style: TextStyle(color: Colors.black)),
               value: teste,
               onChanged: (newValue) {
                 setState(() {
@@ -126,7 +126,7 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
                   ),
                 ),
               ),
-              hint: const Text("Renda familiar mensal"),
+              hint: const Text("Renda familiar mensal", style: TextStyle(color: Colors.black)),
               value: teste,
               onChanged: (newValue) {
                 setState(() {
@@ -153,7 +153,7 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
                   ),
                 ),
               ),
-              hint: const Text("Renda idividual"),
+              hint: const Text("Renda idividual", style: TextStyle(color: Colors.black)),
               value: teste,
               onChanged: (newValue) {
                 setState(() {
@@ -180,7 +180,7 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
                   ),
                 ),
               ),
-              hint: const Text("Sua profissão"),
+              hint: const Text("Sua profissão", style: TextStyle(color: Colors.black)),
               value: teste,
               onChanged: (newValue) {
                 setState(() {
@@ -194,31 +194,33 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
             ),
           ),
           const SizedBox(height: 50),
-          SizedBox(
-              height: 44,
-              width: 344,
-              child: ElevatedButton(onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const MenuPage()),
-              );
-            }, child: const Text("Salvar", style: TextStyle(fontSize: 20))
-            )
+          Container(
+            width: 344,
+            height: 44,
+              child: TextButton(
+              onPressed: () {
+                Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const MenuPage()),
+            );}, child: Text('Salvar', style: TextStyle(fontSize: 20, color: Colors.white)),),
+            decoration: ShapeDecoration(
+              color: Color(0xFF304D63),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
           ),
           const SizedBox(height: 22),
           Container(
-              width: 344,
-              height: 44,
-                child: TextButton(
-                onPressed: () {
-                  Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const MenuPage()),
-              );}, child: Text('Voltar', style: TextStyle(fontSize: 20, color: Colors.white)),),
-              decoration: ShapeDecoration(
-                color: Color(0xFF304D63),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
-              ),
+            width: 344,
+            height: 44,
+              child: TextButton(
+              onPressed: () {
+                Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const MenuPage()),
+            );}, child: Text('Voltar', style: TextStyle(fontSize: 20, color: Colors.white)),),
+            decoration: ShapeDecoration(
+              color: Color(0xFF304D63),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
+          ),
         ]),
       ),
     );

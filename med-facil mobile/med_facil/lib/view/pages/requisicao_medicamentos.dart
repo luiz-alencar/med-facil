@@ -88,7 +88,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                   decoration: const InputDecoration(
                       border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
                   ),
-                  hint: const Text("Selecione o Medicamento "),
+                  hint: const Text("Selecione o Medicamento ", style: TextStyle(color: Colors.black)),
                   onChanged: (newValue){
                     setState(() {
                       
@@ -112,7 +112,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
                     ),
-                    hint: const Text("Selecione a Quantidade "),
+                    hint: const Text("Selecione a Quantidade ", style: TextStyle(color: Colors.black)),
                     onChanged: (newValue){
                       setState(() {
                         
@@ -135,7 +135,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
                     ),
-                    hint: const Text("Selecione o Uso "),
+                    hint: const Text("Selecione o Uso ", style: TextStyle(color: Colors.black)),
                     onChanged: (newValue){
                       setState(() {
                         
@@ -164,17 +164,17 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
               ),
               const SizedBox(height: 10),
               Container(
-              width: 344,
-              height: 44,
-                child: TextButton(
-                onPressed: () {
-                  Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const MenuPage()),
-              );}, child: Text('Voltar', style: TextStyle(fontSize: 20, color: Colors.white)),),
-              decoration: ShapeDecoration(
-                color: Color(0xFF304D63),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
+                width: 344,
+                height: 44,
+                  child: TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MenuPage()),
+                );}, child: Text('Voltar', style: TextStyle(fontSize: 20, color: Colors.white)),),
+                decoration: ShapeDecoration(
+                  color: Color(0xFF304D63),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
               ),
           ],
         )

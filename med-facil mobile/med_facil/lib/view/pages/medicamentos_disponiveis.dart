@@ -29,7 +29,7 @@ class _MedicamentosDisponiveisPageState extends State<MedicamentosDisponiveisPag
             context,
             MaterialPageRoute(builder: (context) => const MenuPage()),
           );
-        }, icon: const Icon(Icons.logout, color: Colors.white))],  //Podemos utilizar a ação onPressed para chamar uma função
+        }, icon: const Icon(Icons.house, color: Colors.white))],  //Podemos utilizar a ação onPressed para chamar uma função
       ),
       body: Center(
         child: Column(
@@ -117,17 +117,19 @@ class _MedicamentosDisponiveisPageState extends State<MedicamentosDisponiveisPag
               ),
             ),
             const SizedBox(height: 22),
-            SizedBox(
-              height: 44,
+            Container(
               width: 344,
-              child: ElevatedButton(onPressed: () {
-              Navigator.push(
+              height: 44,
+                child: TextButton(
+                onPressed: () {
+                  Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const MenuPage()),
-              );
-              }, child: const Text("Voltar", style: TextStyle(fontSize: 20))
-            )
-          ),
+              );}, child: Text('Voltar', style: TextStyle(fontSize: 20, color: Colors.white)),),
+              decoration: ShapeDecoration(
+                color: Color(0xFF304D63),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
+            ),
         ])
       )
     );
