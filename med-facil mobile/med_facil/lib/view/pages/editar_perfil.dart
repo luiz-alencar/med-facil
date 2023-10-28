@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:brasil_fields/brasil_fields.dart';
 import 'package:flutter/services.dart';
-import 'package:med_facil/view/pages/login.dart';
+import 'package:med_facil/view/pages/menu.dart';
 
 class EditarPerfilPage extends StatefulWidget {
   const EditarPerfilPage({super.key});
@@ -15,81 +15,138 @@ class _EditarPerfilState extends State<EditarPerfilPage> {
   List lista = ["Ceres", "Itapaci", "Rialma"];
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: SizedBox(
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Med-Fácil", style: TextStyle(color: Colors.white)), //Utilizamos o TextStyle para alterar o texto
+        backgroundColor: const Color.fromRGBO(48, 77, 99, 1),
+        elevation: 0,
+        leading: SizedBox(
+          child: Image.asset('assets/images/logo2.png'),
+        ),
+        actions: [IconButton(onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const MenuPage()),
+          );
+        }, icon: const Icon(Icons.logout, color: Colors.white))],  //Podemos utilizar a ação onPressed para chamar uma função
+      ),
+      body: Center(
+        child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(
-                  width: 95,
-                  height: 71,
-                  child: Image.asset('assets/images/logo.png'),
+              Text(
+                'Editar Perfil ',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Color(0xFF304D63),
+                  fontSize: 24,
+                  fontFamily: 'Palanquin Dark',
+                  fontWeight: FontWeight.w700,
+                  height: 0,
                 ),
-              const SizedBox(height: 10),
-              const Text("Edite seus dados:", style: TextStyle(fontSize: 30)),
-              const SizedBox(height: 10),
-              const TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "Nome Completo",
+              ),
+              Container(
+                width: 150,
+                decoration: ShapeDecoration(
+                  shape: RoundedRectangleBorder(
+                    side: BorderSide(
+                      width: 1,
+                      strokeAlign: BorderSide.strokeAlignCenter,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              SizedBox(
+                width: 207,
+                height: 23,
+                child: Text(
+                  'Editar Perfil ',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 16,
+                    fontFamily: 'Quicksand',
+                    fontWeight: FontWeight.w400,
+                    height: 0,
+                  ),
+                ),
+              ),
+              SizedBox(height: 20),
+              SizedBox(
+                width: 344,
+                child: const TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                    labelText: "Nome Completo",
+                  ),
                 ),
               ),
               const SizedBox(height: 10),
-              TextFormField(
-                inputFormatters: [
-                  // obrigatório
-                  FilteringTextInputFormatter.digitsOnly,
-                  CpfInputFormatter(),
-                ],
-                keyboardType: TextInputType.number,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "CPF",
+              SizedBox(
+                width: 344,
+                child: TextFormField(
+                  inputFormatters: [
+                    // obrigatório
+                    FilteringTextInputFormatter.digitsOnly,
+                    CpfInputFormatter(),
+                  ],
+                  keyboardType: TextInputType.number,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                    labelText: "CPF",
+                  ),
                 ),
               ),
               const SizedBox(height: 10),
-              const TextField(
-                keyboardType: TextInputType.emailAddress,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "E-mail",
-                ),
-              ), 
-              const SizedBox(height: 10),
-              TextFormField(
-                inputFormatters: [
-                  // obrigatório
-                  FilteringTextInputFormatter.digitsOnly,
-                  TelefoneInputFormatter(),
-                ],
-                keyboardType: TextInputType.number,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "Telefone",
-                ),
-              ), 
-              const SizedBox(height: 10),
-              TextFormField(
-                inputFormatters: [
-                  // obrigatório
-                  FilteringTextInputFormatter.digitsOnly,
-                  DataInputFormatter(),
-                ],
-                keyboardType: TextInputType.number,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "Data de Nascimento",
+              SizedBox(
+                width: 344,
+                child: const TextField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                    labelText: "E-mail",
+                  ),
                 ),
               ), 
               const SizedBox(height: 10),
               SizedBox(
+                width: 344,
+                child: TextFormField(
+                  inputFormatters: [
+                    // obrigatório
+                    FilteringTextInputFormatter.digitsOnly,
+                    TelefoneInputFormatter(),
+                  ],
+                  keyboardType: TextInputType.number,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                    labelText: "Telefone",
+                  ),
+                ),
+              ), 
+              const SizedBox(height: 10),
+              SizedBox(
+                width: 344,
+                child: TextFormField(
+                  inputFormatters: [
+                    // obrigatório
+                    FilteringTextInputFormatter.digitsOnly,
+                    DataInputFormatter(),
+                  ],
+                  keyboardType: TextInputType.number,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                    labelText: "Data de Nascimento",
+                  ),
+                ),
+              ), 
+              const SizedBox(height: 10),
+              SizedBox(
+                width: 344,
                 child: DropdownButtonFormField(
                   decoration: const InputDecoration(
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
                     labelText: "Cidade",
                   ),
                   hint: const Text("Selecione a Cidade "),
@@ -107,33 +164,38 @@ class _EditarPerfilState extends State<EditarPerfilPage> {
                 ),
               ), 
               const SizedBox(height: 10),
-              const TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "Login",
+              SizedBox(
+                width: 344,
+                child: const TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                    labelText: "Login",
+                  ),
                 ),
               ), 
               const SizedBox(height: 10),
-              const TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "Senha",
+              SizedBox(
+                width: 344,
+                child: const TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+                    labelText: "Senha",
+                  ),
                 ),
               ),
               const SizedBox(height: 10),
               SizedBox(
                   height: 44,
-                  width: MediaQuery.of(context).size.width,
+                  width: 344,
                   child: ElevatedButton(onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const LoginPage()),
+                    MaterialPageRoute(builder: (context) => const MenuPage()),
                   );
                 }, child: const Text("Voltar", style: TextStyle(fontSize: 18)))), 
             ]),
-        ), 
-        ),
+      ),
     );
   }
 }
@@ -144,7 +206,7 @@ class _EditarPerfilState extends State<EditarPerfilPage> {
 
 
 /*
-
+          
 
 
 */

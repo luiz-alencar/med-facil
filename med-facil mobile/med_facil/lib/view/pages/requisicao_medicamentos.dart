@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:non_uniform_border/non_uniform_border.dart';
-import 'package:med_facil/view/pages/login.dart';
 import 'package:med_facil/view/pages/menu.dart';
 
 class RequisicaoMedicamentoPage extends StatefulWidget {
@@ -34,7 +33,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
         actions: [IconButton(onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const LoginPage()),
+            MaterialPageRoute(builder: (context) => const MenuPage()),
           );
         }, icon: const Icon(Icons.logout, color: Colors.white))],  //Podemos utilizar a ação onPressed para chamar uma função
       ),
@@ -57,7 +56,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
               decoration: ShapeDecoration(
                 shape: RoundedRectangleBorder(
                   side: BorderSide(
-                    width: 2,
+                    width: 1,
                     strokeAlign: BorderSide.strokeAlignCenter,
                   ),
                 ),
@@ -71,7 +70,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                 'Olá, aqui você deverá gerar suas requisições, apresente nos campos abaixo informações sobre sua requisição de medicamentos e informe suas necessidades!',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: Colors.black.withOpacity(0.5),
+                  color: Colors.black,
                   fontSize: 16,
                   fontFamily: 'Quicksand',
                   fontWeight: FontWeight.w400,
@@ -80,20 +79,6 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
               ),
             ),
             const SizedBox(height: 30),
-            SizedBox(
-              width: 320,
-              height: 29,
-              child: Text(
-                'Medicamento:',
-                style: TextStyle( 
-                  color: Colors.black,
-                  fontSize: 16,
-                  fontFamily: 'Quicksand',
-                  fontWeight: FontWeight.w700,
-                  height: 0,
-                ),
-              ),
-            ),
             Container(
                 width: 328,
                 decoration: ShapeDecoration(
@@ -103,6 +88,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                   decoration: const InputDecoration(
                       border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
                   ),
+                  hint: const Text("Selecione o Medicamento "),
                   onChanged: (newValue){
                     setState(() {
                       
@@ -116,20 +102,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                 ),
               ),
               const SizedBox(height: 25),
-              SizedBox(
-                width: 320,
-                height: 29,
-                child: Text(
-                  'Quantidade:',
-                  style: TextStyle( 
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontFamily: 'Quicksand',
-                    fontWeight: FontWeight.w700,
-                    height: 0,
-                  ),
-                ),
-              ),
+              
               Container(
                   width: 328,
                   decoration: ShapeDecoration(
@@ -139,6 +112,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
                     ),
+                    hint: const Text("Selecione a Quantidade "),
                     onChanged: (newValue){
                       setState(() {
                         
@@ -152,20 +126,6 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                   ),
               ),
               const SizedBox(height: 25),
-              SizedBox(
-                width: 320,
-                height: 29,
-                child: Text(
-                  'Uso:',
-                  style: TextStyle( 
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontFamily: 'Quicksand',
-                    fontWeight: FontWeight.w700,
-                    height: 0,
-                  ),
-                ),
-              ),
               Container(
                   width: 328,
                   decoration: ShapeDecoration(
@@ -175,6 +135,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
                     ),
+                    hint: const Text("Selecione o Uso "),
                     onChanged: (newValue){
                       setState(() {
                         

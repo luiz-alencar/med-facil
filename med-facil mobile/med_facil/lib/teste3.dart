@@ -1,20 +1,3 @@
-class Fruit {
-  final String name;
-
-  Fruit(this.name);
-}
-
-List<Fruit> fruits = [
-  Fruit('Maçã'),
-  Fruit('Banana'),
-  Fruit('Laranja'),
-  Fruit('Morango'),
-  Fruit('Uva'),
-  // Adicione mais frutas conforme necessário
-];
-
-
-
 class Medicamento {
   final String nome;
   final String dosagem;

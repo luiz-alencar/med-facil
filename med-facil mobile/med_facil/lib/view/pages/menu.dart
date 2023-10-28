@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:med_facil/view/pages/editar_perfil.dart';
 import 'package:med_facil/view/pages/login.dart';
+import 'package:med_facil/view/pages/medicamentos_disponiveis.dart';
 import 'package:med_facil/view/pages/relatorio_socioeconomico.dart';
 import 'package:med_facil/view/pages/requisicao_medicamentos.dart';
 
@@ -127,7 +128,10 @@ class _MenuPageState extends State<MenuPage> {
                     top: 100,
                     child: GestureDetector(
                       onTap: () {
-                        
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const MedicamentosDisponiveisPage()),
+                        );
                       },
                       child: Container(
                         width: 159,

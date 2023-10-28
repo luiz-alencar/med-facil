@@ -78,7 +78,7 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
               'Informe seus dados socieconômicos para que possamos entender a sua realiade!',
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: Colors.black.withOpacity(0.5),
+                color: Colors.black,
                 fontSize: 16,
                 fontFamily: 'Quicksand',
                 fontWeight: FontWeight.w400,
@@ -114,39 +114,99 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
             ),
           ),
           const SizedBox(height: 35),
-          SizedBox(
+          Container(
             width: 328,
-            child: TextField(
-              keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: "Renda familiar mensal",
+            decoration: ShapeDecoration(
+              shape: shapeBorder,
+            ),
+            child: DropdownButtonFormField(
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(12),
+                  ),
+                ),
               ),
+              hint: const Text("Renda familiar mensal"),
+              value: teste,
+              onChanged: (newValue) {
+                setState(() {
+                  teste = newValue;
+                });
+              },
+              items: lista.map((valueItem) {
+                return DropdownMenuItem(
+                    value: valueItem, child: Text(valueItem));
+              }).toList(),
             ),
           ),
           const SizedBox(height: 35),
-          SizedBox(
+          Container(
             width: 328,
-            child: TextField(
-              keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: "Renda idividual",
+            decoration: ShapeDecoration(
+              shape: shapeBorder,
+            ),
+            child: DropdownButtonFormField(
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(12),
+                  ),
+                ),
               ),
+              hint: const Text("Renda idividual"),
+              value: teste,
+              onChanged: (newValue) {
+                setState(() {
+                  teste = newValue;
+                });
+              },
+              items: lista.map((valueItem) {
+                return DropdownMenuItem(
+                    value: valueItem, child: Text(valueItem));
+              }).toList(),
             ),
           ),
           const SizedBox(height: 35),
-          SizedBox(
+          Container(
             width: 328,
-            child: TextField(
-              keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: "Sua profissão",
+            decoration: ShapeDecoration(
+              shape: shapeBorder,
+            ),
+            child: DropdownButtonFormField(
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(12),
+                  ),
+                ),
               ),
+              hint: const Text("Sua profissão"),
+              value: teste,
+              onChanged: (newValue) {
+                setState(() {
+                  teste = newValue;
+                });
+              },
+              items: lista.map((valueItem) {
+                return DropdownMenuItem(
+                    value: valueItem, child: Text(valueItem));
+              }).toList(),
             ),
           ),
           const SizedBox(height: 50),
+          SizedBox(
+              height: 44,
+              width: 344,
+              child: ElevatedButton(onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const MenuPage()),
+              );
+            }, child: const Text("Salvar", style: TextStyle(fontSize: 20))
+            )
+          ),
+          const SizedBox(height: 22),
           SizedBox(
               height: 44,
               width: 344,
