@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:brasil_fields/brasil_fields.dart';
 import 'package:flutter/services.dart';
-import 'package:med_facil/view/pages/login.dart';
+import 'package:med_facil/view/components/botao_universal.dart';
 
 class CadastroUsuarioPage extends StatefulWidget {
   const CadastroUsuarioPage({super.key});
@@ -21,145 +21,142 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
         height: MediaQuery.of(context).size.height,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                  width: 95,
-                  height: 71,
-                  child: Image.asset('assets/images/logo.png'),
-                ),
-              const SizedBox(height: 10),
-              const Text("Informe seus dados:", style: TextStyle(fontSize: 30)),
-              const SizedBox(height: 10),
-              SizedBox(
-                width: 344,
-                child: const TextField(
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
-                    labelText: "Nome Completo",
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              SizedBox(
-                width: 344,
-                child: TextFormField(
-                  inputFormatters: [
-                    // obrigatório
-                    FilteringTextInputFormatter.digitsOnly,
-                    CpfInputFormatter(),
-                  ],
-                  keyboardType: TextInputType.number,
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
-                    labelText: "CPF",
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              SizedBox(
-                width: 344,
-                child: const TextField(
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
-                    labelText: "E-mail",
-                  ),
-                ),
-              ), 
-              const SizedBox(height: 10),
-              SizedBox(
-                width: 344,
-                child: TextFormField(
-                  inputFormatters: [
-                    // obrigatório
-                    FilteringTextInputFormatter.digitsOnly,
-                    TelefoneInputFormatter(),
-                  ],
-                  keyboardType: TextInputType.number,
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
-                    labelText: "Telefone",
-                  ),
-                ),
-              ), 
-              const SizedBox(height: 10),
-              SizedBox(
-                width: 344,
-                child: TextFormField(
-                  inputFormatters: [
-                    // obrigatório
-                    FilteringTextInputFormatter.digitsOnly,
-                    DataInputFormatter(),
-                  ],
-                  keyboardType: TextInputType.number,
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
-                    labelText: "Data de Nascimento",
-                  ),
-                ),
-              ), 
-              const SizedBox(height: 10),
-              SizedBox(
-                width: 344,
-                child: DropdownButtonFormField(
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
-                    labelText: "Cidade",
-                  ),
-                  hint: const Text("Selecione a Cidade "),
-                  value: valueEscolhido,
-                  onChanged: (newValue){
-                    setState(() {
-                      valueEscolhido = newValue;
-                    });
-                  },
-                  items: lista.map((valueItem) {
-                    return DropdownMenuItem(
-                      value: valueItem,
-                      child: Text(valueItem));
-                  }).toList(),
-                ),
-              ), 
-              const SizedBox(height: 10),
-              SizedBox(
-                width: 344,
-                child: const TextField(
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
-                    labelText: "Login",
-                  ),
-                ),
-              ), 
-              const SizedBox(height: 10),
-              SizedBox(
-                width: 344,
-                child: const TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
-                    labelText: "Senha",
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              Container(
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            SizedBox(
+              width: 95,
+              height: 71,
+              child: Image.asset('assets/images/logo.png'),
+            ),
+            const SizedBox(height: 10),
+            const Text("Informe seus dados:", style: TextStyle(fontSize: 30)),
+            const SizedBox(height: 10),
+            SizedBox(
               width: 344,
-              height: 44,
-                child: TextButton(
-                onPressed: () {
-                  Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const LoginPage()),
-              );}, child: Text('Salvar', style: TextStyle(fontSize: 20, color: Colors.white)),),
-              decoration: ShapeDecoration(
-                color: Color(0xFF304D63),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
-              ), 
-            ]),
-        ), 
+              child: const TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12))),
+                  labelText: "Nome Completo",
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            SizedBox(
+              width: 344,
+              child: TextFormField(
+                inputFormatters: [
+                  // obrigatório
+                  FilteringTextInputFormatter.digitsOnly,
+                  CpfInputFormatter(),
+                ],
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12))),
+                  labelText: "CPF",
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            SizedBox(
+              width: 344,
+              child: const TextField(
+                keyboardType: TextInputType.emailAddress,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12))),
+                  labelText: "E-mail",
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            SizedBox(
+              width: 344,
+              child: TextFormField(
+                inputFormatters: [
+                  // obrigatório
+                  FilteringTextInputFormatter.digitsOnly,
+                  TelefoneInputFormatter(),
+                ],
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12))),
+                  labelText: "Telefone",
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            SizedBox(
+              width: 344,
+              child: TextFormField(
+                inputFormatters: [
+                  // obrigatório
+                  FilteringTextInputFormatter.digitsOnly,
+                  DataInputFormatter(),
+                ],
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12))),
+                  labelText: "Data de Nascimento",
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            SizedBox(
+              width: 344,
+              child: DropdownButtonFormField(
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12))),
+                  labelText: "Cidade",
+                ),
+                hint: const Text("Selecione a Cidade "),
+                value: valueEscolhido,
+                onChanged: (newValue) {
+                  setState(() {
+                    valueEscolhido = newValue;
+                  });
+                },
+                items: lista.map((valueItem) {
+                  return DropdownMenuItem(
+                      value: valueItem, child: Text(valueItem));
+                }).toList(),
+              ),
+            ),
+            const SizedBox(height: 10),
+            SizedBox(
+              width: 344,
+              child: const TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12))),
+                  labelText: "Login",
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            SizedBox(
+              width: 344,
+              child: const TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12))),
+                  labelText: "Senha",
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            BotaoUniversal(
+                buttonText: 'Salvar',
+                onTapButton: () {
+                  Navigator.of(context).pop();
+                })
+          ]),
         ),
+      ),
     );
   }
 }

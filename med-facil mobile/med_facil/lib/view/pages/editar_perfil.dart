@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:brasil_fields/brasil_fields.dart';
 import 'package:flutter/services.dart';
+import 'package:med_facil/view/components/botao_universal.dart';
 import 'package:med_facil/view/pages/menu.dart';
 
 class EditarPerfilPage extends StatefulWidget {
@@ -195,24 +196,11 @@ class _EditarPerfilState extends State<EditarPerfilPage> {
             ),
           ),
           const SizedBox(height: 10),
-          Container(
-              width: 344,
-              height: 44,
-              child: TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const MenuPage()),
-                  );
-                },
-                child: Text('Salvar',
-                    style: TextStyle(fontSize: 20, color: Colors.white)),
-              ),
-              decoration: ShapeDecoration(
-                color: Color(0xFF304D63),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8)),
-              )),
+          BotaoUniversal(
+              buttonText: 'Salvar',
+              onTapButton: () {
+                Navigator.of(context).pop();
+              })
         ]),
       ),
     );

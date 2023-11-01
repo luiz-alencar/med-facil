@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:med_facil/view/components/botao_universal.dart';
 import 'package:med_facil/view/pages/menu.dart';
 import 'package:non_uniform_border/non_uniform_border.dart';
 
@@ -10,18 +11,18 @@ class Relatorio_socioeconomicoPage extends StatefulWidget {
       _Relatorio_socioeconomicoState();
 }
 
-class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage> {
+class _Relatorio_socioeconomicoState
+    extends State<Relatorio_socioeconomicoPage> {
   Object? teste;
   List lista = ["1", "2", "3"];
   final shapeBorder = NonUniformBorder(
-    leftWidth: 1,
-    rightWidth: 1,
-    topWidth: 1,
-    bottomWidth: 4,
-    color: Color.fromRGBO(48, 77, 99, 100),
-    strokeAlign: BorderSide.strokeAlignCenter,
-    borderRadius: BorderRadius.circular(12)
-  );
+      leftWidth: 1,
+      rightWidth: 1,
+      topWidth: 1,
+      bottomWidth: 4,
+      color: Color.fromRGBO(48, 77, 99, 100),
+      strokeAlign: BorderSide.strokeAlignCenter,
+      borderRadius: BorderRadius.circular(12));
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -99,7 +100,8 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
                   ),
                 ),
               ),
-              hint: const Text("Quantas pessoas moram na sua casa", style: TextStyle(color: Colors.black)),
+              hint: const Text("Quantas pessoas moram na sua casa",
+                  style: TextStyle(color: Colors.black)),
               value: teste,
               onChanged: (newValue) {
                 setState(() {
@@ -126,7 +128,8 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
                   ),
                 ),
               ),
-              hint: const Text("Renda familiar mensal", style: TextStyle(color: Colors.black)),
+              hint: const Text("Renda familiar mensal",
+                  style: TextStyle(color: Colors.black)),
               value: teste,
               onChanged: (newValue) {
                 setState(() {
@@ -153,7 +156,8 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
                   ),
                 ),
               ),
-              hint: const Text("Renda idividual", style: TextStyle(color: Colors.black)),
+              hint: const Text("Renda idividual",
+                  style: TextStyle(color: Colors.black)),
               value: teste,
               onChanged: (newValue) {
                 setState(() {
@@ -180,7 +184,8 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
                   ),
                 ),
               ),
-              hint: const Text("Sua profissão", style: TextStyle(color: Colors.black)),
+              hint: const Text("Sua profissão",
+                  style: TextStyle(color: Colors.black)),
               value: teste,
               onChanged: (newValue) {
                 setState(() {
@@ -194,33 +199,17 @@ class _Relatorio_socioeconomicoState extends State<Relatorio_socioeconomicoPage>
             ),
           ),
           const SizedBox(height: 35),
-          Container(
-            width: 344,
-            height: 44,
-              child: TextButton(
-              onPressed: () {
-                Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const MenuPage()),
-            );}, child: Text('Salvar', style: TextStyle(fontSize: 20, color: Colors.white)),),
-            decoration: ShapeDecoration(
-              color: Color(0xFF304D63),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
-          ),
+          BotaoUniversal(
+              buttonText: 'Salvar',
+              onTapButton: () {
+                Navigator.of(context).pop();
+              }),
           const SizedBox(height: 10),
-          Container(
-            width: 344,
-            height: 44,
-              child: TextButton(
-              onPressed: () {
-                Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const MenuPage()),
-            );}, child: Text('Voltar', style: TextStyle(fontSize: 20, color: Colors.white)),),
-            decoration: ShapeDecoration(
-              color: Color(0xFF304D63),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
-          ),
+          BotaoUniversal(
+              buttonText: 'Voltar',
+              onTapButton: () {
+                Navigator.of(context).pop();
+              })
         ]),
       ),
     );

@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:med_facil/view/components/botao_universal.dart';
 import 'package:med_facil/view/components/textfild_componente.dart';
 import 'package:med_facil/view/components/titulo_imagem.dart';
 import 'package:med_facil/view/pages/cadastro_usuario.dart';
@@ -15,7 +16,7 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   final _formkey = GlobalKey<FormState>();
-    //Controllers dos formulários
+  //Controllers dos formulários
   TextEditingController controllerEmail = TextEditingController();
 
   TextEditingController controllerSenha = TextEditingController();
@@ -41,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
                         obscureText: false,
                         controller: controllerEmail,
                         validator: (value) => validate(value),
-                        keyboardType: TextInputType.emailAddress, 
+                        keyboardType: TextInputType.emailAddress,
                       ),
                       const SizedBox(height: 10),
                       TextFieldComponente(
@@ -52,20 +53,8 @@ class _LoginPageState extends State<LoginPage> {
                         keyboardType: TextInputType.text,
                       ),
                       const SizedBox(height: 15),
-                      Container(
-                          width: 344,
-                          height: 44,
-                          child: TextButton(
-                            onPressed: () => logar(),
-                            child: Text('Entrar',
-                                style:
-                                    TextStyle(fontSize: 20, color: Colors.white)),
-                          ),
-                          decoration: ShapeDecoration(
-                            color: Color(0xFF304D63),
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(8)),
-                          )),
+                      BotaoUniversal(
+                          buttonText: 'Entrar', onTapButton: () => logar()),
                       const SizedBox(height: 10),
                       Container(
                         width: 324,
@@ -122,27 +111,15 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                       const SizedBox(height: 10),
-                      Container(
-                          width: 344,
-                          height: 44,
-                          child: TextButton(
-                            onPressed: () {
-                              Navigator.push(
+                      BotaoUniversal(
+                          buttonText: 'Cadastre-se',
+                          onTapButton: () {
+                            Navigator.push(
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) =>
-                                        const CadastroUsuarioPage()),
-                              );
-                            },
-                            child: Text('Cadastre-se',
-                                style:
-                                    TextStyle(fontSize: 20, color: Colors.white)),
-                          ),
-                          decoration: ShapeDecoration(
-                            color: Color(0xFF304D63),
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(8)),
-                          )),
+                                        const CadastroUsuarioPage()));
+                          })
                     ],
                   ),
                 ),
