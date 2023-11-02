@@ -97,7 +97,7 @@ class _MedicamentosDisponiveisPageState
               },
               decoration: InputDecoration(
                 labelText: 'Pesquisar',
-                prefixIcon: Icon(Icons.search),
+                prefixIcon: const Icon(Icons.search),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(25.0),
                 ),
@@ -115,18 +115,16 @@ class _MedicamentosDisponiveisPageState
               },
             ),
           ),
-          InkWell(
-            onTap: () {
-              _launchPDF();
-            },
-            child: Text(
-              'Clique aqui para abrir o PDF',
-              style: TextStyle(
-                color: Colors.blue,
-                decoration: TextDecoration.underline,
-              ),
-            ),
-          ),
+          GestureDetector(
+              onTap: () {
+                const url =
+                    'https://www.gov.br/saude/pt-br/composicao/sectics/daf/relacao-nacional-de-medicamentos-essenciais';
+                launch(url);
+              },
+              child: const Text('Clique aqui para visitar o site',
+                  style: TextStyle(
+                      decoration: TextDecoration.underline,
+                      color: Colors.blue))),
           const SizedBox(height: 22),
           BotaoUniversal(
               buttonText: 'Voltar',
@@ -134,15 +132,5 @@ class _MedicamentosDisponiveisPageState
                 Navigator.of(context).pop();
               })
         ])));
-  }
-
-  _launchPDF() async {
-    const pdfURL =
-        'https://www.caceres.mt.gov.br/fotos_institucional_downloads/2.pdf'; // Substitua pelo URL do seu arquivo PDF
-    if (await canLaunch(pdfURL)) {
-      await launch(pdfURL);
-    } else {
-      throw 'Não foi possível abrir o PDF';
-    }
   }
 }
