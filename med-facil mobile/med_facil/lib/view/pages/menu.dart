@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:med_facil/view/pages/editar_perfil.dart';
-import 'package:med_facil/view/pages/login.dart';
-import 'package:med_facil/view/pages/minhas_requisicoes.dart';
-import 'package:med_facil/view/pages/medicamentos_disponiveis.dart';
-import 'package:med_facil/view/pages/relatorio_socioeconomico.dart';
-import 'package:med_facil/view/pages/requisicao_medicamentos.dart';
+import 'package:med_facil/view/components/appbar_componente.dart';
 
 class MenuPage extends StatefulWidget {
   const MenuPage({super.key});
@@ -17,28 +12,7 @@ class _MenuPageState extends State<MenuPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Center(
-            child: Text('Med-Fácil',
-                style: TextStyle(
-                    color: Colors
-                        .white))), //Utilizamos o TextStyle para alterar o texto
-        backgroundColor: const Color.fromRGBO(48, 77, 99, 1),
-        elevation: 0,
-        leading: SizedBox(
-          child: Image.asset('assets/images/logo2.png'),
-        ),
-        actions: [
-          IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const LoginPage()),
-                );
-              },
-              icon: const Icon(Icons.logout, color: Colors.white))
-        ], //Podemos utilizar a ação onPressed para chamar uma função
-      ),
+      appBar: MyAppBar(),
       body: Center(
         child: Column(
           children: [
@@ -52,11 +26,7 @@ class _MenuPageState extends State<MenuPage> {
                     top: 450,
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Editarperfil()),
-                        );
+                        Navigator.pushNamed(context, '/editarperfil');
                       },
                       child: Container(
                         width: 159,
@@ -141,12 +111,7 @@ class _MenuPageState extends State<MenuPage> {
                     top: 100,
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  const MedicamentosDisponiveisPage()),
-                        );
+                        Navigator.pushNamed(context, '/medicamentosdisponiveis');
                       },
                       child: Container(
                         width: 159,
@@ -231,12 +196,7 @@ class _MenuPageState extends State<MenuPage> {
                     top: 100,
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  const RequisicaoMedicamentoPage()),
-                        );
+                        Navigator.pushNamed(context, '/requisicao');
                       },
                       child: Container(
                         width: 159,
@@ -320,12 +280,7 @@ class _MenuPageState extends State<MenuPage> {
                     top: 275,
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  const MinhasRequisicoesPage()),
-                        );
+                        Navigator.pushNamed(context, '/minhasrequisicoes');
                       },
                       child: Container(
                         width: 159,
@@ -398,12 +353,7 @@ class _MenuPageState extends State<MenuPage> {
                     top: 275,
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                                  const RelatorioSocioeconomicoPage()),
-                        );
+                        Navigator.pushNamed(context, '/relatorio');
                       },
                       child: Container(
                         width: 159,
