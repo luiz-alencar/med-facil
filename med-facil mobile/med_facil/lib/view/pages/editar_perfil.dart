@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:med_facil/view/components/appbar_paramenu.dart';
 import 'package:med_facil/view/components/botao_universal.dart';
 import 'package:med_facil/view/pages/menu.dart';
 
@@ -14,7 +13,25 @@ class _EditarperfilState extends State<Editarperfil> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: appbarRetornaMenu(),
+        appBar: AppBar(
+          title: const Center(
+            child: Text("Med-Fácil", style: TextStyle(color: Colors.white)),
+          ), //Utilizamos o TextStyle para alterar o texto
+          backgroundColor: const Color.fromRGBO(48, 77, 99, 1),
+          elevation: 0,
+          leading: Image.asset('assets/images/logo2.png'),
+
+          actions: [
+            IconButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const MenuPage()),
+                  );
+                },
+                icon: const Icon(Icons.house, color: Colors.white))
+          ], //Podemos utilizar a ação onPressed para chamar uma função
+        ),
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(15.0),

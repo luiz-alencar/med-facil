@@ -6,6 +6,7 @@ import 'package:med_facil/view/components/textfild_componente.dart';
 import 'package:med_facil/view/components/titulo_imagem.dart';
 import 'package:med_facil/view/pages/cadastro_usuario.dart';
 import 'package:med_facil/view/pages/menu.dart';
+import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -16,6 +17,9 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   final _formkey = GlobalKey<FormState>();
+  final controllerUsername = TextEditingController();
+  final controllerPassword = TextEditingController();
+
   //Controllers dos formulários
   TextEditingController controllerEmail = TextEditingController();
 
@@ -40,7 +44,7 @@ class _LoginPageState extends State<LoginPage> {
                       TextFieldComponente(
                         hintText: 'Login',
                         obscureText: false,
-                        controller: controllerEmail,
+                        controller: controllerUsername,
                         validator: (value) => validate(value),
                         keyboardType: TextInputType.emailAddress,
                       ),
@@ -48,7 +52,7 @@ class _LoginPageState extends State<LoginPage> {
                       TextFieldComponente(
                         hintText: 'Senha',
                         obscureText: true,
-                        controller: controllerSenha,
+                        controller: controllerPassword,
                         validator: (value) => validate(value),
                         keyboardType: TextInputType.text,
                       ),
@@ -136,13 +140,63 @@ class _LoginPageState extends State<LoginPage> {
     return null;
   }
 
-  void logar() async {
-    if (!_formkey.currentState!.validate()) {
-      return;
-    }
-    Navigator.push(
+      void showSuccess(String message) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text("Successo!"),
+          content: Text(message),
+          actions: <Widget>[
+            TextButton(
+              child: const Text("OK"),
+              onPressed: () {
+                Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const MenuPage()),
     );
+              },
+            ),
+          ],
+        );
+      },
+    );
   }
-}
+
+  void showError(String errorMessage) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text("Inválido!"),
+          content: Text(errorMessage),
+          actions: <Widget>[
+            TextButton(
+              child: const Text("OK"),
+              onPressed: () {
+                Navigator.of(context).pop();
+              }
+            )
+          ]
+        );
+      }
+    );
+  }
+
+  void logar() async {
+    if (!_formkey.currentState!.validate()) {
+      return;}
+      final username = controllerUsername.text.trim();
+  final password = controllerPassword.text.trim();
+
+  final user = ParseUser(username, password, null);
+
+  var response = await user.login();
+
+    if (response.success) {
+      showSuccess("Você está sendo redirecionado para a tela de login!!");
+    } else {
+      showError("Verifique seu usuário ou senha!!");
+    }
+  }
+  }
