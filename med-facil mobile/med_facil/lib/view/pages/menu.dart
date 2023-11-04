@@ -18,18 +18,26 @@ class _MenuPageState extends State<MenuPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Med-Fácil", style: TextStyle(color: Colors.white)), //Utilizamos o TextStyle para alterar o texto
+        title: const Center(
+            child: Text('Med-Fácil',
+                style: TextStyle(
+                    color: Colors
+                        .white))), //Utilizamos o TextStyle para alterar o texto
         backgroundColor: const Color.fromRGBO(48, 77, 99, 1),
         elevation: 0,
         leading: SizedBox(
           child: Image.asset('assets/images/logo2.png'),
         ),
-        actions: [IconButton(onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const LoginPage()),
-          );
-        }, icon: const Icon(Icons.logout, color: Colors.white))],  //Podemos utilizar a ação onPressed para chamar uma função
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const LoginPage()),
+                );
+              },
+              icon: const Icon(Icons.logout, color: Colors.white))
+        ], //Podemos utilizar a ação onPressed para chamar uma função
       ),
       body: Center(
         child: Column(
@@ -46,7 +54,8 @@ class _MenuPageState extends State<MenuPage> {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const EditarPerfilPage()),
+                          MaterialPageRoute(
+                              builder: (context) => const Editarperfil()),
                         );
                       },
                       child: Container(
@@ -62,7 +71,8 @@ class _MenuPageState extends State<MenuPage> {
                                 height: 145.78,
                                 decoration: ShapeDecoration(
                                   color: Color(0xFF304D63),
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                 ),
                               ),
                             ),
@@ -75,7 +85,8 @@ class _MenuPageState extends State<MenuPage> {
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
                                   shape: RoundedRectangleBorder(
-                                    side: BorderSide(width: 1, color: Color(0xFF304D63)),
+                                    side: BorderSide(
+                                        width: 1, color: Color(0xFF304D63)),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                 ),
@@ -111,7 +122,8 @@ class _MenuPageState extends State<MenuPage> {
                                         width: 60,
                                         height: 60,
                                         child: SizedBox(
-                                          child: Image.asset('assets/images/imagem5.png'),
+                                          child: Image.asset(
+                                              'assets/images/imagem5.png'),
                                         ),
                                       ),
                                     ),
@@ -131,7 +143,9 @@ class _MenuPageState extends State<MenuPage> {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const MedicamentosDisponiveisPage()),
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const MedicamentosDisponiveisPage()),
                         );
                       },
                       child: Container(
@@ -147,7 +161,8 @@ class _MenuPageState extends State<MenuPage> {
                                 height: 145.78,
                                 decoration: ShapeDecoration(
                                   color: Color(0xFF304D63),
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                 ),
                               ),
                             ),
@@ -160,7 +175,8 @@ class _MenuPageState extends State<MenuPage> {
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
                                   shape: RoundedRectangleBorder(
-                                    side: BorderSide(width: 1, color: Color(0xFF304D63)),
+                                    side: BorderSide(
+                                        width: 1, color: Color(0xFF304D63)),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                 ),
@@ -196,7 +212,8 @@ class _MenuPageState extends State<MenuPage> {
                                         width: 60,
                                         height: 60,
                                         child: SizedBox(
-                                          child: Image.asset('assets/images/imagem2.png'),
+                                          child: Image.asset(
+                                              'assets/images/imagem2.png'),
                                         ),
                                       ),
                                     ),
@@ -216,7 +233,9 @@ class _MenuPageState extends State<MenuPage> {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const RequisicaoMedicamentoPage()),
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const RequisicaoMedicamentoPage()),
                         );
                       },
                       child: Container(
@@ -232,7 +251,8 @@ class _MenuPageState extends State<MenuPage> {
                                 height: 145.78,
                                 decoration: ShapeDecoration(
                                   color: Color(0xFF304D63),
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                 ),
                               ),
                             ),
@@ -245,7 +265,8 @@ class _MenuPageState extends State<MenuPage> {
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
                                   shape: RoundedRectangleBorder(
-                                    side: BorderSide(width: 1, color: Color(0xFF304D63)),
+                                    side: BorderSide(
+                                        width: 1, color: Color(0xFF304D63)),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                 ),
@@ -280,7 +301,8 @@ class _MenuPageState extends State<MenuPage> {
                                         width: 60,
                                         height: 60,
                                         child: SizedBox(
-                                          child: Image.asset('assets/images/imagem1.png'),
+                                          child: Image.asset(
+                                              'assets/images/imagem1.png'),
                                         ),
                                       ),
                                     ),
@@ -300,7 +322,9 @@ class _MenuPageState extends State<MenuPage> {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const MinhasRequisicoesPage()),
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const MinhasRequisicoesPage()),
                         );
                       },
                       child: Container(
@@ -316,7 +340,8 @@ class _MenuPageState extends State<MenuPage> {
                                 height: 145.78,
                                 decoration: ShapeDecoration(
                                   color: Color(0xFF304D63),
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                 ),
                               ),
                             ),
@@ -329,7 +354,8 @@ class _MenuPageState extends State<MenuPage> {
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
                                   shape: RoundedRectangleBorder(
-                                    side: BorderSide(width: 1, color: Color(0xFF304D63)),
+                                    side: BorderSide(
+                                        width: 1, color: Color(0xFF304D63)),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                 ),
@@ -357,7 +383,8 @@ class _MenuPageState extends State<MenuPage> {
                                 width: 60,
                                 height: 60,
                                 child: SizedBox(
-                                  child: Image.asset('assets/images/imagem3.png'),
+                                  child:
+                                      Image.asset('assets/images/imagem3.png'),
                                 ),
                               ),
                             ),
@@ -373,7 +400,9 @@ class _MenuPageState extends State<MenuPage> {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const Relatorio_socioeconomicoPage()),
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const RelatorioSocioeconomicoPage()),
                         );
                       },
                       child: Container(
@@ -389,7 +418,8 @@ class _MenuPageState extends State<MenuPage> {
                                 height: 145.78,
                                 decoration: ShapeDecoration(
                                   color: Color(0xFF304D63),
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(8)),
                                 ),
                               ),
                             ),
@@ -402,7 +432,8 @@ class _MenuPageState extends State<MenuPage> {
                                 decoration: ShapeDecoration(
                                   color: Colors.white,
                                   shape: RoundedRectangleBorder(
-                                    side: BorderSide(width: 1, color: Color(0xFF304D63)),
+                                    side: BorderSide(
+                                        width: 1, color: Color(0xFF304D63)),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                 ),
@@ -438,7 +469,8 @@ class _MenuPageState extends State<MenuPage> {
                                         width: 60,
                                         height: 60,
                                         child: SizedBox(
-                                          child: Image.asset('assets/images/imagem4.png'),
+                                          child: Image.asset(
+                                              'assets/images/imagem4.png'),
                                         ),
                                       ),
                                     ),

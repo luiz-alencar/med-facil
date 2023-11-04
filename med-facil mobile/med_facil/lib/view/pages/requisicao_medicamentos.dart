@@ -18,17 +18,18 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
       rightWidth: 1,
       topWidth: 1,
       bottomWidth: 4,
-      color: Color.fromRGBO(48, 77, 99, 100),
+      color: const Color.fromRGBO(48, 77, 99, 100),
       strokeAlign: BorderSide.strokeAlignCenter,
       borderRadius: BorderRadius.circular(12));
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Med-Fácil",
-            style: TextStyle(
-                color: Colors
-                    .white)), //Utilizamos o TextStyle para alterar o texto
+        title: const Center(
+            child: Text('Med-Fácil',
+                style: TextStyle(
+                    color: Colors
+                        .white))), //Utilizamos o TextStyle para alterar o texto
         backgroundColor: const Color.fromRGBO(48, 77, 99, 1),
         elevation: 0,
         leading: SizedBox(
@@ -48,7 +49,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
       body: Center(
           child: Column(
         children: [
-          Text(
+          const Text(
             'Requisição de Medicamentos',
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -61,7 +62,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
           ),
           Container(
             width: 318,
-            decoration: ShapeDecoration(
+            decoration: const ShapeDecoration(
               shape: RoundedRectangleBorder(
                 side: BorderSide(
                   width: 1,
@@ -71,7 +72,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
             ),
           ),
           const SizedBox(height: 40),
-          SizedBox(
+          const SizedBox(
             width: 328,
             height: 84,
             child: Text(

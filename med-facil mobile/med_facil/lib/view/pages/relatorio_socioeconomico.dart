@@ -1,26 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:med_facil/view/components/botao_universal.dart';
-import 'package:med_facil/view/components/textfild_componente.dart';
 import 'package:med_facil/view/pages/menu.dart';
-import 'package:non_uniform_border/non_uniform_border.dart';
 
-class Relatorio_socioeconomicoPage extends StatefulWidget {
-  const Relatorio_socioeconomicoPage({super.key});
+class RelatorioSocioeconomicoPage extends StatefulWidget {
+  const RelatorioSocioeconomicoPage({super.key});
 
   @override
-  State<Relatorio_socioeconomicoPage> createState() =>
-      _Relatorio_socioeconomicoState();
+  State<RelatorioSocioeconomicoPage> createState() =>
+      _RelatorioSocioeconomicoState();
 }
 
-class _Relatorio_socioeconomicoState
-    extends State<Relatorio_socioeconomicoPage> {
+class _RelatorioSocioeconomicoState extends State<RelatorioSocioeconomicoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Center(
-              child: const Text('Med-Fácil',
-                  style: TextStyle(color: Colors.white))),
+          title: const Center(
+              child: Text('Med-Fácil', style: TextStyle(color: Colors.white))),
 
           //Utilizamos o TextStyle para alterar o texto
           backgroundColor: const Color.fromRGBO(48, 77, 99, 1),
@@ -41,13 +37,13 @@ class _Relatorio_socioeconomicoState
         ),
         body: Center(
           child: Padding(
-            padding: const EdgeInsets.all(35.0),
+            padding: const EdgeInsets.all(25.0),
             child: SingleChildScrollView(
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const Text(
-                      'teste 1',
+                      'Relatorio socioeconômico',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Color(0xFF304D63),
@@ -57,9 +53,10 @@ class _Relatorio_socioeconomicoState
                         height: 0,
                       ),
                     ),
+                    const SizedBox(height: 10),
                     Container(
                       width: 318,
-                      decoration: ShapeDecoration(
+                      decoration: const ShapeDecoration(
                         shape: RoundedRectangleBorder(
                           side: BorderSide(
                             width: 1,
@@ -68,43 +65,59 @@ class _Relatorio_socioeconomicoState
                         ),
                       ),
                     ),
+                    const SizedBox(height: 10),
+                    const Text(
+                      'Informe seus dados socieconômicos para que possamos entender a sua realiade!',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 16,
+                        fontFamily: 'Quicksand',
+                        fontWeight: FontWeight.w400,
+                        height: 0,
+                      ),
+                    ),
                     const SizedBox(height: 40),
                     const Form(
                         child: Column(
                       children: [
                         TextField(
                           decoration: InputDecoration(
+                              label: Text('Quantas pessoas moram na sua casa?'),
                               border: OutlineInputBorder(
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(12)))),
                         ),
-                        const SizedBox(height: 40),
+                        SizedBox(height: 40),
                         TextField(
                             decoration: InputDecoration(
+                                label: Text('Renda familiar mensal bruta?'),
                                 border: OutlineInputBorder(
                                     borderRadius: BorderRadius.all(
                                         Radius.circular(12))))),
-                        const SizedBox(height: 40),
+                        SizedBox(height: 40),
                         TextField(
                             decoration: InputDecoration(
+                                label: Text('Renda individual mensal bruta?'),
                                 border: OutlineInputBorder(
                                     borderRadius: BorderRadius.all(
                                         Radius.circular(12))))),
-                        const SizedBox(height: 40),
+                        SizedBox(height: 40),
                         TextField(
                             decoration: InputDecoration(
+                                label: Text('Qual sua Profissão?'),
                                 border: OutlineInputBorder(
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(12)))))
                       ],
                     )),
-                    const SizedBox(height: 35),
+                    const SizedBox(height: 55),
                     BotaoUniversal(
                         buttonText: 'Salvar',
                         onTapButton: () {
                           Navigator.of(context).pop();
                         }),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 20),
                     BotaoUniversal(
                         buttonText: 'Voltar',
                         onTapButton: () {

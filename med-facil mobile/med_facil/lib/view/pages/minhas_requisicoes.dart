@@ -27,10 +27,11 @@ class _MinhasRequisicoesPageState extends State<MinhasRequisicoesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Med-Fácil",
-            style: TextStyle(
-                color: Colors
-                    .white)), //Utilizamos o TextStyle para alterar o texto
+        title: const Center(
+            child: Text('Med-Fácil',
+                style: TextStyle(
+                    color: Colors
+                        .white))), //Utilizamos o TextStyle para alterar o texto
         backgroundColor: const Color.fromRGBO(48, 77, 99, 1),
         elevation: 0,
         leading: SizedBox(
