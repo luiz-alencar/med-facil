@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:brasil_fields/brasil_fields.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -43,17 +45,21 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
                           key: _formkey,
                           child: Column(children: [
                             TextFieldComponente(
-                                hintText: 'Nome completo.',
+                                hintText: 'Nome completo',
                                 obscureText: false,
                                 controller: controllerUsername,
                                 validator: (value) => validate(value),
                                 keyboardType: TextInputType.text),
                             const SizedBox(height: 10),
-                            TextFieldComponente(
-                                hintText: 'CPF.',
+                            TextFormField(
                                 obscureText: false,
-                                controller: controllerCPF,
                                 validator: (value) => validate(value),
+                                controller: controllerCPF,
+                                decoration: InputDecoration(
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(12)),
+                                    hintText: 'CPF'),
                                 inputFormatters: [
                                   FilteringTextInputFormatter.digitsOnly,
                                   CpfInputFormatter(),
@@ -61,28 +67,36 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
                                 keyboardType: TextInputType.number),
                             const SizedBox(height: 10),
                             TextFieldComponente(
-                                hintText: 'E-mail.',
+                                hintText: 'E-mail',
                                 obscureText: false,
                                 controller: controllerEmail,
                                 validator: (value) => validate(value),
                                 keyboardType: TextInputType.emailAddress),
                             const SizedBox(height: 10),
-                            TextFieldComponente(
-                                hintText: 'Telefone.',
+                            TextFormField(
                                 obscureText: false,
-                                controller: controllerTelefone,
                                 validator: (value) => validate(value),
+                                controller: controllerTelefone,
+                                decoration: InputDecoration(
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(12)),
+                                    hintText: 'Telefone'),
                                 inputFormatters: [
                                   FilteringTextInputFormatter.digitsOnly,
                                   TelefoneInputFormatter(),
                                 ],
                                 keyboardType: TextInputType.number),
                             const SizedBox(height: 10),
-                            TextFieldComponente(
-                                hintText: 'Data nascimento.',
+                            TextFormField(
                                 obscureText: false,
-                                controller: controllerDataNascimento,
                                 validator: (value) => validate(value),
+                                controller: controllerDataNascimento,
+                                decoration: InputDecoration(
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(12)),
+                                    hintText: 'Data de nascimento'),
                                 inputFormatters: [
                                   FilteringTextInputFormatter.digitsOnly,
                                   DataInputFormatter(),
@@ -90,21 +104,21 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
                                 keyboardType: TextInputType.text),
                             const SizedBox(height: 10),
                             TextFieldComponente(
-                                hintText: 'Cidade.',
+                                hintText: 'Cidade',
                                 obscureText: false,
                                 controller: controllerEndereco,
                                 validator: (value) => validate(value),
                                 keyboardType: TextInputType.text),
                             const SizedBox(height: 10),
                             TextFieldComponente(
-                                hintText: 'Login.',
+                                hintText: 'Nome usuário',
                                 obscureText: false,
                                 controller: controllerLogin,
                                 validator: (value) => validate(value),
                                 keyboardType: TextInputType.text),
                             const SizedBox(height: 10),
                             TextFieldComponente(
-                                hintText: 'Senha.',
+                                hintText: 'Senha',
                                 obscureText: false,
                                 controller: controllerPassword,
                                 validator: (value) => validate(value),
@@ -179,9 +193,13 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
 
     final user = ParseUser.createUser(username, password, email);
 
+    // transform datetime
+
+    DateTime data = converterData(dataNascimento);
+    
     user.set<String>("cpf", cpf);
     user.set<String>("telefone", telefone);
-    user.set<String>("dataNascimento", dataNascimento);
+    user.set<DateTime>("dataNascimento", data);
     user.set<String>("endereco", endereco);
     user.set<String>("login", login);
 
@@ -192,5 +210,14 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
     } else {
       showError("Algo ficou errado!!");
     }
+  }
+
+  DateTime converterData(String dataNascimento) {
+    var list = dataNascimento.split('/');
+    final dataFormatada = "${list[2]}-${list[1]}-${list[0]}";
+    log(dataFormatada);
+    final data = DateTime.parse(dataFormatada);
+
+    return data;
   }
 }
