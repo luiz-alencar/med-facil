@@ -14,6 +14,7 @@ class TextFieldComponente extends StatelessWidget {
     required this.controller,
     required this.validator,
     required this.keyboardType,
+    inputFormatters,
   });
 
   @override

@@ -14,20 +14,18 @@ class BotaoUniversal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTapButton,
-      child: Container(
-        width: 344,
-        height: 44,
-        decoration: ShapeDecoration(
-          color: Color(0xFF304D63),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-        ),
-        child: Center(
-          child: Text(buttonText,
-              style: const TextStyle(fontSize: 20, color: Colors.white),
-              textAlign: TextAlign.center),
-        ),
-      ),
-    );
+        onTap: onTapButton,
+        child: Container(
+            width: 344,
+            height: 44,
+            decoration: ShapeDecoration(
+              color: Color(0xFF304D63),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8)),
+            ),
+            child: Center(
+                child: Text(buttonText,
+                    style: const TextStyle(fontSize: 20, color: Colors.white),
+                    textAlign: TextAlign.center))));
   }
 }
