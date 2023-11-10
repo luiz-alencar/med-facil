@@ -17,15 +17,18 @@ class CadastroUsuarioPage extends StatefulWidget {
 }
 
 class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
+  List lista = ["Ceres", "Itapaci", "Rialma"];
+
   final _formkey = GlobalKey<FormState>();
   final controllerUsername = TextEditingController();
   final controllerCPF = TextEditingController();
   final controllerEmail = TextEditingController();
   final controllerTelefone = TextEditingController();
   final controllerDataNascimento = TextEditingController();
-  final controllerEndereco = TextEditingController();
   final controllerLogin = TextEditingController();
   final controllerPassword = TextEditingController();
+
+  late String _cidade;
 
   @override
   Widget build(BuildContext context) {
@@ -103,12 +106,23 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
                                 ],
                                 keyboardType: TextInputType.text),
                             const SizedBox(height: 10),
-                            TextFieldComponente(
-                                hintText: 'Cidade',
-                                obscureText: false,
-                                controller: controllerEndereco,
-                                validator: (value) => validate(value),
-                                keyboardType: TextInputType.text),
+                            DropdownButtonFormField(
+                              decoration: const InputDecoration(
+                                border: OutlineInputBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(12))),
+                              ),
+                              hint: const Text("Selecione a sua cidade"),
+                              onChanged: (newValue) {
+                                setState(() {
+                                  _cidade = newValue as String;
+                                });
+                              },
+                              items: lista.map((valueItem) {
+                                return DropdownMenuItem(
+                                    value: valueItem, child: Text(valueItem));
+                              }).toList(),
+                            ),
                             const SizedBox(height: 10),
                             TextFieldComponente(
                                 hintText: 'Nome usuário',
@@ -187,7 +201,6 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
     final email = controllerEmail.text.trim();
     final telefone = controllerTelefone.text.trim();
     final dataNascimento = controllerDataNascimento.text.trim();
-    final endereco = controllerEndereco.text.trim();
     final login = controllerLogin.text.trim();
     final password = controllerPassword.text.trim();
 
@@ -196,11 +209,11 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
     // transform datetime
 
     DateTime data = converterData(dataNascimento);
-    
+
     user.set<String>("cpf", cpf);
     user.set<String>("telefone", telefone);
     user.set<DateTime>("dataNascimento", data);
-    user.set<String>("endereco", endereco);
+    user.set<String>("endereco", _cidade);
     user.set<String>("login", login);
 
     var response = await user.signUp();

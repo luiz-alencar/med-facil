@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:med_facil/view/components/botao_universal.dart';
 import 'package:non_uniform_border/non_uniform_border.dart';
 import 'package:med_facil/view/pages/menu.dart';
+import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 
 class RequisicaoMedicamentoPage extends StatefulWidget {
   const RequisicaoMedicamentoPage({super.key});
@@ -13,6 +14,16 @@ class RequisicaoMedicamentoPage extends StatefulWidget {
 
 class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
   List lista = ["Ceres", "Itapaci", "Rialma"];
+  List quants = [1, 2, 3];
+
+  final controllerMedicamento = TextEditingController();
+  final controllerQuantidade = TextEditingController();
+  final controllerUso = TextEditingController();
+
+  late String _medicamentos;
+  late int _quantidade;
+  late String _uso;
+
   final shapeBorder = NonUniformBorder(
       leftWidth: 1,
       rightWidth: 1,
@@ -101,7 +112,9 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
               hint: const Text("Selecione o Medicamento ",
                   style: TextStyle(color: Colors.black)),
               onChanged: (newValue) {
-                setState(() {});
+                setState(() {
+                  _medicamentos = newValue as String;
+                });
               },
               items: lista.map((valueItem) {
                 return DropdownMenuItem(
@@ -123,11 +136,13 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
               hint: const Text("Selecione a Quantidade ",
                   style: TextStyle(color: Colors.black)),
               onChanged: (newValue) {
-                setState(() {});
+                setState(() {
+                  _quantidade = newValue as int;
+                });
               },
-              items: lista.map((valueItem) {
+              items: quants.map((valueItem) {
                 return DropdownMenuItem(
-                    value: valueItem, child: Text(valueItem));
+                    value: valueItem, child: Text(valueItem.toString()));
               }).toList(),
             ),
           ),
@@ -145,7 +160,9 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
               hint: const Text("Selecione o Uso ",
                   style: TextStyle(color: Colors.black)),
               onChanged: (newValue) {
-                setState(() {});
+                setState(() {
+                  _uso = newValue as String;
+                });
               },
               items: lista.map((valueItem) {
                 return DropdownMenuItem(
@@ -154,11 +171,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
             ),
           ),
           const SizedBox(height: 50),
-          BotaoUniversal(
-              buttonText: 'Enviar',
-              onTapButton: () {
-                Navigator.of(context).pop();
-              }),
+          BotaoUniversal(buttonText: 'Enviar', onTapButton: () => nova()),
           const SizedBox(height: 10),
           BotaoUniversal(
               buttonText: 'Voltar',
@@ -168,5 +181,16 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
         ],
       )),
     );
+  }
+
+  void nova() async {
+    final medicamento = ParseObject('Medicamentos');
+
+    medicamento.set<String>("medicamento", _medicamentos);
+    medicamento.set<int>("quantidade", _quantidade);
+    medicamento.set<String>("uso", _uso);
+
+    var response = await medicamento.save();
+    if (response.success) {}
   }
 }
