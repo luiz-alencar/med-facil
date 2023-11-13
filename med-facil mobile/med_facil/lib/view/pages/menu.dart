@@ -5,6 +5,7 @@ import 'package:med_facil/view/pages/minhas_requisicoes.dart';
 import 'package:med_facil/view/pages/medicamentos_disponiveis.dart';
 import 'package:med_facil/view/pages/relatorio_socioeconomico.dart';
 import 'package:med_facil/view/pages/requisicao_medicamentos.dart';
+import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 
 class MenuPage extends StatefulWidget {
   const MenuPage({super.key});
@@ -30,12 +31,7 @@ class _MenuPageState extends State<MenuPage> {
           ),
           actions: [
             IconButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const LoginPage()),
-                  );
-                },
+                onPressed: () => sair(),
                 icon: const Icon(Icons.logout, color: Colors.white))
           ], //Podemos utilizar a ação onPressed para chamar uma função
         ),
@@ -391,5 +387,52 @@ class _MenuPageState extends State<MenuPage> {
                             ]))))
               ]))
         ])));
+  }
+    void showSuccess(String message) {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+              title: const Text("Successo!"),
+              content: Text(message),
+              actions: <Widget>[
+                TextButton(
+                    child: const Text("OK"),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const LoginPage()));
+                    })
+              ]);
+        });
+  }
+
+  void showError(String errorMessage) {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+              title: const Text("Inválido!"),
+              content: Text(errorMessage),
+              actions: <Widget>[
+                TextButton(
+                    child: const Text("OK"),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    })
+              ]);
+        });
+  }
+  void sair() async {
+    final user = await ParseUser.currentUser() as ParseUser;
+
+    var response = await user.logout();
+
+    if (response.success) {
+      showSuccess("Você está sendo redirecionado para a tela de login!!");
+    } else {
+      showError("Algo deu errado, tente novamente!");
+    }
   }
 }

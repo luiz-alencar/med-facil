@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, sort_child_properties_last
-
 import 'package:flutter/material.dart';
 import 'package:med_facil/view/components/botao_universal.dart';
 import 'package:med_facil/view/components/textfild_componente.dart';
@@ -166,7 +164,7 @@ class _LoginPageState extends State<LoginPage> {
     var response = await user.login();
 
     if (response.success) {
-      showSuccess("Você está sendo redirecionado para a tela de login!!");
+      showSuccess("Você está sendo redirecionado para o menu inicial!!");
     } else {
       showError("Verifique seu usuário ou senha!!");
     }
