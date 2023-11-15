@@ -17,6 +17,8 @@ class CadastroUsuarioPage extends StatefulWidget {
 }
 
 class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
+  List lista = ["Ceres", "Rialma", "Itapaci", "Aparecida"];
+
   final _formkey = GlobalKey<FormState>();
   final controllerUsername = TextEditingController();
   final controllerCPF = TextEditingController();
@@ -26,7 +28,7 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
   final controllerLogin = TextEditingController();
   final controllerPassword = TextEditingController();
 
-  late ParseObject _cidade;
+  late String _cidade;
 
   @override
   Widget build(BuildContext context) {
@@ -104,30 +106,22 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
                                 ],
                                 keyboardType: TextInputType.text),
                             const SizedBox(height: 10),
-                            FutureBuilder<List<ParseObject>>(
-                                future: getCities(),
-                                builder: (context, snapshot) {
-                                  final cidades = snapshot.data;
-                                  return DropdownButtonFormField(
-                                      decoration: const InputDecoration(
-                                        border: OutlineInputBorder(
-                                            borderRadius: BorderRadius.all(
-                                                Radius.circular(12))),
-                                      ),
-                                      hint:
-                                          const Text("Selecione a sua cidade"),
-                                      onChanged: (newValue) {
-                                        setState(() {
-                                          _cidade = newValue as ParseObject;
-                                        });
-                                      },
-                                      items: cidades?.map((valueItem) {
-                                        return DropdownMenuItem(
-                                            value: valueItem,
-                                            child: Text(
-                                                valueItem.get('nome_cidade')));
-                                      }).toList());
-                                }),
+                            DropdownButtonFormField(
+                                decoration: const InputDecoration(
+                                  border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(12))),
+                                ),
+                                hint: const Text("Selecione a sua cidade"),
+                                onChanged: (newValue) {
+                                  setState(() {
+                                    _cidade = newValue as String;
+                                  });
+                                },
+                                items: lista.map((valueItem) {
+                                  return DropdownMenuItem(
+                                      value: valueItem, child: Text(valueItem));
+                                }).toList()),
                             const SizedBox(height: 10),
                             TextFieldComponente(
                                 hintText: 'Nome usuário',
@@ -218,7 +212,7 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
     user.set<String>("cpf", cpf);
     user.set<String>("telefone", telefone);
     user.set<DateTime>("dataNascimento", data);
-    user.set<ParseObject>("cidade_id", _cidade);
+    user.set<String>("cidadeId", _cidade);
     user.set<String>("login", login);
 
     var response = await user.signUp();
@@ -239,7 +233,7 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
     return data;
   }
 
-  Future<List<ParseObject>> getCities() async {
+  /*Future<List<ParseObject>> getCities() async {
     QueryBuilder<ParseObject> queryCity =
         QueryBuilder<ParseObject>(ParseObject('Cidade'));
     final ParseResponse apiResponse = await queryCity.query();
@@ -249,5 +243,5 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
     } else {
       return [];
     }
-  }
+  }*/
 }

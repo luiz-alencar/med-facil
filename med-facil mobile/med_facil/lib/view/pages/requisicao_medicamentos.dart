@@ -13,8 +13,9 @@ class RequisicaoMedicamentoPage extends StatefulWidget {
 }
 
 class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
-  List lista = ["Ceres", "Itapaci", "Rialma"];
-  List quants = [1, 2, 3];
+  List reme = ["Dipirona", "Anador", "Doralgina"];
+  List quant = [1, 2, 3];
+  List use = ["pre-datado", "continuo"];
 
   final controllerMedicamento = TextEditingController();
   final controllerQuantidade = TextEditingController();
@@ -116,7 +117,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                   _medicamentos = newValue as String;
                 });
               },
-              items: lista.map((valueItem) {
+              items: reme.map((valueItem) {
                 return DropdownMenuItem(
                     value: valueItem, child: Text(valueItem));
               }).toList(),
@@ -140,7 +141,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                   _quantidade = newValue as int;
                 });
               },
-              items: quants.map((valueItem) {
+              items: quant.map((valueItem) {
                 return DropdownMenuItem(
                     value: valueItem, child: Text(valueItem.toString()));
               }).toList(),
@@ -164,7 +165,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                   _uso = newValue as String;
                 });
               },
-              items: lista.map((valueItem) {
+              items: use.map((valueItem) {
                 return DropdownMenuItem(
                     value: valueItem, child: Text(valueItem));
               }).toList(),
@@ -183,6 +184,26 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
     );
   }
 
+  void showSuccess(String message) {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+              title: const Text("Requisição cadastrada!"),
+              content: Text(message),
+              actions: <Widget>[
+                TextButton(
+                    child: const Text("OK"),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const MenuPage()));
+                    })
+              ]);
+        });
+  }
+
   void nova() async {
     final medicamento = ParseObject('Medicamentos');
 
@@ -191,6 +212,8 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
     medicamento.set<String>("uso", _uso);
 
     var response = await medicamento.save();
-    if (response.success) {}
+    if (response.success) {
+      showSuccess("Parabéns!");
+    }
   }
 }

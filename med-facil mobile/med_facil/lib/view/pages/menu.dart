@@ -388,12 +388,13 @@ class _MenuPageState extends State<MenuPage> {
               ]))
         ])));
   }
-    void showSuccess(String message) {
+
+  void showSuccess(String message, TextStyle textStyle) {
     showDialog(
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-              title: const Text("Successo!"),
+              title: const Text(""),
               content: Text(message),
               actions: <Widget>[
                 TextButton(
@@ -413,7 +414,7 @@ class _MenuPageState extends State<MenuPage> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-              title: const Text("Inválido!"),
+              title: const Text(""),
               content: Text(errorMessage),
               actions: <Widget>[
                 TextButton(
@@ -424,13 +425,15 @@ class _MenuPageState extends State<MenuPage> {
               ]);
         });
   }
+
   void sair() async {
     final user = await ParseUser.currentUser() as ParseUser;
 
     var response = await user.logout();
 
     if (response.success) {
-      showSuccess("Você está sendo redirecionado para a tela de login!!");
+      showSuccess("Espero que tenha gostado da experiência!",
+          const TextStyle(fontSize: 20));
     } else {
       showError("Algo deu errado, tente novamente!");
     }
