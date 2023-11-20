@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:med_facil/view/components/botao_universal.dart';
 import 'package:med_facil/view/components/textfild_componente.dart';
 import 'package:med_facil/view/components/titulo_imagem.dart';
+import 'package:med_facil/view/helpers/rout.helper.dart';
 import 'package:med_facil/view/pages/login.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 
@@ -107,21 +108,22 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
                                 keyboardType: TextInputType.text),
                             const SizedBox(height: 10),
                             DropdownButtonFormField(
-                                decoration: const InputDecoration(
-                                  border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(12))),
-                                ),
-                                hint: const Text("Selecione a sua cidade"),
-                                onChanged: (newValue) {
-                                  setState(() {
-                                    _cidade = newValue as String;
-                                  });
-                                },
-                                items: lista.map((valueItem) {
-                                  return DropdownMenuItem(
-                                      value: valueItem, child: Text(valueItem));
-                                }).toList()),
+                              decoration: const InputDecoration(
+                                border: OutlineInputBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(12))),
+                              ),
+                              hint: const Text("Selecione a sua cidade"),
+                              onChanged: (newValue) {
+                                setState(() {
+                                  _cidade = newValue as String;
+                                });
+                              },
+                              items: lista.map((valueItem) {
+                                return DropdownMenuItem(
+                                    value: valueItem, child: Text(valueItem));
+                              }).toList(),
+                            ),
                             const SizedBox(height: 10),
                             TextFieldComponente(
                                 hintText: 'Nome usuário',
@@ -164,10 +166,7 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
                 TextButton(
                     child: const Text("OK"),
                     onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const LoginPage()));
+                      goToLogin(context);
                     })
               ]);
         });
@@ -232,8 +231,7 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
 
     return data;
   }
-
-  /*Future<List<ParseObject>> getCities() async {
+    /*Future<List<ParseObject>> getCities() async {
     QueryBuilder<ParseObject> queryCity =
         QueryBuilder<ParseObject>(ParseObject('Cidade'));
     final ParseResponse apiResponse = await queryCity.query();

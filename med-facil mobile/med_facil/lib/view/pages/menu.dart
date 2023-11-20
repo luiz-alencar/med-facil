@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:med_facil/view/pages/editar_perfil.dart';
-import 'package:med_facil/view/pages/login.dart';
-import 'package:med_facil/view/pages/minhas_requisicoes.dart';
-import 'package:med_facil/view/pages/medicamentos_disponiveis.dart';
-import 'package:med_facil/view/pages/relatorio_socioeconomico.dart';
-import 'package:med_facil/view/pages/requisicao_medicamentos.dart';
+import 'package:med_facil/view/helpers/rout.helper.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 
 class MenuPage extends StatefulWidget {
@@ -46,11 +41,7 @@ class _MenuPageState extends State<MenuPage> {
                     top: 450,
                     child: GestureDetector(
                         onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const Editarperfil()),
-                          );
+                          goToEditar(context);
                         },
                         child: Container(
                             width: 159,
@@ -115,11 +106,7 @@ class _MenuPageState extends State<MenuPage> {
                     top: 100,
                     child: GestureDetector(
                         onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      const MedicamentosDisponiveisPage()));
+                          goToMedicamentos(context);
                         },
                         child: Container(
                             width: 159,
@@ -184,11 +171,7 @@ class _MenuPageState extends State<MenuPage> {
                     top: 100,
                     child: GestureDetector(
                         onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      const RequisicaoMedicamentoPage()));
+                          goToRequisicao(context);
                         },
                         child: Container(
                             width: 159,
@@ -252,12 +235,7 @@ class _MenuPageState extends State<MenuPage> {
                     top: 275,
                     child: GestureDetector(
                         onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    const MinhasRequisicoesPage()),
-                          );
+                          goToRequisicoes(context);
                         },
                         child: Container(
                             width: 159,
@@ -320,12 +298,7 @@ class _MenuPageState extends State<MenuPage> {
                     top: 275,
                     child: GestureDetector(
                         onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    const RelatorioSocioeconomicoPage()),
-                          );
+                          goToRelatorio(context);
                         },
                         child: Container(
                             width: 159,
@@ -388,8 +361,7 @@ class _MenuPageState extends State<MenuPage> {
               ]))
         ])));
   }
-
-  void showSuccess(String message, TextStyle textStyle) {
+    void showSuccess(String message, TextStyle textStyle) {
     showDialog(
         context: context,
         builder: (BuildContext context) {
@@ -400,10 +372,7 @@ class _MenuPageState extends State<MenuPage> {
                 TextButton(
                     child: const Text("OK"),
                     onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const LoginPage()));
+                      goToLogin(context);
                     })
               ]);
         });
@@ -425,10 +394,8 @@ class _MenuPageState extends State<MenuPage> {
               ]);
         });
   }
-
   void sair() async {
     final user = await ParseUser.currentUser() as ParseUser;
-
     var response = await user.logout();
 
     if (response.success) {
