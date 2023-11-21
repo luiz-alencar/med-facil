@@ -7,7 +7,6 @@ import 'package:med_facil/view/components/botao_universal.dart';
 import 'package:med_facil/view/components/textfild_componente.dart';
 import 'package:med_facil/view/components/titulo_imagem.dart';
 import 'package:med_facil/view/helpers/rout.helper.dart';
-import 'package:med_facil/view/pages/login.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 
 class CadastroUsuarioPage extends StatefulWidget {

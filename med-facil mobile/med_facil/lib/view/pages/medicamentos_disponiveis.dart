@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:med_facil/teste3.dart';
 import 'package:med_facil/view/components/appbar_secundaria.dart';
 import 'package:med_facil/view/components/botao_universal.dart';
-import 'package:med_facil/view/pages/menu.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MedicamentosDisponiveisPage extends StatefulWidget {
