@@ -18,11 +18,11 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
   List quant = [1, 2, 3];
   List use = ["pre-datado", "continuo"];
 
-  final controllerMedicamento = TextEditingController();
+  final controllernomeCompleto = TextEditingController();
   final controllerQuantidade = TextEditingController();
   final controllerUso = TextEditingController();
 
-  late String _medicamentos;
+  late String _nomeCompleto;
   late int _quantidade;
   late String _uso;
 
@@ -94,7 +94,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
                   style: TextStyle(color: Colors.black)),
               onChanged: (newValue) {
                 setState(() {
-                  _medicamentos = newValue as String;
+                  _nomeCompleto = newValue as String;
                 });
               },
               items: reme.map((valueItem) {
@@ -187,7 +187,7 @@ class _RequisicaoMedicamentoState extends State<RequisicaoMedicamentoPage> {
   void nova() async {
     final medicamento = ParseObject('Medicamentos');
 
-    medicamento.set<String>("medicamento", _medicamentos);
+    medicamento.set<String>("nomeCompleto", _nomeCompleto);
     medicamento.set<int>("quantidade", _quantidade);
     medicamento.set<String>("uso", _uso);
 

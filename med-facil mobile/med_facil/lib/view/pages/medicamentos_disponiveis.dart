@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:med_facil/teste3.dart';
 import 'package:med_facil/view/components/appbar_secundaria.dart';
 import 'package:med_facil/view/components/botao_universal.dart';
+import 'package:med_facil/view/controller/medicamentosController.dart';
+import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MedicamentosDisponiveisPage extends StatefulWidget {
@@ -20,7 +22,7 @@ class _MedicamentosDisponiveisPageState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: appbarRetornaMenu(),
+        appBar: const appbarRetornaMenu(),
         body: Center(
             child: Column(children: [
           const Text('Medicamentos Disponíveis ',
@@ -59,7 +61,7 @@ class _MedicamentosDisponiveisPageState
                     // Atualize a lista de frutas filtradas com base na entrada do usuário
                     setState(() {
                       filteredMedicamento = medicamentos
-                          .where((medicamento) => medicamento.nome
+                          .where((medicamento) => medicamento.nomeCompleto
                               .toLowerCase()
                               .contains(text.toLowerCase()))
                           .toList();
@@ -71,14 +73,46 @@ class _MedicamentosDisponiveisPageState
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(25.0))))),
           Expanded(
-              child: ListView.builder(
-                  itemCount: filteredMedicamento.length,
-                  itemBuilder: (context, index) {
-                    return ListTile(
-                        title: Text(filteredMedicamento[index].nome),
-                        subtitle:
-                            Text('Dosagem: ${medicamentos[index].dosagem}'));
-                  })),
+            child: FutureBuilder<List<ParseObject>>(
+                future: getTodo(),
+                builder: (context, snapshot) {
+                  switch (snapshot.connectionState) {
+                    case ConnectionState.none:
+                    case ConnectionState.waiting:
+                      return Center(
+                        child: Container(
+                            width: 100,
+                            height: 100,
+                            child: CircularProgressIndicator()),
+                      );
+                    default:
+                      if (snapshot.hasError) {
+                        return Center(
+                          child: Text("Error..."),
+                        );
+                      }
+                      if (!snapshot.hasData) {
+                        return Center(
+                          child: Text("No Data..."),
+                        );
+                      } else {
+                        return ListView.builder(
+                            padding: EdgeInsets.only(top: 10.0),
+                            itemCount: snapshot.data!.length,
+                            itemBuilder: (context, index) {
+                              //*************************************
+                              //Get Parse Object Values
+                              final varTodo = snapshot.data![index];
+                              final varTitle =
+                                  varTodo.get<String>('nomeCompleto')!;
+                              //*************************************
+
+                              return ListTile(title: Text(varTitle));
+                            });
+                      }
+                  }
+                }),
+          ),
           GestureDetector(
               onTap: () {
                 const url =

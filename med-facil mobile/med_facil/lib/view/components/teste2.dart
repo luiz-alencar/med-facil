@@ -8,8 +8,7 @@ class MedicamentosListView extends StatelessWidget {
       itemCount: medicamentos.length,
       itemBuilder: (context, index) {
         return ListTile(
-          title: Text(medicamentos[index].nome),
-          subtitle: Text('Dosagem: ${medicamentos[index].dosagem}'),
+          title: Text(medicamentos[index].nomeCompleto),
         );
       },
     );

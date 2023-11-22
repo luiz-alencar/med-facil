@@ -25,10 +25,10 @@ class _UserScreenState extends State<UserScreen> {
   final controllerDataNascimento = TextEditingController();
   final controllerLogin = TextEditingController();
   final controllerPassword = TextEditingController();
-  
+
   String? cidade;
   String? _cidade;
-  
+
   late Future<ParseUser?> fetch;
 
   @override
@@ -45,7 +45,6 @@ class _UserScreenState extends State<UserScreen> {
     var response = await queryBuilder.query();
     //log(user.username);
     if (response != null) {
-      
       if (response.success && response.results != null) {
         var userResponse = response.results?.first as ParseUser;
         // Aqui você pode acessar os dados do usuário
@@ -53,9 +52,8 @@ class _UserScreenState extends State<UserScreen> {
         //log(userResponse.username!);
 
         return userResponse;
-        
 
-                // Adicione mais Text Widgets para exibir mais informações do usuári;
+        // Adicione mais Text Widgets para exibir mais informações do usuári;
       } else {
         log(response.error!.message);
       }
@@ -71,20 +69,22 @@ class _UserScreenState extends State<UserScreen> {
     }
     return null;
   }
+
   @override
   Widget build(BuildContext context) {
-
     return FutureBuilder<ParseUser?>(
-      future: fetch, 
-      builder: (context, snapshot) {
-        switch (snapshot.connectionState) {
+        future: fetch,
+        builder: (context, snapshot) {
+          switch (snapshot.connectionState) {
             case ConnectionState.none:
             case ConnectionState.waiting:
               return const Center(
                 child: SizedBox(
                     width: 100,
                     height: 100,
-                    child: CircularProgressIndicator()),
+                    child: CircularProgressIndicator(
+                      color: Color(0xFF304D63),
+                    )),
               );
             default:
               final user = snapshot.data;
@@ -214,9 +214,10 @@ class _UserScreenState extends State<UserScreen> {
                 BotaoUniversal(
                     buttonText: 'Salvar', onTapButton: () => usuarioAlterado())
               ]);
-        }              
-      });
+          }
+        });
   }
+
   void showSuccess(String message) {
     showDialog(
         context: context,
@@ -259,7 +260,6 @@ class _UserScreenState extends State<UserScreen> {
         });
   }
 
-
   void usuarioAlterado() async {
     if (!_formkey.currentState!.validate()) {
       return;
@@ -272,7 +272,6 @@ class _UserScreenState extends State<UserScreen> {
     final telefone = controllerTelefone.text.trim();
     final dataNascimento = controllerDataNascimento.text.trim();
     final login = controllerLogin.text.trim();
-
 
     // transform datetime
 

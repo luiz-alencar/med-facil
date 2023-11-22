@@ -25,7 +25,7 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
   final controllerEmail = TextEditingController();
   final controllerTelefone = TextEditingController();
   final controllerDataNascimento = TextEditingController();
-  final controllerLogin = TextEditingController();
+  final controllerNome = TextEditingController();
   final controllerPassword = TextEditingController();
 
   late String _cidade;
@@ -33,118 +33,125 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Center(
-            child: Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: SingleChildScrollView(
-                    child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                      const TituloImagem(),
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: SingleChildScrollView(
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const TituloImagem(),
 
-                      //formulario
-                      Form(
-                          key: _formkey,
-                          child: Column(children: [
-                            TextFieldComponente(
-                                hintText: 'Nome completo',
-                                obscureText: false,
-                                controller: controllerUsername,
-                                validator: (value) => validate(value),
-                                keyboardType: TextInputType.text),
-                            const SizedBox(height: 10),
-                            TextFormField(
-                                obscureText: false,
-                                validator: (value) => validate(value),
-                                controller: controllerCPF,
-                                decoration: InputDecoration(
-                                    border: OutlineInputBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(12)),
-                                    hintText: 'CPF'),
-                                inputFormatters: [
-                                  FilteringTextInputFormatter.digitsOnly,
-                                  CpfInputFormatter(),
-                                ],
-                                keyboardType: TextInputType.number),
-                            const SizedBox(height: 10),
-                            TextFieldComponente(
-                                hintText: 'E-mail',
-                                obscureText: false,
-                                controller: controllerEmail,
-                                validator: (value) => validate(value),
-                                keyboardType: TextInputType.emailAddress),
-                            const SizedBox(height: 10),
-                            TextFormField(
-                                obscureText: false,
-                                validator: (value) => validate(value),
-                                controller: controllerTelefone,
-                                decoration: InputDecoration(
-                                    border: OutlineInputBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(12)),
-                                    hintText: 'Telefone'),
-                                inputFormatters: [
-                                  FilteringTextInputFormatter.digitsOnly,
-                                  TelefoneInputFormatter(),
-                                ],
-                                keyboardType: TextInputType.number),
-                            const SizedBox(height: 10),
-                            TextFormField(
-                                obscureText: false,
-                                validator: (value) => validate(value),
-                                controller: controllerDataNascimento,
-                                decoration: InputDecoration(
-                                    border: OutlineInputBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(12)),
-                                    hintText: 'Data de nascimento'),
-                                inputFormatters: [
-                                  FilteringTextInputFormatter.digitsOnly,
-                                  DataInputFormatter(),
-                                ],
-                                keyboardType: TextInputType.text),
-                            const SizedBox(height: 10),
-                            DropdownButtonFormField(
-                              decoration: const InputDecoration(
-                                border: OutlineInputBorder(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(12))),
-                              ),
-                              hint: const Text("Selecione a sua cidade"),
-                              onChanged: (newValue) {
-                                setState(() {
-                                  _cidade = newValue as String;
-                                });
-                              },
-                              items: lista.map((valueItem) {
-                                return DropdownMenuItem(
-                                    value: valueItem, child: Text(valueItem));
-                              }).toList(),
-                            ),
-                            const SizedBox(height: 10),
-                            TextFieldComponente(
-                                hintText: 'Nome usuário',
-                                obscureText: false,
-                                controller: controllerLogin,
-                                validator: (value) => validate(value),
-                                keyboardType: TextInputType.text),
-                            const SizedBox(height: 10),
-                            TextFieldComponente(
-                                hintText: 'Senha',
-                                obscureText: false,
-                                controller: controllerPassword,
-                                validator: (value) => validate(value),
-                                keyboardType: TextInputType.text),
-                          ])),
-                      const SizedBox(height: 20),
+                  //formulario
+                  Form(
+                    key: _formkey,
+                    child: Column(children: [
+                      TextFieldComponente(
+                          hintText: 'Nome completo',
+                          obscureText: false,
+                          controller: controllerNome,
+                          validator: (value) => validate(value),
+                          keyboardType: TextInputType.text),
+                      const SizedBox(height: 10),
+                      TextFormField(
+                          obscureText: false,
+                          validator: (value) => validate(value),
+                          controller: controllerCPF,
+                          decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(12)),
+                              hintText: 'CPF'),
+                          inputFormatters: [
+                            FilteringTextInputFormatter.digitsOnly,
+                            CpfInputFormatter(),
+                          ],
+                          keyboardType: TextInputType.number),
+                      const SizedBox(height: 10),
+                      TextFieldComponente(
+                          hintText: 'E-mail',
+                          obscureText: false,
+                          controller: controllerEmail,
+                          validator: (value) => validate(value),
+                          keyboardType: TextInputType.emailAddress),
+                      const SizedBox(height: 10),
+                      TextFormField(
+                          obscureText: false,
+                          validator: (value) => validate(value),
+                          controller: controllerTelefone,
+                          decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(12)),
+                              hintText: 'Telefone'),
+                          inputFormatters: [
+                            FilteringTextInputFormatter.digitsOnly,
+                            TelefoneInputFormatter(),
+                          ],
+                          keyboardType: TextInputType.number),
+                      const SizedBox(height: 10),
+                      TextFormField(
+                          obscureText: false,
+                          validator: (value) => validate(value),
+                          controller: controllerDataNascimento,
+                          decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(12)),
+                              hintText: 'Data de nascimento'),
+                          inputFormatters: [
+                            FilteringTextInputFormatter.digitsOnly,
+                            DataInputFormatter(),
+                          ],
+                          keyboardType: TextInputType.text),
+                      const SizedBox(height: 10),
+                      DropdownButtonFormField(
+                        decoration: const InputDecoration(
+                          border: OutlineInputBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(12))),
+                        ),
+                        hint: const Text("Selecione a sua cidade"),
+                        onChanged: (newValue) {
+                          setState(() {
+                            _cidade = newValue as String;
+                          });
+                        },
+                        items: lista.map((valueItem) {
+                          return DropdownMenuItem(
+                              value: valueItem, child: Text(valueItem));
+                        }).toList(),
+                      ),
+                      const SizedBox(height: 10),
+                      TextFieldComponente(
+                          hintText: 'Nome usuário',
+                          obscureText: false,
+                          controller: controllerUsername,
+                          validator: (value) => validate(value),
+                          keyboardType: TextInputType.text),
+                      const SizedBox(height: 10),
+                      TextFieldComponente(
+                          hintText: 'Senha',
+                          obscureText: false,
+                          controller: controllerPassword,
+                          validator: (value) => validate(value),
+                          keyboardType: TextInputType.text),
+                    ]),
+                  ),
+                  const SizedBox(height: 20),
 
-                      //botão de salvar
-                      BotaoUniversal(
-                          buttonText: 'Salvar',
-                          onTapButton: () => novoUsuario())
-                    ])))));
+                  //botões
+                  BotaoUniversal(
+                      buttonText: 'Salvar', onTapButton: () => novoUsuario()),
+                  const SizedBox(height: 10),
+                  BotaoUniversal(
+                      buttonText: 'Voltar',
+                      onTapButton: () {
+                        Navigator.of(context).pop();
+                      }),
+                ]),
+          ),
+        ),
+      ),
+    );
   }
 
   String? validate(String? value) {
@@ -198,7 +205,7 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
     final email = controllerEmail.text.trim();
     final telefone = controllerTelefone.text.trim();
     final dataNascimento = controllerDataNascimento.text.trim();
-    final login = controllerLogin.text.trim();
+    final nome = controllerNome.text.trim();
     final password = controllerPassword.text.trim();
 
     final user = ParseUser.createUser(username, password, email);
@@ -211,7 +218,7 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
     user.set<String>("telefone", telefone);
     user.set<DateTime>("dataNascimento", data);
     user.set<String>("cidadeId", _cidade);
-    user.set<String>("login", login);
+    user.set<String>("nome", nome);
 
     var response = await user.signUp();
 
@@ -230,7 +237,7 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
 
     return data;
   }
-    /*Future<List<ParseObject>> getCities() async {
+  /*Future<List<ParseObject>> getCities() async {
     QueryBuilder<ParseObject> queryCity =
         QueryBuilder<ParseObject>(ParseObject('Cidade'));
     final ParseResponse apiResponse = await queryCity.query();

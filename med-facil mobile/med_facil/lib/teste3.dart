@@ -1,14 +1,13 @@
 class Medicamento {
-  final String nome;
-  final String dosagem;
+  final String nomeCompleto;
 
-  Medicamento(this.nome, this.dosagem);
+  Medicamento(this.nomeCompleto);
 }
 
 List<Medicamento> medicamentos = [
-  Medicamento('Paracetamol', '500mg'),
-  Medicamento('Ibuprofeno', '200mg'),
-  Medicamento('Aspirina', '325mg'),
-  Medicamento('Amoxicilina', '500mg'),
+  Medicamento('Paracetamol'),
+  Medicamento('Ibuprofeno'),
+  Medicamento('Aspirina'),
+  Medicamento('Amoxicilina'),
   // Adicione mais medicamentos conforme necessário
 ];
