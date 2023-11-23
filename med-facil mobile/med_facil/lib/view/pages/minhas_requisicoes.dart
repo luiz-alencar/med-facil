@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:med_facil/view/components/appbar_secundaria.dart';
 import 'package:med_facil/view/components/botao_universal.dart';
-import 'package:med_facil/view/pages/menu.dart';
 import 'package:non_uniform_border/non_uniform_border.dart';
 
 class MinhasRequisicoesPage extends StatefulWidget {

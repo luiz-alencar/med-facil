@@ -23,7 +23,7 @@ class _UserScreenState extends State<UserScreen> {
   final controllerEmail = TextEditingController();
   final controllerTelefone = TextEditingController();
   final controllerDataNascimento = TextEditingController();
-  final controllerLogin = TextEditingController();
+  final controllerNome = TextEditingController();
   final controllerPassword = TextEditingController();
 
   String? cidade;
@@ -95,7 +95,7 @@ class _UserScreenState extends State<UserScreen> {
               controllerDataNascimento.text = _formatarData(data) ?? "";
               cidade = user?.get<String>("cidadeId");
               controllerUsername.text = user?.get<String>("username") ?? "";
-              controllerLogin.text = user?.get<String>("login") ?? "";
+              controllerNome.text = user?.get<String>("login") ?? "";
               return Column(children: [
                 const Text('Editar perfil',
                     textAlign: TextAlign.center,
@@ -130,7 +130,7 @@ class _UserScreenState extends State<UserScreen> {
                       TextFieldComponente(
                           hintText: 'Nome completo',
                           obscureText: false,
-                          controller: controllerUsername,
+                          controller: controllerNome,
                           validator: (value) => validate(value),
                           keyboardType: TextInputType.text),
                       const SizedBox(height: 10),
@@ -203,7 +203,7 @@ class _UserScreenState extends State<UserScreen> {
                       TextFieldComponente(
                           hintText: 'Nome usuário',
                           obscureText: false,
-                          controller: controllerLogin,
+                          controller: controllerUsername,
                           validator: (value) => validate(value),
                           keyboardType: TextInputType.text),
                       const SizedBox(height: 10),
@@ -266,12 +266,12 @@ class _UserScreenState extends State<UserScreen> {
     }
     var user = await ParseUser.currentUser();
 
-    final username = controllerUsername.text.trim();
+    final nome = controllerNome.text.trim();
     final cpf = controllerCPF.text.trim();
     final email = controllerEmail.text.trim();
     final telefone = controllerTelefone.text.trim();
     final dataNascimento = controllerDataNascimento.text.trim();
-    final login = controllerLogin.text.trim();
+    final username = controllerUsername.text.trim();
 
     // transform datetime
 
@@ -282,7 +282,7 @@ class _UserScreenState extends State<UserScreen> {
     user.set<String>("username", username);
     user.set<String>("email", email);
     user.set<DateTime>("dataNascimento", data);
-    user.set<String>("login", login);
+    user.set<String>("login", nome);
     user.set<String>("cidadeId", _cidade ?? cidade);
 
     var response = await user.save();
