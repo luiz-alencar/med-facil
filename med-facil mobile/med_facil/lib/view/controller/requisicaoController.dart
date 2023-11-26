@@ -204,9 +204,9 @@ class _requisicaoControllerState extends State<requisicaoController> {
   }
 
   void nova() async {
-    final medicamento = ParseObject('Medicamentos');
+    final medicamento = ParseObject('Pedido');
 
-    medicamento.set<String>("nomeCompleto", _nomeCompleto);
+    medicamento.set<String>("remedio", _nomeCompleto);
     medicamento.set<int>("quantidade", _quantidade);
     medicamento.set<String>("uso", _uso);
 
