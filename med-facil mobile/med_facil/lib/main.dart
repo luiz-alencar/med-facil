@@ -38,7 +38,8 @@ class MyApp extends StatelessWidget {
         '/requisicao': (context) => RequisicaoMedicamentoPage(),
         '/minhasrequisicoes': (context) => MinhasRequisicoesPage(),
         '/menuadmin': (context) => const MenuAdminPage(),
-        '/medicamentosdisponiveis': (context) => const MedicamentosDisponiveisPage(),
+        '/medicamentosdisponiveis': (context) =>
+            const MedicamentosDisponiveisPage(),
       },
     );
   }
