@@ -37,3 +37,7 @@ void goToRequisicoes(context) {
 void goToMedicamentos(context) {
   Navigator.pushNamed(context, '/medicamentosdisponiveis');
 }
+
+void goToExibir(context) {
+  Navigator.pushNamed(context, '/exibirrelatorio');
+}

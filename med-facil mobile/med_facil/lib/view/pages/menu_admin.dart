@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:med_facil/view/pages/login.dart';
+import 'package:med_facil/view/helpers/rout.helper.dart';
+import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
+
 
 class MenuAdminPage extends StatefulWidget {
   const MenuAdminPage({super.key});
@@ -25,12 +27,7 @@ class _MenuAdminPageState extends State<MenuAdminPage> {
         ),
         actions: [
           IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const LoginPage()),
-                );
-              },
+              onPressed:() => sair(),
               icon: const Icon(Icons.logout, color: Colors.white))
         ], //Podemos utilizar a ação onPressed para chamar uma função
       ),
@@ -47,7 +44,9 @@ class _MenuAdminPageState extends State<MenuAdminPage> {
                           width: 300,
                           height: 300,
                           child: GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              goToExibir(context);
+                            },
                             child: Stack(
                               children: [
                                 Positioned(
@@ -87,7 +86,7 @@ class _MenuAdminPageState extends State<MenuAdminPage> {
                                     width: 161,
                                     height: 86,
                                     child: Text(
-                                      'Baixar Relatório Completo',
+                                      'Acessar Relatório Completo',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         color: Color(0xFF304D63),
@@ -158,5 +157,49 @@ class _MenuAdminPageState extends State<MenuAdminPage> {
                         )
                       ])))),
     );
+  }
+  void showSuccess(String message, TextStyle textStyle) {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+              title: const Text(""),
+              content: Text(message),
+              actions: <Widget>[
+                TextButton(
+                    child: const Text("OK"),
+                    onPressed: () {
+                      goToLogin(context);
+                    })
+              ]);
+        });
+  }
+
+  void showError(String errorMessage) {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+              title: const Text(""),
+              content: Text(errorMessage),
+              actions: <Widget>[
+                TextButton(
+                    child: const Text("OK"),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    })
+              ]);
+        });
+  }
+  void sair() async {
+    final user = await ParseUser.currentUser() as ParseUser;
+    var response = await user.logout();
+
+    if (response.success) {
+      showSuccess("Espero que tenha gostado da experiência!",
+      const TextStyle(fontSize: 20));
+    } else {
+      showError("Algo deu errado, tente novamente!");
+    }
   }
 }

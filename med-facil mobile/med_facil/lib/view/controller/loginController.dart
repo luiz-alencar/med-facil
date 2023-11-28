@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:med_facil/view/helpers/rout.helper.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 import 'package:med_facil/view/components/botao_universal.dart';
 import 'package:med_facil/view/components/textfild_componente.dart';
-import 'package:med_facil/view/pages/cadastro_usuario.dart';
-import 'package:med_facil/view/pages/menu.dart';
 
 class loginController extends StatefulWidget {
   @override
@@ -96,12 +95,7 @@ class _loginControllerState extends State<loginController> {
           BotaoUniversal(
             buttonText: 'Cadastre-se',
             onTapButton: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => CadastroUsuarioPage(),
-                ),
-              );
+              goToCadastro(context);
             },
           ),
         ],
@@ -114,26 +108,6 @@ class _loginControllerState extends State<loginController> {
       return "* Campo Obrigatorio";
     }
     return null;
-  }
-
-  void showSuccess(String message) {
-    showDialog(
-        context: context,
-        builder: (BuildContext context) {
-          return AlertDialog(
-              title: const Text("Successo!"),
-              content: Text(message),
-              actions: <Widget>[
-                TextButton(
-                    child: const Text("OK"),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const MenuPage()));
-                    })
-              ]);
-        });
   }
 
   void showError(String errorMessage) {
@@ -164,10 +138,14 @@ class _loginControllerState extends State<loginController> {
 
     var response = await user.login();
 
-    if (response.success) {
-      showSuccess("Você está sendo redirecionado para o menu inicial!!");
+    if (response.success && user.get("admin") == true) {
+      // Navegar para a tela do administrador
+      goToMenuAdmin(context);
+    } else if (response.success) {
+      // Navegar para a tela do usuário normal
+      goToMenu(context);
     } else {
-      showError("Verifique seu usuário ou senha!!");
+      showError("Erro de Login");
     }
   }
 }

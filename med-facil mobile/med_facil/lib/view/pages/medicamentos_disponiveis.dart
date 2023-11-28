@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:med_facil/view/components/appbar_secundaria.dart';
 import 'package:med_facil/view/components/botao_universal.dart';
 import 'package:med_facil/view/components/buscar_medicamento.dart';
+import 'package:med_facil/view/helpers/rout.helper.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MedicamentosDisponiveisPage extends StatefulWidget {
@@ -52,6 +53,10 @@ class _MedicamentosDisponiveisPageState
                         fontWeight: FontWeight.w400,
                         height: 0))),
 
+
+
+
+              
             //faz a lista dos medicamentos!
             const Expanded(
               child: MedicamentosListView(),
@@ -75,7 +80,7 @@ class _MedicamentosDisponiveisPageState
             BotaoUniversal(
               buttonText: 'Voltar',
               onTapButton: () {
-                Navigator.of(context).pop();
+                goToMenu(context);
               },
             ),
           ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:med_facil/view/pages/cadastro_usuario.dart';
 import 'package:med_facil/view/pages/editar_perfil.dart';
+import 'package:med_facil/view/pages/exibir_relatorio.dart';
 import 'package:med_facil/view/pages/login.dart';
 import 'package:med_facil/view/pages/medicamentos_disponiveis.dart';
 import 'package:med_facil/view/pages/menu.dart';
@@ -38,8 +39,8 @@ class MyApp extends StatelessWidget {
         '/requisicao': (context) => RequisicaoMedicamentoPage(),
         '/minhasrequisicoes': (context) => MinhasRequisicoesPage(),
         '/menuadmin': (context) => const MenuAdminPage(),
-        '/medicamentosdisponiveis': (context) =>
-            const MedicamentosDisponiveisPage(),
+        '/medicamentosdisponiveis': (context) => const MedicamentosDisponiveisPage(),
+        '/exibirrelatorio':(context) => exibirRelatorioPage()
       },
     );
   }

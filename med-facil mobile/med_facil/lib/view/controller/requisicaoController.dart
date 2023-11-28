@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:med_facil/view/components/appbar_secundaria.dart';
 import 'package:med_facil/view/components/botao_universal.dart';
-import 'package:med_facil/view/pages/menu.dart';
+import 'package:med_facil/view/helpers/rout.helper.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 
 class requisicaoController extends StatefulWidget {
@@ -194,25 +194,49 @@ class _requisicaoControllerState extends State<requisicaoController> {
                 TextButton(
                     child: const Text("OK"),
                     onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const MenuPage()));
+                      goToMenu(context);
+                    })
+              ]);
+        });
+  }
+
+  void showError(String errorMessage) {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+              title: const Text("Inválido!"),
+              content: Text(errorMessage),
+              actions: <Widget>[
+                TextButton(
+                    child: const Text("OK"),
+                    onPressed: () {
+                      Navigator.of(context).pop();
                     })
               ]);
         });
   }
 
   void nova() async {
-    final medicamento = ParseObject('Pedido');
+    var currentUser = await ParseUser.currentUser();
 
-    medicamento.set<String>("remedio", _nomeCompleto);
-    medicamento.set<int>("quantidade", _quantidade);
-    medicamento.set<String>("uso", _uso);
+    if (currentUser != null) {
+      final medicamento = ParseObject('Pedido');
 
-    var response = await medicamento.save();
-    if (response.success) {
-      showSuccess("Parabéns!");
+      medicamento.set<ParseUser>("cidadaoId", currentUser);
+      medicamento.set<String>("remedio", _nomeCompleto);
+      medicamento.set<int>("quantidade", _quantidade);
+      medicamento.set<String>("uso", _uso);
+
+      var response = await medicamento.save();
+      if (response.success) {
+        showSuccess("Parabéns!");
+      } else {
+        showError("Erro ao cadastrar a requisição.");
+      }
+    } else {
+      // O usuário não está logado, exiba uma mensagem de erro ou redirecione para a página de login.
+      showError("Usuário não está logado.");
     }
   }
 }
