@@ -52,10 +52,6 @@ class _MedicamentosDisponiveisPageState
                         fontWeight: FontWeight.w400,
                         height: 0))),
 
-
-
-
-              
             //faz a lista dos medicamentos!
             const Expanded(
               child: MedicamentosListView(),

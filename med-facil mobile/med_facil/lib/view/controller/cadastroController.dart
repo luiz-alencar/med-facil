@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:med_facil/view/components/botao_universal.dart';
 import 'package:med_facil/view/components/textfild_componente.dart';
+import 'package:med_facil/view/controller/cidadeController.dart';
 import 'package:med_facil/view/helpers/rout.helper.dart';
+import 'package:med_facil/view/models/cidades.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 
 class cadastroController extends StatefulWidget {
@@ -25,7 +27,17 @@ class _CadastroControllerState extends State<cadastroController> {
   final controllerNome = TextEditingController();
   final controllerPassword = TextEditingController();
 
-  late String _cidade;
+  late Future<List<Cidade>?>? cidadeList;
+
+  final cidadeController = CidadeController();
+
+  Cidade? _cidade;
+
+  @override
+  void initState() {
+    super.initState();
+    cidadeList = getCidades();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -92,23 +104,39 @@ class _CadastroControllerState extends State<cadastroController> {
               ],
               keyboardType: TextInputType.text),
           const SizedBox(height: 10),
-          DropdownButtonFormField(
-            decoration: const InputDecoration(
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.all(
-                  Radius.circular(12),
-                ),
-              ),
-            ),
-            hint: const Text("Selecione a sua cidade"),
-            onChanged: (newValue) {
-              setState(() {
-                _cidade = newValue as String;
-              });
+
+          FutureBuilder<List<Cidade>?>(
+            future: cidadeList,
+            builder: (context, snapshot) {
+              switch (snapshot.connectionState) {
+                case ConnectionState.none:
+                case ConnectionState.waiting:
+                  return const Center(
+                    child: SizedBox(
+                        width: 100,
+                        height: 100,
+                        child: CircularProgressIndicator()),
+                  );
+                default:
+                  final cidades = snapshot.data;
+                  return DropdownButtonFormField<Cidade>(
+                    decoration: const InputDecoration(
+                      labelText: "Cidade",
+                    ),
+                    hint: const Text("Selecione sua cidade"),
+                    onChanged: (Cidade? value) {
+                      _cidade = value!;
+                    },
+                    items:
+                        cidades!.map<DropdownMenuItem<Cidade>>((Cidade value) {
+                      return DropdownMenuItem<Cidade>(
+                        value: value,
+                        child: Text(value.nome!),
+                      );
+                    }).toList(),
+                  );
+              }
             },
-            items: lista.map((valueItem) {
-              return DropdownMenuItem(value: valueItem, child: Text(valueItem));
-            }).toList(),
           ),
           const SizedBox(height: 10),
           TextFieldComponente(
@@ -205,7 +233,7 @@ class _CadastroControllerState extends State<cadastroController> {
     user.set<String>("cpf", cpf);
     user.set<String>("telefone", telefone);
     user.set<DateTime>("dataNascimento", data);
-    user.set<String>("cidadeId", _cidade);
+    user.set<Cidade?>("cidadeId", _cidade);
     user.set<String>("nome", nome);
 
     var response = await user.signUp();
@@ -224,5 +252,9 @@ class _CadastroControllerState extends State<cadastroController> {
     final data = DateTime.parse(dataFormatada);
 
     return data;
+  }
+
+  Future<List<Cidade>?> getCidades() async {
+    return await cidadeController.getAllCidades();
   }
 }
