@@ -125,13 +125,13 @@ class _CadastroControllerState extends State<cadastroController> {
                     ),
                     hint: const Text("Selecione sua cidade"),
                     onChanged: (Cidade? value) {
-                      _cidade = value!;
+                      _cidade = value;
                     },
                     items:
-                        cidades!.map<DropdownMenuItem<Cidade>>((Cidade value) {
+                        cidades?.map<DropdownMenuItem<Cidade>>((Cidade value) {
                       return DropdownMenuItem<Cidade>(
                         value: value,
-                        child: Text(value.nome!),
+                        child: Text(value.nome ?? ""),
                       );
                     }).toList(),
                   );

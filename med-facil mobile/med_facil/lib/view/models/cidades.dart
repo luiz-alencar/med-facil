@@ -8,7 +8,7 @@ class Cidade extends ParseObject implements ParseCloneable {
 
   Cidade.clone() : this();
 
-  static const String keyNome = 'nomeCompleto';
+  static const String keyNome = 'nomeCidade';
 
   factory Cidade.fromParseObject(ParseObject? object) {
     return Cidade()

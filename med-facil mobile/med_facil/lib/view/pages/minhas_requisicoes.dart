@@ -95,9 +95,18 @@ class _MinhasRequisicoesPageState extends State<MinhasRequisicoesPage> {
                 ),
               ),
               const SizedBox(height: 35),
-        
-              for (int i = 0; i < pedidos.length; i++)
-                buildPedidoContainer(pedidos[i], i + 1),
+
+              if (pedidos.isEmpty)
+                Center(
+                  child: Text(
+                    'Você não possui nenhuma requisição.',
+                    style: TextStyle(fontSize: 18),
+                  ),
+                )
+              else
+                // Exibição dinâmica dos pedidos
+                for (int i = 0; i < pedidos.length; i++)
+                  buildPedidoContainer(pedidos[i], i + 1),
         
               //botao voltar
               const SizedBox(height: 50),
