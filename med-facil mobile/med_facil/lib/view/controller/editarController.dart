@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:med_facil/view/components/botao_universal.dart';
 import 'package:med_facil/view/components/textfild_componente.dart';
+import 'package:med_facil/view/controller/cidadeController.dart';
 import 'package:med_facil/view/helpers/rout.helper.dart';
+import 'package:med_facil/view/models/cidades.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 
 class UserScreen extends StatefulWidget {
@@ -15,7 +17,6 @@ class UserScreen extends StatefulWidget {
 
 class _UserScreenState extends State<UserScreen> {
   ParseUser? user;
-  List lista = ["Ceres", "Rialma", "Itapaci", "Aparecida"];
   final _formkey = GlobalKey<FormState>();
   final controllerUsername = TextEditingController();
   final controllerCPF = TextEditingController();
@@ -25,30 +26,36 @@ class _UserScreenState extends State<UserScreen> {
   final controllerNome = TextEditingController();
   final controllerPassword = TextEditingController();
 
-  String? cidade;
-  String? _cidade;
+  Cidade? cidade;
+  Cidade? _cidade;
 
   late Future<ParseUser?> fetch;
+
+  late Future<List<Cidade>?> cidadeList;
+
+  final cidadeController = CidadeController();
 
   @override
   void initState() {
     super.initState();
     fetch = fetchUser();
+    cidadeList = getCidades();
   }
 
   Future<ParseUser?> fetchUser() async {
     var user = await ParseUser.currentUser();
     var queryBuilder = QueryBuilder<ParseUser>(ParseUser.forQuery())
-      ..whereEqualTo('objectId', user.objectId);
+      ..whereEqualTo('objectId', user.objectId)
+      ..includeObject(['cidadeId']);
 
     var response = await queryBuilder.query();
     //log(user.username);
+    // ignore: unnecessary_null_comparison
     if (response != null) {
       if (response.success && response.results != null) {
         var userResponse = response.results?.first as ParseUser;
         // Aqui você pode acessar os dados do usuário
         // Ex: var username = userResponse.username;
-        //log(userResponse.username!);
 
         return userResponse;
 
@@ -91,8 +98,7 @@ class _UserScreenState extends State<UserScreen> {
               controllerCPF.text = user?.get<String>("cpf") ?? "";
               controllerTelefone.text = user?.get<String>("telefone") ?? "";
               controllerEmail.text = user?.get<String>("email") ?? "";
-              controllerDataNascimento.text = _formatarData(data) ?? "";
-              cidade = user?.get<String>("cidadeId");
+              controllerDataNascimento.text = _formatarData(data);
               controllerUsername.text = user?.get<String>("username") ?? "";
               controllerNome.text = user?.get<String>("nome") ?? "";
               return Column(
@@ -183,21 +189,50 @@ class _UserScreenState extends State<UserScreen> {
                             ],
                             keyboardType: TextInputType.number),
                         const SizedBox(height: 10),
-                        DropdownButtonFormField<String>(
-                          decoration: const InputDecoration(
-                            hintText: "Escolha sua cidade",
-                            border: OutlineInputBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(12))),
-                          ),
-                          value: cidade,
-                          onChanged: (newValue) {
-                            _cidade = newValue as String;
+                        FutureBuilder<List<Cidade>?>(
+                          future: cidadeList,
+                          builder: (context, snapshot) {
+                            switch (snapshot.connectionState) {
+                              case ConnectionState.none:
+                              case ConnectionState.waiting:
+                                return const Center(
+                                  child: SizedBox(
+                                      width: 100,
+                                      height: 100,
+                                      child: CircularProgressIndicator()),
+                                );
+                              default:
+                                final cidades = snapshot.data;
+                                final cityName =
+                                    user?["cidadeId"]["nomeCidade"] ?? "";
+
+                                cidade = cidades?.firstWhere(
+                                  (e) => e.nome == cityName,
+                                  orElse: () => cidades.first,
+                                );
+
+                                log(cidade.toString());
+                                return DropdownButtonFormField<Cidade>(
+                                  decoration: InputDecoration(
+                                      border: OutlineInputBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(12)),
+                                      hintText: 'Selecione a cidade'),
+                                  hint: const Text("Selecione sua cidade"),
+                                  value: cidade,
+                                  onChanged: (Cidade? value) {
+                                    _cidade = value;
+                                  },
+                                  items: cidades?.map<DropdownMenuItem<Cidade>>(
+                                      (Cidade value) {
+                                    return DropdownMenuItem<Cidade>(
+                                      value: value,
+                                      child: Text(value.nome ?? ""),
+                                    );
+                                  }).toList(),
+                                );
+                            }
                           },
-                          items: lista.map((valueItem) {
-                            return DropdownMenuItem<String>(
-                                value: valueItem, child: Text(valueItem));
-                          }).toList(),
                         ),
                         const SizedBox(height: 10),
                         TextFieldComponente(
@@ -296,7 +331,7 @@ class _UserScreenState extends State<UserScreen> {
     user.set<String>("email", email);
     user.set<DateTime>("dataNascimento", data);
     user.set<String>("nome", nome);
-    user.set<String>("cidadeId", _cidade ?? cidade);
+    user.set<Cidade>("cidadeId", _cidade ?? cidade);
 
     var response = await user.save();
 
@@ -314,5 +349,9 @@ class _UserScreenState extends State<UserScreen> {
     final data = DateTime.parse(dataFormatada);
 
     return data;
+  }
+
+  Future<List<Cidade>?> getCidades() async {
+    return await cidadeController.getAllCidades();
   }
 }

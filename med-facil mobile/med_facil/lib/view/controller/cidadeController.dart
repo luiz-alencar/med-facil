@@ -23,8 +23,14 @@ class CidadeController {
     final response = await queryBuilder.query();
 
     if (response.success && response.results != null) {
-      log(response.results.toString());
-      return response.results!.map((e) => e as Cidade).toList();
+      //log(response.results.toString());
+      return response.results!.map(
+        (e) {
+          final cidade = e as Cidade;
+          cidade.nome = cidade['nomeCidade'];
+          return cidade;
+        },
+      ).toList();
     }
 
     log(response.error!.message);

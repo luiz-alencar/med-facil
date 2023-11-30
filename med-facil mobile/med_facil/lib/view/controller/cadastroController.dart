@@ -16,7 +16,6 @@ class cadastroController extends StatefulWidget {
 }
 
 class _CadastroControllerState extends State<cadastroController> {
-  List lista = ["Ceres", "Rialma", "Itapaci", "Aparecida"];
 
   final _formkey = GlobalKey<FormState>();
   final controllerUsername = TextEditingController();
@@ -120,9 +119,10 @@ class _CadastroControllerState extends State<cadastroController> {
                 default:
                   final cidades = snapshot.data;
                   return DropdownButtonFormField<Cidade>(
-                    decoration: const InputDecoration(
-                      labelText: "Cidade",
-                    ),
+                    decoration: InputDecoration(
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12)),
+                        hintText: 'Selecione a sua cidade'),
                     hint: const Text("Selecione sua cidade"),
                     onChanged: (Cidade? value) {
                       _cidade = value;

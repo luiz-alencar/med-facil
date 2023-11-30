@@ -9,7 +9,6 @@ class requisicaoController extends StatefulWidget {
   State<requisicaoController> createState() => _requisicaoControllerState();
 }
 
-List reme = ["Dipirona", "Anador", "Doralgina"];
 List quant = [1, 2, 3];
 List use = ["pre-datado", "continuo"];
 
@@ -22,7 +21,16 @@ late String _nomeCompleto;
 late int _quantidade;
 late String _uso;
 
+List<String> _items = []; // Lista para armazenar os itens do Dropdown
+String? _selectedItem; // Item selecionado no Dropdown
+
 class _requisicaoControllerState extends State<requisicaoController> {
+  @override
+  void initState() {
+    super.initState();
+    _fetchDataFromBack4App(); // Inicializa o carregamento dos dados do Back4App
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -85,17 +93,20 @@ class _requisicaoControllerState extends State<requisicaoController> {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(12))),
                         ),
-                        hint: const Text("Selecione o Medicamento ",
+                        hint: const Text("Selecione o medicamento ",
                             style: TextStyle(color: Colors.black)),
-                        onChanged: (newValue) {
+                        value: _selectedItem,
+                        items: _items.map((item) {
+                          return DropdownMenuItem(
+                            value: item,
+                            child: Text(item),
+                          );
+                        }).toList(),
+                        onChanged: (value) {
                           setState(() {
-                            _nomeCompleto = newValue as String;
+                            _selectedItem = value!;
                           });
                         },
-                        items: reme.map((valueItem) {
-                          return DropdownMenuItem(
-                              value: valueItem, child: Text(valueItem));
-                        }).toList(),
                       ),
 
                       //espaço
@@ -224,7 +235,7 @@ class _requisicaoControllerState extends State<requisicaoController> {
       final medicamento = ParseObject('Pedido');
 
       medicamento.set<ParseUser>("cidadaoId", currentUser);
-      medicamento.set<String>("remedio", _nomeCompleto);
+      medicamento.set<String?>("remedio", _selectedItem);
       medicamento.set<int>("quantidade", _quantidade);
       medicamento.set<String>("uso", _uso);
 
@@ -237,6 +248,26 @@ class _requisicaoControllerState extends State<requisicaoController> {
     } else {
       // O usuário não está logado, exiba uma mensagem de erro ou redirecione para a página de login.
       showError("Usuário não está logado.");
+    }
+  }
+
+  Future<void> _fetchDataFromBack4App() async {
+    final query = QueryBuilder(ParseObject(
+        'Medicamentos')); // Substitua 'YourClassName' pelo nome da sua classe no Back4App
+
+    try {
+      final response = await query.query();
+      if (response.success && response.results != null) {
+        setState(() {
+          _items = response.results!
+              .map((obj) => obj['nomeCompleto'].toString())
+              .toList();
+        });
+      } else {
+        print('Error fetching data from Back4App: ${response.error}');
+      }
+    } catch (e) {
+      print('Error: $e');
     }
   }
 }
