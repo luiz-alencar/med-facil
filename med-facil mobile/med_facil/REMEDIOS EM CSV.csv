@@ -1,943 +1,777 @@
-﻿objectId;createdAt;updateAt;ACL;quantidade;uso;nomeCompleto
-;;;;0;vazio;abacavir (sulfato de abacavir), comprimido 300 mg
-;;;;0;vazio;abacavir (sulfato de abacavir), solução oral, 20 mg/mL frasco
-;;;;0;vazio;abatacepte, injetável, 125 mg seringa preenchida
-;;;;0;vazio;abatacepte, injetável, 250 mg frasco- ampola
-;;;;0;vazio;abciximabe, injetável, 2 mg/mL frasco ampola
-;;;;0;vazio;acetato de sódio, injetável, 2 mEq/mL ampola
-;;;;0;vazio;acetazolamida, comprimido 250mg
-;;;;0;vazio;acetazolamida, comprimido 250mg
-;;;;0;vazio;aciclovir, comprimido 200 mg
-;;;;0;vazio;aciclovir, creme 50 mg/g (5%)
-;;;;0;vazio;aciclovir, injetável, 250 mg frasco- ampola
-;;;;0;vazio;aciclovir, comprimido 200 mg
-;;;;0;vazio;aciclovir, comprimido 200 mg
-;;;;0;vazio;ácido acetilsalicílico, comprimido 100 mg
-;;;;0;vazio;ácido acetilsalicílico, comprimido 500 mg
-;;;;0;vazio;ácido ascórbico, solução oral, 200 mg/mL frasco
-;;;;0;vazio;ácido fólico, comprimido 5 mg
-;;;;0;vazio;ácido fólico, comprimido 5 mg
-;;;;0;vazio;ácido fólico, solução oral 0,2 mg/mL frasco
-;;;;0;vazio;ácido folínico (folinato de cálcio), comprimido 15 mg
-;;;;0;vazio;ácido folínico (folinato de cálcio), comprimido 15 mg
-;;;;0;vazio;ácido nicotínico, comprimido de liberação prolongada 500 mg
-;;;;0;vazio;ácido paraminossalicílico, granulado oral, 4 g envelope
-;;;;0;vazio;ácido salicílico, pomada 50 mg/g (5%)
-;;;;0;vazio;ácido tranexâmico, comprimido 250 mg
-;;;;0;vazio;ácido tricloacético, solução tópica, frasco
-;;;;0;vazio;ácido ursodesoxicólico, comprimido 50 mg
-;;;;0;vazio;ácido ursodesoxicólico, comprimido 150 mg
-;;;;0;vazio;ácido ursodesoxicólico, comprimido 300 mg
-;;;;0;vazio;ácido valpróico (valproato de sódio), comprimido ou cápsula 250 mg
-;;;;0;vazio;ácido valpróico (valproato de sódio), cápsula 250 mg
-;;;;0;vazio;ácido valpróico (valproato de sódio), comprimido 500 mg
-;;;;0;vazio;ácido valpróico (valproato de sódio), solução oral, 50 mg/mL frasco
-;;;;0;vazio;ácido valpróico (valproato de sódio), xarope, 50 mg/mL frasco
-;;;;0;vazio;ácido zoledrônico, injetável, 5 mg/100mL frasco
-;;;;0;vazio;acitretina, cápsula 10 mg
-;;;;0;vazio;acitretina, cápsula 25 mg
-;;;;0;vazio;adalimumabe, injetável, 40mg frasco ampola (uso pediátrico)
-;;;;0;vazio;adalimumabe, injetável, 40 mg seringa preenchida
-;;;;0;vazio;água para injetáveis, injetável, ampola de 5 mL
-;;;;0;vazio;água para injetáveis, injetável, ampola  de 10 mL
-;;;;0;vazio;água para injetáveis, injetável, frasco de 100 mL
-;;;;0;vazio;água para injetáveis, injetável, frasco de 500 mL
-;;;;0;vazio;agulha para caneta aplicadora de insulina, unidade
-;;;;0;vazio;albendazol, comprimido mastigável 400 mg
-;;;;0;vazio;albendazol, suspensão oral, 40 mg/mL frasco
-;;;;0;vazio;albumina humana, injetável, 0,2 g/mL (20%) frasco
-;;;;0;vazio;alcachofra (Cynara scolymus L.), cápsula, comprimido, drágea, solução oral e tintura (24 a 48mg de derivados de ácido cafeoilquínico expressos em ácido clorogênico - dose diária)
-;;;;0;vazio;alcatrão mineral, pomada 10 mg/g (1%)
-;;;;0;vazio;álcool etílico, gel 70%
-;;;;0;vazio;álcool etílico, solução 70%
-;;;;0;vazio;alendronato de sódio, comprimido 10 mg
-;;;;0;vazio;alendronato de sódio, comprimido 70 mg
-;;;;0;vazio;alendronato de sódio, comprimido 70 mg
-;;;;0;vazio;alfa-alglicosidase, injetável, frasco-ampola com 50 mg de pó liofilizado
-;;;;0;vazio;alfacalcidol, cápsula 0,25 mcg *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de processo
-;;;;0;vazio;alfacalcidol, cápsula 1,0 mcg *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de processo
-;;;;0;vazio;alfadornase, solução para inalação, 1mg/mL ampola
-;;;;0;vazio;alfaelosulfase, injetável, 1mg/mL frasco de 5mL
-;;;;0;vazio;alfaepoetina, injetável, 1.000 UI frasco ampola *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de processo licitatório.
-;;;;0;vazio;alfaepoetina, injetável, 2.000 UI frasco ampola
-;;;;0;vazio;alfaepoetina, injetável, 3.000 UI frasco ampola *item atualmente sem demanda. Após abertura (fluxo NP)e deferimento do processo, seu fornecimento deverá aguardar finalização de processo licitatório.
-;;;;0;vazio;alfaepoetina, injetável, 4.000 UI frasco ampola
-;;;;0;vazio;alfaepoetina, injetável, 10.000 UI frasco ampola
-;;;;0;vazio;alfainterferona 2b, injetável, 3.000.000 UI frasco ampola
-;;;;0;vazio;alfainterferona 2b, injetável, 5.000.000 UI frasco ampola  *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de processo
-;;;;0;vazio;alfainterferona 2b, injetável, 10.000.000 UI frasco ampola  *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de processo
-;;;;0;vazio;alfapeginterferona 2a, injetável, 180 mcg seringa preenchida
-;;;;0;vazio;alfapeginterferona 2b, injetável, 80 mcg frasco ampola
-;;;;0;vazio;alfapeginterferona 2b, injetável, 100 mcg frasco ampola
-;;;;0;vazio;alfapeginterferona 2b, injetável, 120 mcg frasco-ampola
-;;;;0;vazio;alfataliglicerase, injetável, 200 UI frasco- ampola
-;;;;0;vazio;alfaporactanto (surfactante pulmonar), suspensão injetável intratecal ou intrabrônquica, 80 mg/mL frasco ampola
-;;;;0;vazio;alfavelaglicerase, injetável, 400 UI frasco ampola
-;;;;0;vazio;alopurinol, comprimido 100 mg
-;;;;0;vazio;alopurinol, comprimido 300 mg
-;;;;0;vazio;alteplase, injetável, 10 mg frasco ampola
-;;;;0;vazio;alteplase, injetável, 20 mg frasco ampola
-;;;;0;vazio;alteplase, injetável, 50 mg frasco ampola
-;;;;0;vazio;amantadina, comprimido 100 mg
-;;;;0;vazio;ambrisentana, comprimido 5 mg
-;;;;0;vazio;ambrisentana, comprimido 10mg
-;;;;0;vazio;amicacina (sulfato de amicacina), injetável, 250 mg/ml ampola
-;;;;0;vazio;amiodarona (cloridrato de amiodarona), comprimido 200 mg
-;;;;0;vazio;amiodarona (cloridrato de amiodarona), injetável, 50 mg/mL ampola
-;;;;0;vazio;amitriptilina (cloridrato de amitriptilina), comprimido 25 mg
-;;;;0;vazio;amitriptilina (cloridrato de amitriptilina), comprimido 25 mg
-;;;;0;vazio;amitriptilina (cloridrato de amitriptilina), comprimido 75 mg
-;;;;0;vazio;amoxicilina, cápsula 500 mg
-;;;;0;vazio;amoxicilina, suspensão oral, 50 mg/mL frasco
-;;;;0;vazio;amoxicilina + clavulanato de potássio, comprimido 500 mg + 125 mg
-;;;;0;vazio;amoxicilina + clavulanato de potássio, suspensão oral, (50 mg + 12,5 mg)/mL frasco
-;;;;0;vazio;anfotericina B (complexo lipídico), injetável, 5 mg/mL frasco ampola
-;;;;0;vazio;anfotericina B (lipossomal), injetável, 50 mg frasco ampola
-;;;;0;vazio;anlodipino, comprimido 5 mg
-;;;;0;vazio;anlodipino, comprimido 10 mg
-;;;;0;vazio;antimoniato de meglumina, injetável, 300 mg/mL ampola
-;;;;0;vazio;aroeira (Schinus terebenthifolius Raddi), gel e óvulo vaginal (1,932 mg de ácido gálico - dose diária)
-;;;;0;vazio;artemeter+ lumefantrina, comprimido 20 mg + 120 mg
-;;;;0;vazio;artesunato, injetável, 60 mg/mL frasco-ampola
-;;;;0;vazio;artesunato + cloridrato mefloquina, comprimido (25 + 55)mg
-;;;;0;vazio;artesunato + cloridrato mefloquina, comprimido (100 + 220)mg
-;;;;0;vazio;atazanavir (sulfato de atazanavir), cápsula  300 mg
-;;;;0;vazio;atenolol, comprimido 50 mg
-;;;;0;vazio;atenolol, comprimido 100 mg
-;;;;0;vazio;atorvastatina, comprimido 10mg
-;;;;0;vazio;atorvastatina, comprimido 20mg
-;;;;0;vazio;atorvastatina, comprimido 40 mg
-;;;;0;vazio;atorvastatina, comprimido 80 mg *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de processo
-;;;;0;vazio;atropina (sulfato de atropina), injetável, 0,25 mg/mL ampola
-;;;;0;vazio;azatioprina, comprimido 50 mg
-;;;;0;vazio;azitromicina, comprimido 250 mg
-;;;;0;vazio;azitromicina, comprimido 500 mg
-;;;;0;vazio;azitromicina, suspensão oral, 40 mg/mL frasco
-;;;;0;vazio;aztreonam lysine, solução inalatória, 75 mg
-;;;;0;vazio;babosa [Aloe vera (L.) Burm. f. ], creme e gel (10-70% gel fresco)
-;;;;0;vazio;baricitinibe, comprimido 2 mg
-;;;;0;vazio;baricitinibe, comprimido 4 mg
-;;;;0;vazio;basiliximabe, injetável, 20 mg frasco ampola
-;;;;0;vazio;beclometasona (dipropionato de beclometasona), solução para inalação oral 50 mcg/dose
-;;;;0;vazio;beclometasona (dipropionato de beclometasona), suspensão para inalação nasal 50 mcg/dose
-;;;;0;vazio;beclometasona (dipropionato de beclometasona), pó para inalação oral 200 mcg/dose
-;;;;0;vazio;beclometasona (dipropionato de beclometasona), solução para inalação oral 200 mcg/dose
-;;;;0;vazio;beclometasona (dipropionato de beclometasona), cápsula inalante 200 mcg/dose
-;;;;0;vazio;beclometasona (dipropionato de beclometasona), solução para inalação oral 250 mcg/dose
-;;;;0;vazio;beclometasona (dipropionato de beclometasona), pó para inalação oral 400 mcg/dose
-;;;;0;vazio;beclometasona (dipropionato de beclometasona), cápsula inalante 400mcg/dose
-;;;;0;vazio;bedaquilina, comprimido 100mg
-;;;;0;vazio;benzilpenicilina benzatina, injetável, 600.000 UI frasco-ampola
-;;;;0;vazio;benzilpenicilina benzatina, injetável, 1.200.000 UI frasco-ampola
-;;;;0;vazio;benzilpenicilina potássica, injetável, 5.000.000 UI frasco-ampola
-;;;;0;vazio;benzilpenicilina procaína + benzilpenicilina potássica, injetável, (300.000 + 100.000)UI frasco- ampola
-;;;;0;vazio;benznidazol, comprimido 12,5 mg
-;;;;0;vazio;benznidazol, comprimido 100 mg
-;;;;0;vazio;beractanto (surfactante pulmonar), suspensão injetável intratecal ou intrabrônquica, 25 mg/mL frasco ampola
-;;;;0;vazio;betainterferona 1a, injetável, 6.000.000 UI (22 mcg) seringa preenchida
-;;;;0;vazio;betainterferona 1a, injetável, 6.000.000 UI (30 mcg) frasco ampola, seringa preenchida ou caneta preenchida
-;;;;0;vazio;betainterferona 1a, injetável, 12.000.000 UI (44 mcg) seringa preenchida
-;;;;0;vazio;betainterferona 1b, injetável, 9.600.000 UI (300mcg) frasco ampola
-;;;;0;vazio;betametasona (acetato de betametasona  + fosfato dissódico de betametasona), injetável, (3 mg + 3 mg)/mL ampola
-;;;;0;vazio;bezafibrato, comprimido 200 mg
-;;;;0;vazio;bezafibrato, comprimido de desintegração lenta 400 mg  *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de
-;;;;0;vazio;bicarbonato de sódio, injetável, 1 mEq/mL (8,4%) ampola
-;;;;0;vazio;"biotina, cápsula 2,5mg* item indisponível: Consta na RENAME, porém ainda não 
-disponibilizado pelo MS"
-;;;;0;vazio;bimatoprosta, solução oftálmica, 0,3mg/mL (0,03%) frasco 3mL
-;;;;0;vazio;biperideno (cloridrato de biperideno), comprimido 2 mg
-;;;;0;vazio;biperideno (cloridrato de biperideno), comprimido de liberação controlada 4 mg
-;;;;0;vazio;biperideno (lactato de biperideno), injetável, 5 mg/mL ampola
-;;;;0;vazio;bosentana, comprimido revestido 62,5 mg
-;;;;0;vazio;bosentana, comprimido revestido 125mg
-;;;;0;vazio;brimonidina, solução oftálmica, 2 mg/mL frasco com 5mL
-;;;;0;vazio;brinzolamida, solução oftálmica, 10 mg/ml (0,01%) frasco com 5 mL
-;;;;0;vazio;bromocriptina, comprimido  2,5 mg *item indisponível no mercado nacional
-;;;;0;vazio;budesonida, cápsula inalante ou pó inalante ou aerossol bucal 200 mcg
-;;;;0;vazio;budesonida, cápsula inalante 400 mcg
-;;;;0;vazio;budesonida, supensão para inalação nasal 32 mcg
-;;;;0;vazio;budesonida, supensão para inalação nasal 50 mcg
-;;;;0;vazio;budesonida, supensão para inalação nasal 64 mcg
-;;;;0;vazio;bupivacaína (cloridrato de bupivacaína), injetável, 2,5 mg/mL (0,25%) ampola
-;;;;0;vazio;bupivacaína (cloridrato de bupivacaína), injetável, 5 mg/mL (0,50%) ampola
-;;;;0;vazio;bupropiona (cloridrato de bupropiona), comprimidos de liberação prolongada 150 mg
-;;;;0;vazio;cabergolina, comprimido 0,5 mg
-;;;;0;vazio;calcipotriol, pomada, 50 mcg/g (0,005%) bisnaga 30g
-;;;;0;vazio;calcitonina, spray nasal, 200 UI/dose frasco
-;;;;0;vazio;calcitriol, cápsula 0,25 mcg
-;;;;0;vazio;caneta para aplicação de insulina, unidade
-;;;;0;vazio;capreomicina, injetável, 1 g frasco- ampola
-;;;;0;vazio;captopril, comprimido 25 mg
-;;;;0;vazio;carbamazepina, comprimido 200 mg
-;;;;0;vazio;carbamazepina, comprimido 400 mg
-;;;;0;vazio;carbamazepina, suspensão oral, 20 mg/mL frasco
-;;;;0;vazio;carbonato de cálcio, comprimido 1250mg (equivalente a 500 mg de cálcio)
-;;;;0;vazio;carbonato de cálcio + colecalciferol, comprimido 1250 mg (500 mg de Ca) + 200 UI
-;;;;0;vazio;carbonato de cálcio + colecalciferol, comprimido 1250 mg (500 mg de Ca) + 400 UI
-;;;;0;vazio;carbonato de cálcio + colecalciferol, comprimido 1500 mg (600 mg de Ca) + 400 UI
-;;;;0;vazio;carbonato de lítio, comprimido 300 mg
-;;;;0;vazio;carvão vegetal ativado, pó para suspensão oral
-;;;;0;vazio;cáscara-sagrada (Rhamnus purshiana DC. ), 30  mg de derivados de hidroantracênicos expressos em cascarosídeo A - dose
-;;;;0;vazio;cefalexina, cápsula ou comprimido 500 mg
-;;;;0;vazio;cefalexina, comprimido 500 mg
-;;;;0;vazio;cefalexina, suspensão oral, 50 mg/mL frasco
-;;;;0;vazio;cefalexina, suspensão oral, 50 mg/mL frasco
-;;;;0;vazio;cefotaxima sódica, injetável, 500 mg frasco- ampola
-;;;;0;vazio;ceftriaxona, injetável, 500 mg frasco ampola
-;;;;0;vazio;ceftriaxona, injetável, 1 g frasco- ampola
-;;;;0;vazio;certolizumabe pegol, injetável, 200 mg/mL seringa preenchida
-;;;;0;vazio;cetoconazol, comprimido 200mg
-;;;;0;vazio;cetoconazol, xampu, 20 mg/g (2%) frasco
-;;;;0;vazio;cianocobalamina, injetável, 1000 mcg/mL ampola
-;;;;0;vazio;ciclofosfamida, Comprimido 50 mg
-;;;;0;vazio;ciclosporina, cápsula 10 mg
-;;;;0;vazio;ciclosporina, cápsula 25 mg
-;;;;0;vazio;ciclosporina, cápsula 50 mg
-;;;;0;vazio;ciclosporina, cápsula 100 mg
-;;;;0;vazio;ciclosporina, solução oral, 100 mg/ml frasco de 50 mL
-;;;;0;vazio;ciclosporina, injetável, 50 mg frasco- ampola
-;;;;0;vazio;ciclosporina, injetável, 250 mg frasco- ampola
-;;;;0;vazio;cinacalcete, comprimidos 30 mg
-;;;;0;vazio;cinacalcete, comprimidos 60 mg
-;;;;0;vazio;ciprofibrato, comprimido 100 mg
-;;;;0;vazio;ciprofloxacino, comprimido 250 mg
-;;;;0;vazio;ciprofloxacino, comprimido 500 mg
-;;;;0;vazio;ciproterona, comprimido 50 mg
-;;;;0;vazio;claritromicina, comprimido 250 mg
-;;;;0;vazio;claritromicina, comprimido 500 mg
-;;;;0;vazio;claritromicina, suspensão oral, 50 mg/mL frasco
-;;;;0;vazio;clindamicina (cloridrato de clindamicina), cápsula 150 mg
-;;;;0;vazio;clindamicina (cloridrato de clindamicina), cápsula 300 mg
-;;;;0;vazio;clindamicina (fosfato de clindamicina), gel, 10mg/g
-;;;;0;vazio;, solução tópica, 10mg/g
-;;;;0;vazio;clobazam, comprimido 10 mg
-;;;;0;vazio;clobazam, comprimido 20 mg
-;;;;0;vazio;clobetasol, creme 0,5mg/g, bisnaga 30 g
-;;;;0;vazio;clobetasol, solução capilar, 0,5 mg/g frasco 50g *item atualmente sem demanda nas farmácia cidadãs. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar
-;;;;0;vazio;clofazimina, cápsula 50 mg
-;;;;0;vazio;clofazimina, cápsula 100 mg
-;;;;0;vazio;clomifeno (citrato de clomifeno), comprimido 50 mg *item atualmente sem demanda nas farmácia cidadãs. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de processo
-;;;;0;vazio;clomipramina (cloridrato de, comprimido 10 mg
-;;;;0;vazio;clomipramina), comprimido 25 mg
-;;;;0;vazio;clonazepam, comprimido 0,5mg
-;;;;0;vazio;clonazepam, comprimido 2mg
-;;;;0;vazio;clonazepam, solução oral, 2,5 mg/mL frasco
-;;;;0;vazio;clopidogrel, comprimido 75 mg
-;;;;0;vazio;cloranfenicol, cápsula ou comprimido 250 mg
-;;;;0;vazio;cloranfenicol, suspensão oral, 25 mg/mL frasco
-;;;;0;vazio;cloreto de potássio, injetável, 2,56 mEq/mL (19,1%) ampola
-;;;;0;vazio;cloreto de sódio, injetável,  0,154 mEq/mL (0,9%) ampola
-;;;;0;vazio;cloreto de sódio, solução nasal,  0,154 mEq/mL (0,9%) ampola
-;;;;0;vazio;"cloreto de sódio, injetável, 3,4 mEq/mL
-(20%) ampola"
-;;;;0;vazio;cloreto de sódio, solução nasal, 9 mg/mL (0,9%) frasco
-;;;;0;vazio;clorexidina (digliconato de clorexidina), solução bucal, 0,12% frasco
-;;;;0;vazio;clorexidina (digliconato de clorexidina), solução para uso tópico, 2% a 4% frasco
-;;;;0;vazio;clorexidina (digliconato de clorexidina), solução degermante, 4% frasco com 100mL
-;;;;0;vazio;cloroquina, comprimido 150mg (correspondente a 250mg de Difosfato de cloroquina)*item atualmente sem demanda nas farmácia cidadãs. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de
-;;;;0;vazio;clorpromazina (cloridrato de clorpromazina), comprimido 25 mg
-;;;;0;vazio;clorpromazina (cloridrato de clorpromazina), comprimido 100 mg
-;;;;0;vazio;clorpromazina (cloridrato de clorpromazina), injetável, 5 mg/mL ampola
-;;;;0;vazio;clorpromazina (cloridrato de clorpromazina), solução oral, 40 mg/mL frasco
-;;;;0;vazio;clozapina, comprimido 25 mg
-;;;;0;vazio;clozapina, comprimido 100 mg
-;;;;0;vazio;codeína, comprimido 30 mg
-;;;;0;vazio;codeína, comprimido 60 mg
-;;;;0;vazio;codeína, solução oral, 3 mg/mL frasco de 120 mL *item atualmente sem demanda nas farmácia cidadãs. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de processo
-;;;;0;vazio;codeína, injetável, 30 mg/mL ampola de 2 mL *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de
-;;;;0;vazio;colecalciferol (vitamina D), comprimido 7.000 UI
-;;;;0;vazio;colimicina, pó para injeção 1.000.000 UI
-;;;;0;vazio;alimentar p/ paciente fenilcetonurico menor de 1 ano - formula de aminoácidos isenta de, (por grama)
-;;;;0;vazio;complemento alimentar p/ paciente fenilcetonurico maior de 1 ano - formula de aminoácidos isenta de fenilalanina, Pacientes 01 a 08 anos (por grama)
-;;;;0;vazio;complemento alimentar p/ paciente fenilcetonurico maior de 1 ano - formula de aminoácidos isenta de fenilalanina, Pacientes maior de 08 anos (por grama)
-;;;;0;vazio;complexo protrombínico humano, injetável, 500 a 600 UI frasco-ampola
-;;;;0;vazio;complexo protrombínico parcialmente ativado, injetável, 500 UI frasco- ampola
-;;;;0;vazio;complexo protrombínico parcialmente ativado, injetável, 1000 UI frasco- ampola
-;;;;0;vazio;complexo protrombínico parcialmente ativado, injetável, 2500 UI frasco- ampola
-;;;;0;vazio;dabigatrana (etexilato de dabigatrana), cápsula 110 mg
-;;;;0;vazio;dabigatrana (etexilato de dabigatrana), cápsula 150 mg
-;;;;0;vazio;daclatasvir, comprimido 30mg
-;;;;0;vazio;daclatasvir, comprimido 60mg
-;;;;0;vazio;daclizumabe, injetável, 5 mg/mL frasco
-;;;;0;vazio;dactinomicina, injetável, 500 mcg/ml frascoampola
-;;;;0;vazio;danazol, cápsula 100 mg
-;;;;0;vazio;danazol, cápsula 200 mg
-;;;;0;vazio;dapagliflozina, comprimido 10 mg
-;;;;0;vazio;dapsona, comprimido 50mg* (Disponível apenas no blíster da  poliquimioterapia Única – PQT-U, com outros medicamentos, para o esquema
-;;;;0;vazio;dapsona, comprimido 100mg*(Disponível apenas no blíster da  poliquimioterapia Única – PQT-U, com outros medicamentos, para o esquema
-;;;;0;vazio;dapsona, comprimido 100 mg
-;;;;0;vazio;darunavir, comprimido 75 mg
-;;;;0;vazio;darunavir, comprimido 600 mg
-;;;;0;vazio;dasatinibe, comprimido 20 mg
-;;;;0;vazio;dasatinibe, comprimido 100 mg
-;;;;0;vazio;deferasirox, comprimido 125 mg
-;;;;0;vazio;deferasirox, comprimido 250 mg
-;;;;0;vazio;deferasirox, comprimido 500 mg
-;;;;0;vazio;deferiprona, comprimido 500 mg
-;;;;0;vazio;delamanida, comprimido 500 mg
-;;;;0;vazio;desferroxamina, injetável, 500 mg frasco ampola
-;;;;0;vazio;desmopressina (acetato de desmopressina), injetável, 4 mcg/mL ampola
-;;;;0;vazio;desmopressina (acetato de desmopressina), injetável, 15 mcg/mL ampola
-;;;;0;vazio;desmopressina (acetato de desmopressina), comprimido 0,1  mg* item indisponível: Consta na RENAME, porém ainda não disponibilizado pelo MS
-;;;;0;vazio;desmopressina (acetato de desmopressina), comprimido 0,2  mg* item indisponível: Consta na RENAME, porém ainda não disponibilizado pelo MS
-;;;;0;vazio;desmopressina (acetato de desmopressina), aplicação nasal, 0,1 mg/mL  frasco de 2,5 mL
-;;;;0;vazio;dexametasona, comprimido 4 mg
-;;;;0;vazio;dexametasona, creme 1 mg/g (0,1%)
-;;;;0;vazio;dexametasona, elixir, 0,1 mg/mL frasco
-;;;;0;vazio;dexametasona, pomada oftálmica, 1 mg/mL (0,1%)
-;;;;0;vazio;dexametasona, suspensão oftálmica, 1 mg/mL (0,1%)
-;;;;0;vazio;dexametasona (fosfato dissódico de dexametasona), injetável, 4 mg/mL ampola
-;;;;0;vazio;dexclorfeniramina (maleato de dexclorfeniramina), comprimido 2 mg
-;;;;0;vazio;dexclorfeniramina (maleato de dexclorfeniramina), solução oral, 0,4 mg/mL frasco
-;;;;0;vazio;dexclorfeniramina (maleato de dexclorfeniramina), xarope, 0,4 mg/mL frasco
-;;;;0;vazio;diafragma, 60 mm de diâmetro
-;;;;0;vazio;diafragma, 65 mm de diâmetro
-;;;;0;vazio;diafragma, 70 mm de diâmetro
-;;;;0;vazio;diafragma, 75 mm de diâmetro
-;;;;0;vazio;diafragma, 80 mm de diâmetro
-;;;;0;vazio;diafragma, 85 mm de diâmetro
-;;;;0;vazio;diazepam, comprimido 5 mg
-;;;;0;vazio;diazepam, comprimido 10 mg
-;;;;0;vazio;diazepam, comprimido 10 mg
-;;;;0;vazio;diazepam, injetável, 5 mg/mL ampola
-;;;;0;vazio;dietilcarbamazepina (citrato de dietilcarbamazepina), comprimido 50mg
-;;;;0;vazio;digoxina, comprimido 0,25 mg
-;;;;0;vazio;digoxina, elixir, 0,05 mg/mL frasco
-;;;;0;vazio;dipirona, comprimido 500 mg
-;;;;0;vazio;dipirona, injetável, 500mg/mL frasco
-;;;;0;vazio;dipirona, solução oral, 500 mg/mL frasco
-;;;;0;vazio;dispositivo intra- uterino plástico com cobre, modelo T 380 mm2
-;;;;0;vazio;dobutamina (cloridrato de dobutamina), injetável, 12,5 mg/mL ampola
-;;;;0;vazio;dolutegravir sódio, comprimido 50 mg
-;;;;0;vazio;domperidona, suspensão oral, 1mg/mL frasco
-;;;;0;vazio;donepezila, comprimido 5 mg
-;;;;0;vazio;donepezila, comprimido 10 mg
-;;;;0;vazio;dopamina (cloridrato de dopamina), injetável, 5 mg/mL ampola
-;;;;0;vazio;dorzolamida, solução oftálmica, 20 mg/mL frasco com 5mL
-;;;;0;vazio;doxazosina (mesilato de doxazosina), comprimido 2 mg
-;;;;0;vazio;doxazosina (mesilato de doxazosina), comprimido 4 mg
-;;;;0;vazio;doxiciclina, comprimido 100 mg
-;;;;0;vazio;doxiciclina, injetável, 100 mg frasco- ampola
-;;;;0;vazio;efavirenz, cápsula 200 mg
-;;;;0;vazio;efavirenz, comprimido 600 mg
-;;;;0;vazio;efavirenz, solução oral, 30 mg/mL frasco
-;;;;0;vazio;elbasvir + grazoprevir monoidratado, comprimido, 50mg + 100mg
-;;;;0;vazio;eltrombopague olamina, comprimido 25 mg
-;;;;0;vazio;eltrombopague olamina, comprimido 50 mg
-;;;;0;vazio;enalapril (maleato de enalapril), comprimido 5 mg
-;;;;0;vazio;enalapril (maleato de enalapril), comprimido 10 mg
-;;;;0;vazio;enalapril (maleato de enalapril), comprimido 20 mg
-;;;;0;vazio;enfuvirtida, injetável, 108 mg (90 mg/ mL após reconstituição) frasco ampola
-;;;;0;vazio;enoxaparina sódica, injetável, 20 mg/0,2mL seringa preenchida
-;;;;0;vazio;enoxaparina sódica, injetável, 40 mg/0,4mL seringa preenchida
-;;;;0;vazio;enoxaparina sódica, injetável, 60 mg/0,6mL seringa preenchida
-;;;;0;vazio;enoxaparina sódica, injetável, 80 mg/0,8mL seringa preenchida
-;;;;0;vazio;enoxaparina sódica, injetável, 100 mg/1mL seringa preenchida
-;;;;0;vazio;entacapona, comprimido 200 mg
-;;;;0;vazio;entecavir, comprimido 0,5 mg
-;;;;0;vazio;entecavir, comprimido 1 mg
-;;;;0;vazio;epinefrina, injetável, 1 mg/mL ampola
-;;;;0;vazio;eritromicina (estolato de eritromicina), comprimido 500 mg
-;;;;0;vazio;eritromicina (estolato de eritromicina), comprimido 500 mg
-;;;;0;vazio;eritromicina (estolato de eritromicina), suspensão oral, 25 mg/mL frasco
-;;;;0;vazio;eritromicina (estolato de eritromicina), suspensão oral, 50 mg/mL frasco
-;;;;0;vazio;eritromicina (estolato de eritromicina), suspensão oral, 50 mg/mL frasco
-;;;;0;vazio;espinheira-santa (Maytenus ilicifolia Mart. ex Reissek ), cápsula, emulsão oral, solução oral e tintura (60 a 90mg de taninos totais expressos em pirogalol - dose diária)
-;;;;0;vazio;espiramicina, comprimido 1,5 MUI
-;;;;0;vazio;espironolactona, comprimido 25 mg
-;;;;0;vazio;espironolactona, comprimido 100 mg
-;;;;0;vazio;estreptomicina (sulfato de estreptomicina), injetável, 1 g frasco- ampola
-;;;;0;vazio;estreptoquinase, injetável, 250.000 UI frasco ampola
-;;;;0;vazio;estriol, creme vaginal 1 mg/g
-;;;;0;vazio;estrogênios conjugados, comprimido 0,3 mg
-;;;;0;vazio;estrogênios conjugados, creme vaginal 0,625 mg/g
-;;;;0;vazio;etambutol (cloridrato de etambutol), comprimido 400 mg
-;;;;0;vazio;etanercepte, injetável, 25 mg frasco ampola
-;;;;0;vazio;etanercepte, injetável, 50 mg frasco ampola ou seringa preenchida
-;;;;0;vazio;etinilestradiol + levonorgestrel, comprimido 0,03 + 0,15mg
-;;;;0;vazio;etionamida, comprimido 250 mg
-;;;;0;vazio;etofibrato, cápsula 500 mg *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização
-;;;;0;vazio;etossuximida, Solução oral, 50 mg/mL frasco com 120 mL
-;;;;0;vazio;etravirina, comprimido 100 mg
-;;;;0;vazio;etravirina, comprimido 200 mg
-;;;;0;vazio;everolimo, comprimido 0,5 mg
-;;;;0;vazio;everolimo, comprimido 0,75 mg
-;;;;0;vazio;everolimo, comprimido 1 mg
-;;;;0;vazio;fator VII ativado recombinante (alfaeptacogue ativado), injetável, 1 mg (50.000UI) frasco-ampola
-;;;;0;vazio;fator VII ativado recombinante (alfaeptacogue ativado), injetável, 2 mg (100.000UI) frasco- ampola
-;;;;0;vazio;fator VII ativado recombinante (alfaeptacogue ativado), injetável, 5 mg (250.000UI) frasco- ampola
-;;;;0;vazio;fator VIII de coagulação, injetável, 250 UI frasco- ampola
-;;;;0;vazio;fator VIII de coagulação, injetável, 500 UI frasco- ampola
-;;;;0;vazio;fator VIII de coagulação, injetável, 1.000 UI frasco-ampola
-;;;;0;vazio;fator VIII recombinante (alfaoctocogue), injetável, 250 UI frasco- ampola
-;;;;0;vazio;fator VIII recombinante (alfaoctocogue), injetável, 500 UI frasco- ampola
-;;;;0;vazio;fator VIII recombinante (alfaoctocogue), injetável, 1000 UI frasco- ampola
-;;;;0;vazio;fator VIII de coagulação contendo Fator doença de von Willebrand, injetável, 250 UI frasco- ampola
-;;;;0;vazio;fator VIII de coagulação contendo Fator doença de von Willebrand, injetável, 500 UI frasco- ampola
-;;;;0;vazio;fator VIII de coagulação contendo Fator doença de von Willebrand, injetável, 1000 UI frasco- ampola
-;;;;0;vazio;fator IX de coagulação, injetável, 200 UI frasco- ampola
-;;;;0;vazio;fator IX de coagulação, injetável, 250 UI frasco- ampola
-;;;;0;vazio;fator IX de coagulação, injetável, 500 UI frasco- ampola
-;;;;0;vazio;fator IX de coagulação, injetável, 600 UI frasco- ampola
-;;;;0;vazio;fator IX de coagulação, injetável, 1.000 UI frasco-ampola
-;;;;0;vazio;fator IX de coagulação, injetável, 1.200 UI frasco-ampola
-;;;;0;vazio;fator XIII de coagulação, injetável, 250 UI frasco- ampola
-;;;;0;vazio;fenitoína sódica, comprimido 100 mg
-;;;;0;vazio;fenitoína sódica, injetável, 50 mg/mL ampola
-;;;;0;vazio;fenitoína sódica, suspensão oral, 20 mg/mL frasco
-;;;;0;vazio;fenobarbital, comprimido 100 mg
-;;;;0;vazio;fenobarbital, injetável, 100 mg/mL ampola
-;;;;0;vazio;fenobarbital, solução oral, 40 mg/mL frasco
-;;;;0;vazio;fenofibrato, cápsula 200 mg
-;;;;0;vazio;fenofibrato, cápsula de liberação retardada 250 mg
-;;;;0;vazio;fenoterol, aerossol, 100 mcg/dose - frasco com 200 doses *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de processo licitatório.
-;;;;0;vazio;fenoximetilpenicilina potássica, pó para solução oral, 80.000 UI/mL
-;;;;0;vazio;fibrinogênio, injetável, 1 g frasco- ampola
-;;;;0;vazio;filgrastim, injetável, 300 mcg frasco-ampola ou seringa preenchida
-;;;;0;vazio;finasterida, comprimido 5 mg
-;;;;0;vazio;fingolimode, cápsula 0,5 mg
-;;;;0;vazio;flucitosina, cápsula 250 mg
-;;;;0;vazio;flucitosina, cápsula 500mg
-;;;;0;vazio;fluconazol, cápsula 100 mg
-;;;;0;vazio;fluconazol, cápsula 150 mg
-;;;;0;vazio;fluconazol, injetável, 2 mg/mL ampola
-;;;;0;vazio;fluconazol, suspensão oral, 10 mg/mL frasco
-;;;;0;vazio;fludrocortisona, comprimido 0,1 mg
-;;;;0;vazio;flumazenil, injetável, 0,1 mg/mL ampola
-;;;;0;vazio;fluoxetina (cloridrato de fluoxetina), cápsula ou comprimido 20 mg
-;;;;0;vazio;formoterol, cápsula inalante ou pó inalante 12 mcg
-;;;;0;vazio;formoterol + budesonida, cápsula inalante ou pó inalante, 6 + 200 mcg
-;;;;0;vazio;formoterol + budesonida, cápsula inalante ou pó inalante, 12 + 400 mcg
-;;;;0;vazio;fosamprenavir, suspensão oral 50 mg/mL
-;;;;0;vazio;fosfato de cálcio tribásico + colecalciferol, comprimido 1661,616mg (600mg de cálcio) + 400 UI
-;;;;0;vazio;fosfato de potássio monobásico + fostato de potássio dibásico, injetável, 0,03 + 0,1567 g/mL ampola
-;;;;0;vazio;Denominação genérica, Forma Farmacêutica / Concentração / Descrição
-;;;;0;vazio;Fósforo Elementar, comprimido, 250 mg de fósforo elementar* Formulação manipulada - composição conforme tabela 2 PCDT
-;;;;0;vazio;Fósforo Elementar, Solução Fosfatada, 15mg de fósforo elementar/mL de solução* Formulação manipulada - composição conforme tabela 1 PCDT
-;;;;0;vazio;fumarato de Dimetila, cápsula 120 mg
-;;;;0;vazio;fumarato de Dimetila, cápsula 240 mg
-;;;;0;vazio;furosemida, comprimido 40 mg
-;;;;0;vazio;furosemida, injetável, 10 mg/mL ampola
-;;;;0;vazio;gabapentina, cápsula 300 mg
-;;;;0;vazio;gabapentina, cápsula 400 mg
-;;;;0;vazio;ganciclovir sódico, injetável, 1 mg/mL bolsa 250mL sistema fechado
-;;;;0;vazio;galantamina, cápsula de liberação prolongada 8 mg
-;;;;0;vazio;galantamina, cápsula de liberação prolongada 16 mg
-;;;;0;vazio;galantamina, cápsula de liberação prolongada 24 mg
-;;;;0;vazio;galsulfase, injetável, 5 mg Frasco
-;;;;0;vazio;garra-do-diabo (Harpagophytum procumbens DC. Ex Meissn. ), cápsula, comprimido e comprimido de liberação retardada (30 a 100mg de harpagosídeo ou 45 a 150mg de irodoides totais expressos em harpagosídeos - dose
-;;;;0;vazio;gel lubrificante, gel
-;;;;0;vazio;genfibrozila, comprimido 600 mg
-;;;;0;vazio;genfibrozila, comprimido 900 mg *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de processo
-;;;;0;vazio;gentamicina (sulfato de gentamicina), pomada oftálmica 5 mg/g
-;;;;0;vazio;gentamicina (sulfato de gentamicina), solução oftálmica, 5 mg/mL frasco
-;;;;0;vazio;glatirâmer, injetável, 20 mg  seringa preenchida
-;;;;0;vazio;glatirâmer, injetável, 40 mg seringa preenchida
-;;;;0;vazio;glecaprevir + pibrentasvir, comprimido, 100mg + 40mg
-;;;;0;vazio;glibenclamida, comprimido 5 mg
-;;;;0;vazio;glicerol, solução retal, 120 mg/mL frasco
-;;;;0;vazio;glicerol, supositório retal 72 mg
-;;;;0;vazio;gliclazida, comprimido de liberação prolongada 30 mg
-;;;;0;vazio;gliclazida, comprimido de liberação prolongada  60 mg
-;;;;0;vazio;gliclazida, comprimido 80 mg
-;;;;0;vazio;glicose, injetável, 50 mg/mL (5%) ampola
-;;;;0;vazio;glicose, injetável, 100 mg/mL(10%) ampola
-;;;;0;vazio;glicose, injetável, 500 mg/mL (50%) ampola
-;;;;0;vazio;glutaral, solução 2%
-;;;;0;vazio;golimumabe, injetável, 50 mg seringa preenchida
-;;;;0;vazio;gosserrelina, injetável, 3,60 mg seringa preenchida
-;;;;0;vazio;gosserrelina, injetável, 10,80 mg seringa preenchida
-;;;;0;vazio;guaco (Mikania glomerata Spreng. ), solução oral, tintura e xarope (0,5 a 5mg de cumarina - dose diária)
-;;;;0;vazio;haloperidol, comprimido 1 mg
-;;;;0;vazio;haloperidol, comprimido 5 mg
-;;;;0;vazio;haloperidol, injetável, 5 mg/mL ampola
-;;;;0;vazio;haloperidol, solução oral, 2 mg/mL frasco
-;;;;0;vazio;haloperidol (decanoato de haloperidol), injetável, 50 mg/mL ampola
-;;;;0;vazio;hemitartarato de norepinefrina, injetável, 2 mg/mL ampola
-;;;;0;vazio;heparina sódica, injetável, 5.000 UI/0,25 mL ampola
-;;;;0;vazio;hidralazina (cloridrato de hidralazina), comprimido 25 mg
-;;;;0;vazio;hidralazina (cloridrato de hidralazina), comprimido 50 mg
-;;;;0;vazio;hidroclorotiazida, comprimido 12,5 mg
-;;;;0;vazio;hidroclorotiazida, comprimido 25 mg
-;;;;0;vazio;hidrocortisona (acetato de hidrocortisona), creme 10 mg/g (1%)
-;;;;0;vazio;hidrocortisona (succinato sódico de hidrocortisona), injetável, 100 mg frasco- ampola
-;;;;0;vazio;hidrocortisona (succinato sódico de hidrocortisona), injetável, 500 mg frasco- ampola
-;;;;0;vazio;hidroxicloroquina, comprimido 400 mg
-;;;;0;vazio;hidroxiureia, cápsula 500 mg
-;;;;0;vazio;hidroxocobalamina (cloridrato de hidroxocobalamina), injetável, 5 g frasco- ampola
-;;;;0;vazio;hipoclorito de sódio, solução, 10 mg/mL (1%) frasco
-;;;;0;vazio;hipoclorito de sódio, solução, 25 mg/mL (2,5%) frasco
-;;;;0;vazio;hipromelose, solução oftálmica, 3 mg/mL (0,3%) frasco
-;;;;0;vazio;hipromelose, solução oftálmica, 5 mg/mL (0,5%) frasco
-;;;;0;vazio;hortelã (Mentha x piperita L .), cápsula (60 a 440 mg de mentol e 28 a 256 mg de mentona - dose diária)
-;;;;0;vazio;ibuprofeno, comprimido 200 mg
-;;;;0;vazio;ibuprofeno, comprimido 300 mg
-;;;;0;vazio;ibuprofeno, comprimido 600 mg
-;;;;0;vazio;ibuprofeno, suspensão oral, 50 mg/mL frasco
-;;;;0;vazio;icatibanto (acetato de icatibanto), injetável, 10 mg/mL seringa preenchida 3mL
-;;;;0;vazio;idursulfase, injetável, 2 mg/ml frasco ampola 3mL
-;;;;0;vazio;iloprosta, solução para nebulização, 10 mcg/mL ampola 1 ml *item atualmente sem demanda. Após abertura (fluxo NP)e deferimento do processo, seu fornecimento deverá aguardar finalização de processo
-;;;;0;vazio;imatinibe (mesilato de imatinibe), comprimido 100 mg
-;;;;0;vazio;imatinibe (mesilato de imatinibe), comprimido 400 mg
-;;;;0;vazio;imiglucerase, injetável, 400 UI frasco ampola
-;;;;0;vazio;imiquimode, creme, 50mg/g
-;;;;0;vazio;imunoglobulina anti RH (D), injetável
-;;;;0;vazio;imunoglobulina humana antirrábica, injetável, 150 UI/mL ampola
-;;;;0;vazio;imunoglobulina antitetânica, injetável, 250 UI/mL ampola
-;;;;0;vazio;imunoglobulina antivaricela zoster, injetável, 125 UI/2,5 ml ampola
-;;;;0;vazio;imunoglobulina, injetável, 0,5 g frasco *item atualmente sem demanda. Após abertura (fluxo NP)e deferimento do processo, seu fornecimento deverá aguardar finalização de processo licitatório.
-;;;;0;vazio;imunoglobulina, injetável, 1,0 g frasco *item atualmente sem demanda. Após abertura (fluxo NP)e deferimento do processo, seu fornecimento deverá aguardar finalização de processo licitatório.
-;;;;0;vazio;imunoglobulina antitimócitos humanos (coelho), injetável, 25 mg frasco ampola
-;;;;0;vazio;imunoglobulina humana anti-hepatite B, injetável, 100 UI ampola  
-;;;;0;vazio;imunoglobulina humana anti-hepatite B, injetável, 180 a 200 UI/mL ampola
-;;;;0;vazio;imunoglobulina humana anti-hepatite B, injetável, 500 UI ampola  
-;;;;0;vazio;imunoglobulina humana anti-hepatite B, injetável, 600 UI ampola  
-;;;;0;vazio;imunoglobulina humana anti-hepatite B, injetável, 1000 UI ampola  
-;;;;0;vazio;infliximabe, injetável, 100mg frasco- ampola
-;;;;0;vazio;insulina análoga de ação rápida (insulina Asparte), injetável, 100 UI/mL caneta com 3mL + agulha 0,23 x 4mm
-;;;;0;vazio;insulina humana de ação rápida (insulina regular), injetável, 100 UI/mL frasco-ampola
-;;;;0;vazio;insulina humana de duração intermediária (insulina NPH), injetável, 100 UI/mL frasco-ampola
-;;;;0;vazio;insulina análoga de longa duração (insulina detemir), injetável, 100 UI/mL refil ou caneta com 3mL
-;;;;0;vazio;insulina análoga de longa duração (insulina glargina), injetável, 100 UI/mL frasco ampola 10mL
-;;;;0;vazio;insulina análoga de longa duração (insulina glargina), injetável, 100 UI/mL refil com 3mL
-;;;;0;vazio;iodo + iodeto de potássio, solução, (20 + 40) mg/mL frasco
-;;;;0;vazio;ipratrópio (brometo de ipratrópio), solução para inalação oral 20 mcg/dose
-;;;;0;vazio;ipratrópio (brometo de ipratrópio), solução para inalação 0,25 mg/mL
-;;;;0;vazio;isoflavona-de-soja [Glycine max  (L. ) Merr. ], cápsula ou comprimido (50 a 120 mg de isoflavonas - dose diária)
-;;;;0;vazio;isoniazida, comprimido 100 mg
-;;;;0;vazio;isoniazida, comprimido 300 mg
-;;;;0;vazio;isossorbida (dinitrato de isossorbida), comprimido sublingual 5mg
-;;;;0;vazio;isossorbida (mononitrato de isossorbida), comprimido 20 mg
-;;;;0;vazio;isossorbida (mononitrato de isossorbida), comprimido 40 mg
-;;;;0;vazio;isotretinoína, cápsula 10 mg
-;;;;0;vazio;isotretinoína, cápsula 20 mg
-;;;;0;vazio;itraconazol, cápsula 100 mg
-;;;;0;vazio;itraconazol, solução oral, 10 mg/mL frasco
-;;;;0;vazio;Ivacaftor, comprimido 150mg
-;;;;0;vazio;ivermectina, comprimido 6 mg
-;;;;0;vazio;lactulose, xarope, 667 mg/ mL frasco
-;;;;0;vazio;lamivudina, comprimido 150 mg
-;;;;0;vazio;lamivudina, solução oral, 10 mg/mL frasco
-;;;;0;vazio;lamotrigina, comprimido 25 mg
-;;;;0;vazio;lamotrigina, comprimido 50 mg
-;;;;0;vazio;lamotrigina, comprimido 100 mg
-;;;;0;vazio;lancetas para punção digital, unidade
-;;;;0;vazio;lanreotida, injetável, 60 mg seringa preenchida
-;;;;0;vazio;lanreotida, injetável, 90 mg seringa preenchida
-;;;;0;vazio;lanreotida, injetável, 120 mg seringa preenchida
-;;;;0;vazio;l-asparaginase, injetável, 10.000 UI frasco ampola
-;;;;0;vazio;laronidase, injetável, 0,58 mg/mL frasco com 5 mL* item indisponível: Consta na RENAME, porém ainda não disponibilizado pelo MS
-;;;;0;vazio;latanoprosta, solução oftálmica, 0,05mg/mL frasco 2,5mL
-;;;;0;vazio;ledipasvir + sofosbuvir, comprimido (90 + 400)mg
-;;;;0;vazio;leflunomida, comprimido 20 mg
-;;;;0;vazio;leuprorrelina, injetável, 3,75 mg frasco ampola
-;;;;0;vazio;leuprorrelina, injetável, 11,25 mg frasco ampola
-;;;;0;vazio;leuprorrelina, injetável,  45 mg frasco ampola
-;;;;0;vazio;levetiracetam, solução oral, 100mg/mL frasco 100 ou 150mL
-;;;;0;vazio;levetiracetam, comprimido 250mg
-;;;;0;vazio;levetiracetam, comprimido 750mg
-;;;;0;vazio;levodopa + benserazida, cápsula ou comprimido 100 mg + 25 mg
-;;;;0;vazio;levodopa + benserazida, comprimido 200 mg + 50 mg
-;;;;0;vazio;levodopa + carbidopa, comprimido 200 mg + 50 mg
-;;;;0;vazio;levodopa + carbidopa, comprimido 250 mg + 25 mg
-;;;;0;vazio;levofloxacino, comprimido 250 mg
-;;;;0;vazio;levofloxacino, comprimido 500 mg
-;;;;0;vazio;levonorgestrel, comprimido 1,5 mg
-;;;;0;vazio;levonorgestrel, comprimido 0,75 mg
-;;;;0;vazio;levotiroxina sódica, comprimido 12,5 mcg
-;;;;0;vazio;levotiroxina sódica, comprimido 25 mcg
-;;;;0;vazio;levotiroxina sódica, comprimido 37,5 mcg
-;;;;0;vazio;levotiroxina sódica, comprimido 50 mcg
-;;;;0;vazio;levotiroxina sódica, comprimido 100 mcg
-;;;;0;vazio;lidocaína (cloridrato de lidocaína), injetável, 10 mg/mL (1%) ampola
-;;;;0;vazio;lidocaína (cloridrato de lidocaína), injetável, 20 mg/mL (2%) ampola
-;;;;0;vazio;lidocaína (cloridrato de lidocaína), gel 20 mg/mL (2%)
-;;;;0;vazio;lidocaína (cloridrato de lidocaína), solução spray, 100 mg/mL frasco
-;;;;0;vazio;lidocaína (cloridrato de lidocaína) + glicose, injetável, 50 + 75 mg/mL   (5 + 7,5%) ampola
-;;;;0;vazio;lidocaína (cloridrato de lidocaína) + hemitartarato de epinefrina, injetável, 1% + 1:200.000 ampola
-;;;;0;vazio;lidocaína (cloridrato de lidocaína) + hemitartarato de epinefrina, injetável, 2% + 1:80.000 ampola
-;;;;0;vazio;lidocaína (cloridrato de lidocaína) + hemitartarato de epinefrina, injetável, 2% + 1:200.000 ampola
-;;;;0;vazio;linezolida, comprimido 600 mg
-;;;;0;vazio;linezolida, solução para infusão, 2 mg/mL frasco
-;;;;0;vazio;lopinavir + ritonavir, comprimido 100 mg + 25mg
-;;;;0;vazio;lopinavir + ritonavir, comprimido 200 mg + 50mg
-;;;;0;vazio;lopinavir + ritonavir, solução oral, 80 mg/mL + 20 mg/mL frasco
-;;;;0;vazio;loratadina, comprimido 10 mg
-;;;;0;vazio;loratadina, xarope, 1 mg/mL frasco
-;;;;0;vazio;losartana potássica, comprimido 50 mg
-;;;;0;vazio;maraviroque, comprimido 150 mg
-;;;;0;vazio;medicamento homeopáticos, conforme Farmacopéia Homeopática Brasileira 3ª edição
-;;;;0;vazio;medroxiprogesterona (acetato de medroxiprogesterona), comprimido 10 mg
-;;;;0;vazio;medroxiprogesterona (acetato de medroxiprogesterona), injetável, 50 mg/mL ampola
-;;;;0;vazio;medroxiprogesterona (acetato de medroxiprogesterona), injetável, 150 mg/mL ampola
-;;;;0;vazio;memantina, comprimido 10 mg
-;;;;0;vazio;mepolizumabe, solução injetável, 100mg frasco ampola
-;;;;0;vazio;mesalazina, comprimido 400 mg
-;;;;0;vazio;mesalazina, comprimido de liberação prolongada 500 mg
-;;;;0;vazio;mesalazina, comprimido 800 mg
-;;;;0;vazio;mesalazina, enema retal, 10 mg/mL frasco com 100 mL
-;;;;0;vazio;mesalazina, supositório 250 mg
-;;;;0;vazio;mesalazina, supositório 500 mg
-;;;;0;vazio;mesalazina, supositório 1000 mg
-;;;;0;vazio;metadona, comprimido 5 mg
-;;;;0;vazio;metadona, comprimido 10 mg
-;;;;0;vazio;metadona, injetável, 10 mg/mL ampola 1 mL *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização
-;;;;0;vazio;metformina (cloridrato de metformina), comprimido 500 mg
-;;;;0;vazio;metformina (cloridrato de metformina), comprimido 850 mg
-;;;;0;vazio;metildopa, comprimido 250 mg
-;;;;0;vazio;metilfenidato, comprimido de liberação imediata 10 mg
-;;;;0;vazio;metilfenidato, comprimido de liberação prolongada 20 mg
-;;;;0;vazio;metilfenidato, comprimido de liberação prolongada 30 mg
-;;;;0;vazio;metilfenidato, comprimido de liberação prolongada 40 mg
-;;;;0;vazio;metilprednisolona, injetável, 500 mg frasco ampola
-;;;;0;vazio;metoclopramida (cloridrato de metoclopramida), comprimido 10 mg
-;;;;0;vazio;metoclopramida (cloridrato de metoclopramida), injetável, 5 mg/mL ampola
-;;;;0;vazio;metoclopramida (cloridrato de metoclopramida), solução oral, 4 mg/mL frasco
-;;;;0;vazio;metoprolol (succinato de metoprolol), comprimido de liberação prolongada 25 mg
-;;;;0;vazio;metoprolol (succinato de metoprolol), comprimido de liberação prolongada 50 mg
-;;;;0;vazio;metoprolol (succinato de metoprolol), comprimido de liberação prolongada 100 mg
-;;;;0;vazio;metoprolol (tartarato de metoprolol), comprimido 100 mg
-;;;;0;vazio;metotrexato, comprimido 2,5 mg
-;;;;0;vazio;metotrexato, injetável, 25 mg/mL ampola de 2 mL
-;;;;0;vazio;metronidazol, comprimido 250 mg
-;;;;0;vazio;metronidazol, comprimido 250 mg
-;;;;0;vazio;metronidazol, comprimido 400 mg
-;;;;0;vazio;metronidazol, gel vaginal 100 mg/g (10%)
-;;;;0;vazio;metronidazol, gel vaginal 100 mg/g (10%)
-;;;;0;vazio;metronidazol (benzoilmetronidazol), suspensão oral 40 mg/mL
-;;;;0;vazio;micofenolato de mofetila, comprimido 500 mg
-;;;;0;vazio;micofenolato de sodio, comprimido 180 mg
-;;;;0;vazio;micofenolato de sodio, comprimido 360 mg
-;;;;0;vazio;miconazol (nitrato de miconazol), creme 20 mg/g (2%)
-;;;;0;vazio;miconazol (nitrato de miconazol), gel oral 20 mg/g (2%)
-;;;;0;vazio;micronutrientes, pó, 1 g (vitamina A 400 mcg + vitamina D 5 mcg, vitamina E 5 mgvitamina C 30 mg, vitamina B1 0,5 mg,
-;;;;0;vazio;midazolam (maleato de midazolam), comprimido 15 mg
-;;;;0;vazio;midazolam (maleato de midazolam), solução oral, 2 mg/mL frasco
-;;;;0;vazio;miglustate, cápsula 100 mg
-;;;;0;vazio;miltefosina, cápsula 10 mg
-;;;;0;vazio;miltefosina, cápsula 50 mg
-;;;;0;vazio;minociclina (cloridrato de minociclina), comprimido 100 mg
-;;;;0;vazio;misoprostol, comprimido vaginal 25mcg
-;;;;0;vazio;misoprostol, comprimido vaginal 200mcg
-;;;;0;vazio;mometasona, suspensão nasal, spray 50 mcg frasco com 120 atomizações
-;;;;0;vazio;montelucaste de sódio, grânulos orais 4 mg
-;;;;0;vazio;montelucaste de sódio, comprimido mastigável 4mg
-;;;;0;vazio;montelucaste de sódio, comprimido mastigável 5mg
-;;;;0;vazio;montelucaste de sódio, comprimido revestido 10mg
-;;;;0;vazio;morfina, cápsula de liberação controlada 30 mg
-;;;;0;vazio;morfina, cápsula de liberação controlada 60 mg
-;;;;0;vazio;morfina, cápsula de liberação controlada 100 mg *item atualmente sem demanda nas farmácia cidadãs. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de processo
-;;;;0;vazio;morfina, comprimido 10 mg
-;;;;0;vazio;morfina, comprimido 30 mg
-;;;;0;vazio;morfina, injetável, 10 mg/mL ampola de 1 mL *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de
-;;;;0;vazio;morfina, solução oral, 10 mg/mL frasco de 60 mL    *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de processo
-;;;;0;vazio;moxifloxacino (cloridrato de moxifloxacino), comprimido 400 mg
-;;;;0;vazio;multivitaminas lipossolúveis e minerais, solução oral, frasco (até 2 anos)
-;;;;0;vazio;multivitaminas lipossolúveis e minerais, comprimido mastigáveis (2 a 10 anos)
-;;;;0;vazio;multivitaminas lipossolúveis e minerais, cápsulas gelatinosas (acima de 10 anos)
-;;;;0;vazio;mupirocina, pomada, 2% tubo com 15g
-;;;;0;vazio;naloxona (cloridrato de naloxona), injetável, 0,4 mg/mL ampola
-;;;;0;vazio;naproxeno, Comprimido 250mg
-;;;;0;vazio;naproxeno, Comprimido 500mg
-;;;;0;vazio;natalizumabe, injetável, 20 mg/mL frasco ampola com 15 mL
-;;;;0;vazio;nevirapina, comprimido 200 mg
-;;;;0;vazio;nevirapina, suspensão oral 10 mg/ mL
-;;;;0;vazio;nicotina, adesivo transdérmico 7 mg
-;;;;0;vazio;nicotina, adesivo transdérmico 14 mg
-;;;;0;vazio;nicotina, adesivo transdérmico 21 mg
-;;;;0;vazio;nicotina, goma de mascar 2 mg
-;;;;0;vazio;nicotina, pastilha 2 mg
-;;;;0;vazio;nifedipino, cápsula ou comprimido 10 mg
-;;;;0;vazio;nilotinibe, comprimido 200 mg
-;;;;0;vazio;"nistatina, suspensão oral,
-100.000 UI/mL frasco"
-;;;;0;vazio;suspensão oral, 100.000 UI/mL frasco
-;;;;0;vazio;nitrofurantoína, cápsula 100 mg
-;;;;0;vazio;, suspensão oral, 5 mg/mL frasco
-;;;;0;vazio;noretisterona, comprimido 0,35 mg
-;;;;0;vazio;noretisterona (enantato de noretisterona) + estradiol (valerato de estradiol), injetável, 50 + 5 mg/mL ampola
-;;;;0;vazio;nortriptilina (cloridrato de nortriptilina), cápsula 10 mg
-;;;;0;vazio;nortriptilina (cloridrato de nortriptilina), cápsula 25 mg
-;;;;0;vazio;nortriptilina (cloridrato de nortriptilina), cápsula 50 mg
-;;;;0;vazio;nortriptilina (cloridrato de nortriptilina), cápsula 75 mg
-;;;;0;vazio;nusinersena, injetável, 2,4 mg/mL frasco-ampola com 5 mL
-;;;;0;vazio;Octreotida, injetável, 0,1 mg/mL ampola com 1 mL
-;;;;0;vazio;Octreotida, injetável, 10 mg frasco-ampola *item atualmente sem demanda. Após abertura (fluxo NP)e deferimento do processo, seu fornecimento deverá aguardar finalização de
-;;;;0;vazio;Octreotida, injetável, 20 mg frasco- ampola
-;;;;0;vazio;Octreotida, injetável, 30 mg frasco- ampola
-;;;;0;vazio;ofloxacino, comprimido 400 mg
-;;;;0;vazio;olanzapina, comprimido 5 mg
-;;;;0;vazio;olanzapina, comprimido 10 mg
-;;;;0;vazio;óleo mineral, óleo para uso oral
-;;;;0;vazio;omalizumabe, injetável, 150 mg frasco ampola
-;;;;0;vazio;omeprazol, cápsula 10 mg
-;;;;0;vazio;omeprazol, cápsula 20 mg
-;;;;0;vazio;omeprazol, comprimido 20 mg
-;;;;0;vazio;omeprazol magnésico, comprimido dispersível 10 mg
-;;;;0;vazio;ondansetrona (cloridrato de ondansetrona), comprimido 4 mg
-;;;;0;vazio;ondansetrona (cloridrato de ondansetrona), comprimido orodispersível 4 mg
-;;;;0;vazio;ondansetrona (cloridrato de ondansetrona), comprimido 8 mg
-;;;;0;vazio;ondansetrona (cloridrato de ondansetrona), comprimido orodispersível 8 mg
-;;;;0;vazio;oseltamivir (fosfato de oseltamivir), cápsula 45 mg
-;;;;0;vazio;oseltamivir (fosfato de oseltamivir), cápsula 75 mg
-;;;;0;vazio;oxamniquina, suspensão oral, 50 mg/mL frasco
-;;;;0;vazio;oxibutinina (cloridrato de oxibutinina), comprimido 5 mg
-;;;;0;vazio;oxibutinina (cloridrato de oxibutinina), comprimido 10mg liberação prolongada
-;;;;0;vazio;palivizumabe, injetável, 50mg frasco ampola
-;;;;0;vazio;palivizumabe, injetável, 100mg frasco ampola
-;;;;0;vazio;pamidronato, injetável, 60 mg frasco ampola
-;;;;0;vazio;pancreatina, cápsula 10.000UI
-;;;;0;vazio;pancreatina, cápsula 25.000UI
-;;;;0;vazio;paracetamol, comprimido 500 mg
-;;;;0;vazio;paracetamol, solução oral, 200 mg/mL frasco
-;;;;0;vazio;paricalcitol, injetável, 5 mcg/mL ampola com 1 mL
-;;;;0;vazio;pasta d'água, pasta
-;;;;0;vazio;penicilamina, cápsula 250 mg
-;;;;0;vazio;pentamidina (isetionato de pentamidina), injetável, 300 mg frasco- ampola
-;;;;0;vazio;pentoxifilina, comprimido 400 mg
-;;;;0;vazio;permanganato de potássio, comprimido para uso tópico 100 mg
-;;;;0;vazio;permanganato de potássio, pó, 100 mg frasco
-;;;;0;vazio;permetrina, loção 10 mg/g (1%)
-;;;;0;vazio;permetrina, loção 50 mg/g (5%)
-;;;;0;vazio;peróxido de benzoíla, gel 25 mg/g (2,5%)
-;;;;0;vazio;peróxido de benzoíla, gel 50 mg/g (5%)
-;;;;0;vazio;pertuzumabe, injetável, 420 mg Frasco
-;;;;0;vazio;pilocarpina (cloridrato de pilocarpina), solução oftálmica, 20 mg/mL (2%)  frasco
-;;;;0;vazio;pirazinamida, comprimido dispersível 150 mg
-;;;;0;vazio;pirazinamida, comprimido 500 mg
-;;;;0;vazio;pirazinamida, solução oral, 30 mg/mL (3%) frasco
-;;;;0;vazio;piridostigmina, comprimido 60 mg
-;;;;0;vazio;piridoxina (cloridrato de piridoxina), comprimido 40 mg
-;;;;0;vazio;piridoxina (cloridrato de piridoxina), comprimido 100 mg
-;;;;0;vazio;pirimetamina, comprimido 25 mg
-;;;;0;vazio;plantago (Plantago ovata Forssk .), pó para dispersão oral (3 a 30 g - dose diária)
-;;;;0;vazio;podofilina, solução para uso tópico 100 mg/mL (10%) a 250 mg/mL (25%)
-;;;;0;vazio;podofilotoxina, creme, 1,5 mg/g
-;;;;0;vazio;Polimixina + neomicina + fluocinolona + lidocaína (sulfato de polimixina B + sulfato de neomicina +, solução otológica,  10.000 UI/mL + 3,50 mg/mL + 0,250 mg/mL + 20,0 mg/mL
-;;;;0;vazio;polivitamínico, comprimidos
-;;;;0;vazio;polivitamínico, solução oral (gotas)
-;;;;0;vazio;pralidoxima (mesilato de pralidoxima), injetável, 200 mg frasco- ampola
-;;;;0;vazio;pramipexol (dicloridrato de pramipexol), comprimido 0,125 mg
-;;;;0;vazio;pramipexol (dicloridrato de pramipexol), comprimido 0,25 mg
-;;;;0;vazio;pramipexol (dicloridrato de pramipexol), comprimido 1 mg
-;;;;0;vazio;pravastatina, comprimido 10mg *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo,  seu fornecimento deverá aguardar finalização de
-;;;;0;vazio;pravastatina, comprimido 20mg *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de
-;;;;0;vazio;pravastatina, comprimido 40 mg *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de
-;;;;0;vazio;praziquantel, comprimido 600 mg
-;;;;0;vazio;prednisolona (fosfato sódico de prednisolona), solução oral, 1 mg/mL frasco
-;;;;0;vazio;prednisolona (fosfato sódico de prednisolona), solução oral, 3 mg/mL frasco
-;;;;0;vazio;prednisona, comprimido 5 mg
-;;;;0;vazio;prednisona, comprimido 20 mg
-;;;;0;vazio;preservativo feminino, até 20 cm
-;;;;0;vazio;preservativo masculino, 160 mm x 49 mm
-;;;;0;vazio;preservativo masculino, 160 mm x 52 mm
-;;;;0;vazio;prilocaína (cloridrato de prilocaína) + felipressina, injetável, 30 mg/mL (3%) + 0,03 UI/mL ampola
-;;;;0;vazio;primaquina (difosfato de primaquina), comprimido 5 mg
-;;;;0;vazio;primaquina (difosfato de primaquina), comprimido 15 mg
-;;;;0;vazio;primidona, comprimido 100 mg
-;;;;0;vazio;primidona, comprimido 250 mg *item atualmente sem demanda. Após abertura (fluxo NP) e deferimento do processo, seu fornecimento deverá aguardar finalização de
-;;;;0;vazio;prometazina (cloridrato de prometazina), comprimido 25 mg
-;;;;0;vazio;prometazina (cloridrato de prometazina), injetável, 25 mg/mL ampola
-;;;;0;vazio;propafenona (cloridrato de, comprimido 150 mg
-;;;;0;vazio;propafenona), comprimido 300 mg
-;;;;0;vazio;propiltiouracila, comprimido 100 mg
-;;;;0;vazio;propranolol (cloridrato de propranolol), comprimido 10 mg
-;;;;0;vazio;propranolol (cloridrato de propranolol), comprimido 40 mg
-;;;;0;vazio;protamina (cloridrato de protamina), injetável, 10 mg/mL ampola
-;;;;0;vazio;quetiapina, comprimido 25 mg
-;;;;0;vazio;quetiapina, comprimido 100 mg
-;;;;0;vazio;quetiapina, comprimido 200 mg
-;;;;0;vazio;quetiapina, comprimido 300 mg
-;;;;0;vazio;raloxifeno (cloridrato de raloxifeno), comprimido 60 mg
-;;;;0;vazio;raltegravir potássico, comprimido 100 mg
-;;;;0;vazio;raltegravir potássico, comprimido 400 mg
-;;;;0;vazio;ranitidina, xarope, 15 mg/mL frasco
-;;;;0;vazio;rasagilina, comprimido 1 mg
-;;;;0;vazio;retinol (palmitato de retinol), cápsula mole 100.000 UI
-;;;;0;vazio;retinol (palmitato de retinol), cápsula mole 200.000 UI
-;;;;0;vazio;retinol (palmitato de retinol), solução oral, 150.000 UI/mL frasco
-;;;;0;vazio;ribavirina, cápsula 250 mg
-;;;;0;vazio;rifabutina, cápsula 150 mg
-;;;;0;vazio;rifampicina, cápsula 300 mg
-;;;;0;vazio;rifampicina, suspensão oral 20mg/mL(2%), frasco
-;;;;0;vazio;rifampicina + isoniazida, comprimido 150 mg + 75mg
-;;;;0;vazio;rifampicina + isoniazida, comprimido 300 mg + 150mg
-;;;;0;vazio;rifampicina + isoniazida, comprimido dispersível, 75 mg + 50mg
-;;;;0;vazio;rifampicina + isoniazida + pirazinamida, comprimido (75 + 50 + 150)mg
-;;;;0;vazio;rifampicina + isoniazida + pirazinamida + etambutol (cloridrato de etambutol), comprimido (150 + 75 + 400 + 275)mg
-;;;;0;vazio;rifapentina, comprimido, 150mg
-;;;;0;vazio;riluzol, comprimido 50 mg
-;;;;0;vazio;risanquinumabe, solução injetável, 75mg/0,83mL frasco ampola
-;;;;0;vazio;risedronato, comprimido 35 mg
-;;;;0;vazio;risperidona, comprimido 1 mg
-;;;;0;vazio;risperidona, comprimido 2 mg
-;;;;0;vazio;ritonavir, comprimido 100 mg
-;;;;0;vazio;rituximabe, injetável, 100 mg frasco ampola
-;;;;0;vazio;rituximabe, injetável, 500 mg frasco ampola
-;;;;0;vazio;rivaroxabana, comprimido 15 mg
-;;;;0;vazio;, comprimido 20mg
-;;;;0;vazio;rivastigmina, cápsula 1,5 mg
-;;;;0;vazio;rivastigmina, cápsula 3 mg
-;;;;0;vazio;rivastigmina, cápsula 4,5 mg
-;;;;0;vazio;rivastigmina, cápsula 6 mg
-;;;;0;vazio;rivastigmina, solução oral, 2mg/mL frasco com 120 mL
-;;;;0;vazio;rivastigmina, adesivo transdérmico 9 mg
-;;;;0;vazio;rivastigmina, adesivo transdérmico 18 mg
-;;;;0;vazio;sacarato de hidróxido férrico, injetável, 20 mg/mL frasco com 5 mL
-;;;;0;vazio;sacubitril + valsartana, comprimido 24 mg + 26mg
-;;;;0;vazio;sacubitril + valsartana, comprimido 49 mg + 51mg
-;;;;0;vazio;sacubitril + valsartana, comprimido 97 mg + 103mg
-;;;;0;vazio;sais para reidratação oral, pó para solução oral (cloreto de sódio, glicose anidra, cloreto de potássio, citrato de sódio di-hidratado)
-;;;;0;vazio;salbutamol (sulfato de salbutamol), aerossol oral, 100 mcg/dose
-;;;;0;vazio;salbutamol (sulfato de salbutamol), solução para inalação, 5 mg/mL
-;;;;0;vazio;salbutamol (sulfato de salbutamol), injetável, 0,5 mg/mL ampola
-;;;;0;vazio;salbutamol, spray aerossol, 100 mcg/dose frasco com 200 doses
-;;;;0;vazio;salgueiro (Salix alba L. ), comprimido, elixir e solução oral (60 a 240 mg de salicina - dose diária)
-;;;;0;vazio;salmeterol + fluticasona, suspensão oral, spray (25+125) mcg/dose frasco com 120 doses
-;;;;0;vazio;salmeterol + fluticasona, pó inalatório, (50+250) mcg/dose frasco com 60 doses
-;;;;0;vazio;sapropterina (dicloridrato de sapropterina), comprimido 100 mg
-;;;;0;vazio;selegilina (cloridrato de selegilina), comprimido 5 mg
-;;;;0;vazio;seringas com agulha acoplada para aplicação de insulina, unidade
-;;;;0;vazio;sevelamer (cloridrato de sevelâmer), comprimido 800 mg
-;;;;0;vazio;sildenafila, comprimido 20 mg
-;;;;0;vazio;sildenafila, comprimido 25 mg
-;;;;0;vazio;sildenafila, comprimido 50 mg
-;;;;0;vazio;sinvastatina, comprimido 10 mg
-;;;;0;vazio;sinvastatina, comprimido 20 mg
-;;;;0;vazio;sinvastatina, comprimido 40 mg
-;;;;0;vazio;sirolimo, drágea 1 mg
-;;;;0;vazio;sirolimo, drágea 2 mg
-;;;;0;vazio;sirolimo, solução oral, 1 mg/mL frasco
-;;;;0;vazio;sistema de nebulização para uso do medicamento Pentamidina, sistema de nebulização com bocal, conector em Y, tendo uma das extremidades válvula unidirecional que permite apenas fluxo inspiratório
-;;;;0;vazio;sofosbuvir, comprimido 400 mg
-;;;;0;vazio;sofosbuvir + velpatasvir, comprimidos (400 + 100)mg
-;;;;0;vazio;solução ringer + lactato, injetável (lactato de sódio 3 mg/mL + cloreto de sódio 6 mg/mL + cloreto de potássio 0,3 mg/mL + cloreto de cálcio 0,2 mg/mL)
-;;;;0;vazio;solução salina hipertônica, injetável, 7% ampola
-;;;;0;vazio;somatropina, injetável, 4 UI frasco ampola
-;;;;0;vazio;somatropina, injetável, 12 UI frasco ampola
-;;;;0;vazio;somatropina, injetável, 16 UI frasco ampola *item indisponível, aguardando disponibilidade pelo MS
-;;;;0;vazio;soro antiaracnídico (Loxosceles e Phoneutria) e Tityus), injetável, imunoglobulinas que neutralizam, no mínimo, 1,5 dose mínima mortal (DMM) de veneno de Tityus serrulatus  (1,5 DMM/mL), 1,5 DMM de veneno de Phoneutria nigriventer  (1,5 DMM/mL) e 15 dose mínima necrosante (DMN)de veneno de Loxosceles gaucho  (15DMN/mL) ampola
-;;;;0;vazio;soro antibotrópico (pentavalente), injetável, imunoglobulinas (IgG) que neutralizam, no mínimo, 5 mg de veneno de  Bothrops jararaca  (5 mg/mL) ampola
-;;;;0;vazio;soro antibotrópico (pentavalente) e anticrotálico, injetável, imunoglobulinas (IgG) que neutralizam, no mínimo, 5 mg de veneno de  Bothrops jararaca  e a 1,5 mg de veneno de Crotalus durissus terrifcus  (5 mg/mL e 1,5 mg/mL) ampola
-;;;;0;vazio;soro antibotrópico (pentavalente) e antilaquético, injetável, imunoglobulinas (IgG) que neutralizam, no mínimo, 5 mg de veneno de  Bothrops jararaca  e 3 mg de veneno de Lachesis muta  (5 mg/mL e 3 mg/mL) ampola
-;;;;0;vazio;soro antibotulínico AB (bivalente), injetável, imunoglobulinas (IgG) que neutralizam, no mínimo, 375 UI de toxina botulínica tipo A e 275 UI de toxina botulínica tipo B (375 UI/mL e 275 UI/mL) ampola
-;;;;0;vazio;soro anticrotálico, injetável, imunoglobulinas (IgG) que neutralizam, no mínimo, 1,5 mg de veneno de Crotalus durissus  terrifcus (1,5 mg/mL) ampola
-;;;;0;vazio;soro antidiftérico, injetável, imunoglobulinas (IgG) que neutralizam, no mínimo, 1.000UI de toxina diftérica (1.000 UI/mL) ampola
-;;;;0;vazio;soro antielapídico, injetável, imunoglobulinas (IgG) que neutralizam, no mínimo, 1,5 mg de veneno de Micrurus frontalis  (1,5 mg/mL) ampola
-;;;;0;vazio;soro antiescorpiônico, injetável, imunoglobulinas que neutralizam, no mínimo, 1,5 dose mínima mortal (DMM) de veneno de Tityus serrulatus  (1,5 DMM/mL) ampola
-;;;;0;vazio;soro antilonômico, injetável, imunoglobulinas que neutralizam, no mínimo, 0,35 mg de veneno de Lonomia obliqua  (0,35 mg/mL) ampola
-;;;;0;vazio;soro antiloxoscélico, injetável, imunoglobulinas que neutralizam, no mínimo, 15 dose mínima necrosante (DMN) de veneno de aranhas das espécies Loxosceles laeta, Lxosceles gaucho e Loxosceles intermedia (15 DMN/mL) ampola
-;;;;0;vazio;soro antirrábico, injetável, imunoglobulinas que neutralizam, no mínimo, 200 UI de vírus da raiva (200 UI/mL) ampola
-;;;;0;vazio;soro antitetânico, injetável, imunoglobulinas que neutralizam, no mínimo, 1.000 UI de toxina tetânica
-;;;;0;vazio;sulfadiazina, comprimido 500 mg
-;;;;0;vazio;sulfadiazina de prata, creme 10 mg/g (1%)
-;;;;0;vazio;sulfametoxazol + trimetoprima, comprimido 400 mg + 80 mg
-;;;;0;vazio;sulfametoxazol + trimetoprima, suspensão oral, (40 + 8) mg/mL frasco
-;;;;0;vazio;sulfametoxazol + trimetoprima, injetável, (80 + 16 mg)/Ml ampola
-;;;;0;vazio;sulfassalazina, comprimido 500 mg
-;;;;0;vazio;sulfato de magnésio, pó para solução oral
-;;;;0;vazio;sulfato de magnésio, injetável 0,81 mEq/mL Mg++ (10%)
-;;;;0;vazio;sulfato de magnésio, injetável, 4,05 mEq/mL Mg++ (50%)
-;;;;0;vazio;sulfato de zinco, comprimido mastigável 10 mg
-;;;;0;vazio;sulfato de zinco, xarope, 4 mg/mL frasco
-;;;;0;vazio;sulfato de zinco, injetável, 200 mcg/dose ampola
-;;;;0;vazio;sulfato ferroso, comprimido 40 mg
-;;;;0;vazio;sulfato ferroso, solução oral, 25 mg/mL frasco
-;;;;0;vazio;sulfato ferroso, xarope, 5 mg/mL frasco
-;;;;0;vazio;tacrolimo, cápsula 1 mg
-;;;;0;vazio;tacrolimo, cápsula 5 mg
-;;;;0;vazio;tacrolimo, injetável, 5 mg/mL frasco ampola
-;;;;0;vazio;tafamidis, cápsula 20 mg
-;;;;0;vazio;tafenoquina (succinato de tafenoquina), comprimido 150 mg
-;;;;0;vazio;talidomida, comprimido 100 mg
-;;;;0;vazio;teclozana, comprimido 500 mg
-;;;;0;vazio;teclozana, suspensão oral, 10 mg/mL frasco
-;;;;0;vazio;teicoplanina, injetável, 400 mg frasco ampola
-;;;;0;vazio;tenecteplase, injetável, 30 mg frasco ampola
-;;;;0;vazio;tenecteplase, injetável, 40 mg frasco ampola
-;;;;0;vazio;tenecteplase, injetável, 50 mg frasco ampola
-;;;;0;vazio;tenofovir (fumarato de tenofovir desoproxila), comprimido 300 mg
-;;;;0;vazio;tenofovir (fumarato de tenofovir desoproxila) + entricitabina, comprimido (300 + 200)mg
-;;;;0;vazio;tenofovir (fumarato de tenofovir desoproxila) + lamivudina, comprimido (300 + 300)mg
-;;;;0;vazio;tenofovir (fumarato de tenofovir desoproxila) + lamivudina + efavirenz, comprimido (300 + 300 + 600)mg 
-;;;;0;vazio;tenofovir (hemifumarato de tenofovir alafenamida), comprimido 25 mg
-;;;;0;vazio;teriflunomida, comprimido 14 mg
-;;;;0;vazio;terizidona, cápsula 250 mg
-;;;;0;vazio;tetraciclina (cloridrato de tetraciclina), cápsula 500 mg
-;;;;0;vazio;tetraciclina (cloridrato de tetraciclina), pomada oftálmica 10mg/g (1%)
-;;;;0;vazio;tiamazol, comprimido 5mg
-;;;;0;vazio;tiamazol, comprimido 10mg
-;;;;0;vazio;tiamina (cloridrato de tiamina), comprimido 300 mg
-;;;;0;vazio;timolol (maleato de timolol), solução oftálmica, 2,5mg/mL (0,25%) frasco
-;;;;0;vazio;timolol (maleato de timolol), solução oftálmica, 5mg/mL (0,5%) frasco
-;;;;0;vazio;tiotrópio (brometo de tiotrópio), solução inalatória, 2,5mcg/dose frasco com 4 mL (60 DOSES)
-;;;;0;vazio;tiotrópio + olodaterol, solução inalatória, (2,5mcg + 2,5mcg)/dose frasco com 60 doses
-;;;;0;vazio;tipranavir, cápsula 250 mg
-;;;;0;vazio;tipranavir, solução oral, 100 mg/mL
-;;;;0;vazio;tiras reagentes de medida de glicemia capilar, unidade
-;;;;0;vazio;tirofibana (cloridrato de tirofibana), injetável, 0,25 mg/mL frasco ampola
-;;;;0;vazio;tobramicina, solução para inalação, 300mg frasco
-;;;;0;vazio;tobramicina, cápsula inalatória 28 mg
-;;;;0;vazio;tocilizumabe, injetável, 20 mg/mL frasco ampola com 4mL
-;;;;0;vazio;tofacitinibe, comprimido 5 mg
-;;;;0;vazio;tolterodina (tartarato de tolterodina), cápsula de liberação prolongada 4 mg *item indisponível  no mercado nacional por parte do fabricante.
-;;;;0;vazio;topiramato, comprimido 25 mg
-;;;;0;vazio;topiramato, comprimido 50 mg
-;;;;0;vazio;topiramato, comprimido 100 mg
-;;;;0;vazio;toxina botulínica tipo A, injetável, 100 UI frasco ampola
-;;;;0;vazio;toxina botulínica tipo A, injetável, 500 UI frasco ampola
-;;;;0;vazio;tramadol (cloridrato de tramadol), comprimido 50 mg
-;;;;0;vazio;trastuzumabe, comprimido 150 mg
-;;;;0;vazio;travoprosta, solução oftálmica, 0,04 mg/mL frasco com 2,5 mL
-;;;;0;vazio;trientina, cápsula 250 mg
-;;;;0;vazio;triexifenidil (cloridrato de triexifenidil), comprimido 5 mg *item atualmente sem demanda. Após abertura (fluxo NP)e deferimento do processo, seu fornecimento deverá aguardar finalização de processo
-;;;;0;vazio;triptorrelina, injetável, 3,75 mg frasco ampola
-;;;;0;vazio;triptorrelina, injetável, 11,25 mg frasco ampola *item atualmente sem demanda. Após abertura (fluxo NP)e deferimento do processo, seu fornecimento deverá aguardar finalização de processo licitatório.
-;;;;0;vazio;unha-de-gato [Uncaria tomentosa (Willd ex Roem.& Schult.)], cápsula, comprimido e gel (0,9 mg de alcaloides oxindólicos pentaclíclicos)
-;;;;0;vazio;umeclídio + vilaterol, pó para inalação oral, (62,5mcg + 25mcg)/dose frasco com 60 doses
-;;;;0;vazio;Upadacitinibe, comprimidos 15 mg
-;;;;0;vazio;Ustequinumabe, injetável, 45mg frasco ampola
-;;;;0;vazio;vacina adsorvida difteria e tétano adulto, injetável, frasco ampola
-;;;;0;vazio;vacina adsorvida difteria e tétano infantil, injetável, frasco ampola
-;;;;0;vazio;vacina adsorvida difteria, tétano e pertussis, injetável, frasco ampola
-;;;;0;vazio;vacina adsorvida difteria, tétano e pertussis  (acelular) adulto, injetável, frasco ampola
-;;;;0;vazio;vacina adsorvida difteria, tétano e pertussis  (acelular) infantil, injetável, frasco ampola
-;;;;0;vazio;vacina adsorvida difteria, tétano, pertussis , hepatite B (recombinante) e Haemophilus Influenzae  B (conjugada), injetável, frasco ampola
-;;;;0;vazio;vacina adsorvida hepatite A (inativada) adulto, injetável, frasco ampola
-;;;;0;vazio;vacina adsorvida hepatite A (inativada) infantil, injetável, frasco ampola
-;;;;0;vazio;vacina BCG, injetável, frasco ampola
-;;;;0;vazio;vacina cólera (inativada), suspensão oral, frasco
-;;;;0;vazio;vacina febre amarela (atenuada), injetável, frasco ampola
-;;;;0;vazio;vacina febre tifóide (polissacarídica), injetável, ampola
-;;;;0;vazio;vacina Haemophilus Influenzae  B (conjugada), injetável, frasco ampola
-;;;;0;vazio;vacina hepatite B (recombinante), injetável, frasco ampola
-;;;;0;vazio;vacina influenza trivalente (fragmentada, inativada), injetável, frasco ampola
-;;;;0;vazio;vacina meningocócica ACWY (conjugada), injetável, frasco ampola
-;;;;0;vazio;vacina meningocócica C, injetável, frasco ampola
-;;;;0;vazio;vacina papilomavírus humano 6, 11, 16 e 18 (recombinante), injetável, frasco ampola
-;;;;0;vazio;vacina pneumocócica 10-valente (conjugada), injetável, frasco ampola
-;;;;0;vazio;vacina pneumocócica 13-valente (conjugada), injetável, frasco ampola
-;;;;0;vazio;vacina pneumocócica 23-valente (polissacarídica), injetável, ampola
-;;;;0;vazio;vacina poliomielite 1, 2 e 3 (inativada), injetável, ampola
-;;;;0;vazio;vacina poliomielite 1 e 3 (atenuada), suspensão oral, frasco
-;;;;0;vazio;vacina raiva (inativada), injetável, frasco ampola
-;;;;0;vazio;vacina rotavírus humano G1P [8] (atenuada), suspensão oral, frasco
-;;;;0;vazio;vacina sarampo, caxumba, rubéola, injetável, frasco ampola
-;;;;0;vazio;vacina sarampo, caxumba, rubéola e varicela (atenuada), injetável, frasco ampola
-;;;;0;vazio;vacina varicela (atenuada), injetável, frasco ampola
-;;;;0;vazio;valaciclovir, comprimido 500 mg
-;;;;0;vazio;varfarina sódica, comprimido 1 mg
-;;;;0;vazio;varfarina sódica, comprimido 5 mg
-;;;;0;vazio;vedolizumabe, injetável, 300mg frasco
-;;;;0;vazio;verapamil (cloridrato de verapamil), comprimido 80 mg
-;;;;0;vazio;verapamil (cloridrato de verapamil), comprimido 120 mg
-;;;;0;vazio;verapamil (cloridrato de verapamil), injetável, 2,5 mg/mL ampola
-;;;;0;vazio;vigabatrina, comprimido 500 mg
-;;;;0;vazio;voriconazol, injetável 200 mg, frasco- ampola
-;;;;0;vazio;zanamivir, pó  inalante oral 5 mg
-;;;;0;vazio;zidovudina, cápsula 100 mg injetável, 10 mg/mL frasco
-;;;;0;vazio;zidovudina, solução oral, 10 mg/mL frasco
-;;;;0;vazio;zidovudina +, comprimido 300 mg +
-;;;;0;vazio;lamivudina, 150 mg
-;;;;0;vazio;ziprasidona, cápsula 40 mg
-;;;;0;vazio;ziprasidona, cápsula 80 mg
+﻿objectId;createdAt;updateAt;ACL;nomeMedicamento
+;;;;abacavir, comprimido 300 mg
+;;;;abacavir, solução oral, 20 mg/mL frasco
+;;;;abatacepte, injetável, 125 mg seringa preenchida
+;;;;abatacepte, injetável, 250 mg frasco- ampola
+;;;;abciximabe, injetável, 2 mg/mL frasco ampola
+;;;;acetato de sódio, injetável, 2 mEq/mL ampola
+;;;;acetazolamida, comprimido 250mg
+;;;;aciclovir, comprimido 200 mg
+;;;;aciclovir, creme 50 mg/g (5%)
+;;;;aciclovir, injetável, 250 mg frasco- ampola
+;;;;ácido acetilsalicílico, comprimido 100 mg
+;;;;ácido acetilsalicílico, comprimido 500 mg
+;;;;ácido ascórbico, solução oral, 200 mg/mL frasco
+;;;;ácido fólico, comprimido 5 mg
+;;;;ácido fólico, solução oral 0,2 mg/mL frasco
+;;;;ácido folínico (folinato de cálcio), comprimido 15 mg
+;;;;ácido nicotínico, 500 mg
+;;;;ácido salicílico, pomada 50 mg/g (5%)
+;;;;ácido tranexâmico, comprimido 250 mg
+;;;;ácido tricloacético, solução tópica, frasco
+;;;;ácido ursodesoxicólico, comprimido 50 mg
+;;;;ácido ursodesoxicólico, comprimido 150 mg
+;;;;ácido ursodesoxicólico, comprimido 300 mg
+;;;;ácido valpróico, comprimido 250 mg
+;;;;ácido valpróico), comprimido 500 mg
+;;;;ácido valpróico 50 mg/mL frasco
+;;;;ácido zoledrônico, injetável, 5 mg/100mL frasco
+;;;;acitretina, cápsula 10 mg
+;;;;acitretina, cápsula 25 mg
+;;;;adalimumabe, injetável, 40 mg
+;;;;albendazol, comprimido mastigável 400 mg
+;;;;albendazol, suspensão oral, 40 mg/mL frasco
+;;;;albumina humana, injetável, 0,2 g/mL
+;;;;alcachofra, cápsula, comprimido
+;;;;alcatrão mineral, pomada 10 mg/g (1%)
+;;;;alendronato de sódio, comprimido 10 mg
+;;;;alendronato de sódio, comprimido 70 mg
+;;;;alfa-alglicosidase, injetável
+;;;;alfacalcidol, cápsula 0,25 mcg
+;;;;alfacalcidol, cápsula 1,0 mcg
+;;;;alfaporactanto 80 mg/mL frasco ampola
+;;;;alfavelaglicerase, injetável, 400 UI frasco ampola
+;;;;alopurinol, comprimido 100 mg
+;;;;alopurinol, comprimido 300 mg
+;;;;alteplase, injetável, 10 mg frasco ampola
+;;;;alteplase, injetável, 20 mg frasco ampola
+;;;;alteplase, injetável, 50 mg frasco ampola
+;;;;amantadina, comprimido 100 mg
+;;;;ambrisentana, comprimido 5 mg
+;;;;ambrisentana, comprimido 10mg
+;;;;amicacina, injetável, 250 mg/ml ampola
+;;;;amiodarona, comprimido 200 mg
+;;;;amiodarona, injetável, 50 mg/mL ampola
+;;;;amitriptilina, comprimido 25 mg
+;;;;amitriptilina, comprimido 75 mg
+;;;;amoxicilina, cápsula 500 mg
+;;;;amoxicilina, suspensão oral, 50 mg/mL frasco
+;;;;amoxicilina, comprimido 500 mg
+;;;;amoxicilina, 50 mg + 12,5 mg)/mL frasco
+;;;;anfotericina B50 mg frasco ampola
+;;;;anlodipino, comprimido 5 mg
+;;;;anlodipino, comprimido 10 mg
+;;;;antimoniato de meglumina, 300 mg/mL ampola
+;;;;artemeter+ lumefantrina, comprimido 20 mg 
+;;;;artesunato, injetável, 60 mg/mL frasco-ampola
+;;;;artesunato + cloridrato mefloquina, (25 + 55)mg
+;;;;artesunato + cloridrato mefloquina, (100 + 220)mg
+;;;;atazanavir (sulfato de atazanavir), cápsula  300 mg
+;;;;atenolol, comprimido 50 mg
+;;;;atenolol, comprimido 100 mg
+;;;;atorvastatina, comprimido 10mg
+;;;;atorvastatina, comprimido 20mg
+;;;;atorvastatina, comprimido 40 mg
+;;;;atorvastatina, comprimido 80 mg
+;;;;atropina (sulfato de atropina), 0,25 mg/mL ampola
+;;;;azatioprina, comprimido 50 mg
+;;;;azitromicina, comprimido 250 mg
+;;;;azitromicina, comprimido 500 mg
+;;;;azitromicina, suspensão oral, 40 mg/mL frasco
+;;;;aztreonam lysine, solução inalatória, 75 mg
+;;;;baricitinibe, comprimido 2 mg
+;;;;baricitinibe, comprimido 4 mg
+;;;;basiliximabe, injetável, 20 mg frasco ampola
+;;;;beclometasona oral 50 mcg/dose
+;;;;beclometasona nasal 50 mcg/dose
+;;;;beclometasona, pó para inalação oral 200 mcg/dose
+;;;;beclometasona, cápsula inalante 200 mcg/dose
+;;;;beclometasona, oral 250 mcg/dose
+;;;;beclometasona, pó para inalação oral 400 mcg/dose
+;;;;beclometasona, cápsula inalante 400mcg/dose
+;;;;bedaquilina, comprimido 100mg
+;;;;benzilpenicilina, 600.000 UI frasco-ampola
+;;;;benzilpenicilina, 1.200.000 UI frasco-ampola
+;;;;benzilpenicilina, 5.000.000 UI frasco-ampola
+;;;;benzilpenicilina, (300.000 + 100.000)UI ampola
+;;;;benznidazol, comprimido 12,5 mg
+;;;;benznidazol, comprimido 100 mg
+;;;;beractanto 25 mg/mL frasco ampola
+;;;;betainterferona 1a, injetável
+;;;;betainterferona (300mcg) frasco ampola
+;;;;betametasona, injetável, (3 mg + 3 mg)/mL ampola
+;;;;bezafibrato, comprimido 200 mg
+;;;;bezafibrato, comprimido 400 mg
+;;;;bicarbonato de sódio, 1 mEq/mL (8,4%) ampola
+;;;;biotina, cápsula 2,5mg
+;;;;bimatoprosta, 0,3mg/mL (0,03%) frasco 3mL
+;;;;biperideno, comprimido 2 mg
+;;;;biperideno, comprimido 4 mg
+;;;;biperideno injetável, 5 mg/mL ampola
+;;;;bosentana, comprimido revestido 62,5 mg
+;;;;bosentana, comprimido revestido 125mg
+;;;;brimonidina, 2 mg/mL frasco com 5mL
+;;;;brinzolamida, 10 mg/ml (0,01%) frasco com 5 mL
+;;;;bromocriptina, comprimido  2,5 mg
+;;;;budesonida, capsula 200 mcg
+;;;;budesonida, cápsula inalante 400 mcg
+;;;;budesonida, supensão para inalação nasal 32 mcg
+;;;;budesonida, supensão para inalação nasal 50 mcg
+;;;;budesonida, supensão para inalação nasal 64 mcg
+;;;;bupivacaína, injetável, 2,5 mg/mL (0,25%) ampola
+;;;;bupivacaína, injetável, 5 mg/mL (0,50%) ampola
+;;;;bupropiona 150 mg
+;;;;cabergolina, comprimido 0,5 mg
+;;;;calcipotriol, pomada, 50 mcg/g (0,005%) bisnaga 30g
+;;;;calcitonina, spray nasal, 200 UI/dose frasco
+;;;;calcitriol, cápsula 0,25 mcg
+;;;;caneta para aplicação de insulina, unidade
+;;;;capreomicina, injetável, 1 g frasco- ampola
+;;;;captopril, comprimido 25 mg
+;;;;carbamazepina, comprimido 200 mg
+;;;;carbamazepina, comprimido 400 mg
+;;;;carbamazepina, suspensão oral, 20 mg/mL frasco
+;;;;carbonato de lítio, comprimido 300 mg
+;;;;cefalexina, cápsula ou comprimido 500 mg
+;;;;cefalexina, comprimido 500 mg
+;;;;cefalexina, suspensão oral, 50 mg/mL frasco
+;;;;cefotaxima sódica, injetável, 500 mg frasco- ampola
+;;;;ceftriaxona, injetável, 500 mg frasco ampola
+;;;;ceftriaxona, injetável, 1 g frasco- ampola
+;;;;certolizumabe pegol, injetável, 200 mg/mL
+;;;;cetoconazol, comprimido 200mg
+;;;;cetoconazol, xampu, 20 mg/g (2%) frasco
+;;;;cianocobalamina, injetável, 1000 mcg/mL ampola
+;;;;ciclofosfamida, Comprimido 50 mg
+;;;;ciclosporina, cápsula 10 mg
+;;;;ciclosporina, cápsula 25 mg
+;;;;ciclosporina, cápsula 50 mg
+;;;;ciclosporina, cápsula 100 mg
+;;;;ciclosporina, oral, 100 mg/ml frasco de 50 mL
+;;;;ciclosporina, injetável, 50 mg frasco- ampola
+;;;;ciclosporina, injetável, 250 mg frasco- ampola
+;;;;cinacalcete, comprimidos 30 mg
+;;;;cinacalcete, comprimidos 60 mg
+;;;;ciprofibrato, comprimido 100 mg
+;;;;ciprofloxacino, comprimido 250 mg
+;;;;ciprofloxacino, comprimido 500 mg
+;;;;ciproterona, comprimido 50 mg
+;;;;claritromicina, comprimido 250 mg
+;;;;claritromicina, comprimido 500 mg
+;;;;claritromicina, suspensão oral, 50 mg/mL frasco
+;;;;clindamicina, cápsula 150 mg
+;;;;clindamicina , cápsula 300 mg
+;;;;clindamicina (fosfato de clindamicina), gel, 10mg/g
+;;;;clobazam, comprimido 10 mg
+;;;;clobazam, comprimido 20 mg
+;;;;clobetasol, creme 0,5mg/g, bisnaga 30 g
+;;;;clobetasol, solução capilar, 0,5 mg/g frasco 50g
+;;;;clofazimina, cápsula 50 mg
+;;;;clofazimina, cápsula 100 mg
+;;;;clomifeno (citrato de clomifeno), comprimido 50 mg
+;;;;clomipramina (cloridrato de, comprimido 10 mg
+;;;;clomipramina), comprimido 25 mg
+;;;;clonazepam, comprimido 0,5mg
+;;;;clonazepam, comprimido 2mg
+;;;;clonazepam, solução oral, 2,5 mg/mL frasco
+;;;;clopidogrel, comprimido 75 mg
+;;;;cloranfenicol, cápsula ou comprimido 250 mg
+;;;;cloranfenicol, suspensão oral, 25 mg/mL frasco
+;;;;cloreto de potássio, 2,56 mEq/mL (19,1%) ampola
+;;;;cloreto de sódio,  0,154 mEq/mL (0,9%) ampola
+;;;;cloreto de sódio nasal,  0,154 mEq/mL (0,9%) ampola
+;;;;cloreto de sódio, 3,4 mEq/mL (20%) ampola
+;;;;cloreto de sódio nasal, 9 mg/mL (0,9%) frasco
+;;;;clorexidina
+;;;;cloroquina, comprimido 150mg
+;;;;clorpromazina, comprimido 25 mg
+;;;;clorpromazina, comprimido 100 mg
+;;;;clorpromazina, injetável, 5 mg/mL ampola
+;;;;clorpromazina, solução oral, 40 mg/mL frasco
+;;;;clozapina, comprimido 25 mg
+;;;;clozapina, comprimido 100 mg
+;;;;codeína, comprimido 30 mg
+;;;;codeína, comprimido 60 mg
+;;;;codeína, solução oral, 3 mg/mL frasco de 120 mL
+;;;;codeína, injetável, 30 mg/mL ampola de 2 mL
+;;;;colecalciferol (vitamina D), comprimido 7.000 UI
+;;;;colimicina, pó para injeção 1.000.000 UI
+;;;;dabigatrana, cápsula 110 mg
+;;;;dabigatrana, cápsula 150 mg
+;;;;daclatasvir, comprimido 30mg
+;;;;daclatasvir, comprimido 60mg
+;;;;daclizumabe, injetável, 5 mg/mL frasco
+;;;;dactinomicina, injetável, 500 mcg/ml frascoampola
+;;;;danazol, cápsula 100 mg
+;;;;danazol, cápsula 200 mg
+;;;;dapagliflozina, comprimido 10 mg
+;;;;dapsona, comprimido 50mg
+;;;;dapsona, comprimido 100mg
+;;;;dapsona, comprimido 100 mg
+;;;;darunavir, comprimido 75 mg
+;;;;darunavir, comprimido 600 mg
+;;;;dasatinibe, comprimido 20 mg
+;;;;dasatinibe, comprimido 100 mg
+;;;;deferasirox, comprimido 125 mg
+;;;;deferasirox, comprimido 250 mg
+;;;;deferasirox, comprimido 500 mg
+;;;;deferiprona, comprimido 500 mg
+;;;;delamanida, comprimido 500 mg
+;;;;desferroxamina, injetável, 500 mg frasco ampola
+;;;;desmopressina, injetável, 4 mcg/mL
+;;;;desmopressina, injetável, 15 mcg/mL
+;;;;desmopressina, comprimido 0,1
+;;;;desmopressina, comprimido 0,2
+;;;;desmopressina, 0,1 mg/mL 
+;;;;dexametasona, comprimido 4 mg
+;;;;dexametasona, creme 1 mg/g (0,1%)
+;;;;dexametasona, elixir, 0,1 mg/mL frasco
+;;;;dexametasona, pomada oftálmica, 1 mg/mL (0,1%)
+;;;;dexametasona, injetável, 4 mg/mL ampola
+;;;;dexclorfeniramina, comprimido 2 mg
+;;;;dexclorfeniramina, xarope, 0,4 mg/mL frasco
+;;;;diafragma, 60 mm de diâmetro
+;;;;diafragma, 65 mm de diâmetro
+;;;;diafragma, 70 mm de diâmetro
+;;;;diafragma, 75 mm de diâmetro
+;;;;diafragma, 80 mm de diâmetro
+;;;;diafragma, 85 mm de diâmetro
+;;;;diazepam, comprimido 5 mg
+;;;;diazepam, comprimido 10 mg
+;;;;diazepam, injetável, 5 mg/mL ampola
+;;;;dietilcarbamazepina, comprimido 50mg
+;;;;digoxina, comprimido 0,25 mg
+;;;;digoxina, elixir, 0,05 mg/mL frasco
+;;;;dipirona, comprimido 500 mg
+;;;;dipirona, injetável, 500mg/mL frasco
+;;;;dipirona, solução oral, 500 mg/mL frasco
+;;;;dispositivo, modelo T 380 mm2
+;;;;dobutamina, injetável, 12,5 mg/mL ampola
+;;;;dolutegravir sódio, comprimido 50 mg
+;;;;domperidona, suspensão oral, 1mg/mL frasco
+;;;;donepezila, comprimido 5 mg
+;;;;donepezila, comprimido 10 mg
+;;;;dopamina, injetável, 5 mg/mL ampola
+;;;;dorzolamida, 20 mg/mL frasco com 5mL
+;;;;doxazosina, comprimido 2 mg
+;;;;doxazosina, comprimido 4 mg
+;;;;doxiciclina, comprimido 100 mg
+;;;;doxiciclina, injetável, 100 mg frasco- ampola
+;;;;efavirenz, cápsula 200 mg
+;;;;efavirenz, comprimido 600 mg
+;;;;efavirenz, solução oral, 30 mg/mL frasco
+;;;;elbasvir, comprimido, 50mg + 100mg
+;;;;eltrombopague olamina, comprimido 25 mg
+;;;;eltrombopague olamina, comprimido 50 mg
+;;;;enalapril, comprimido 5 mg
+;;;;enalapril, comprimido 10 mg
+;;;;enalapril, comprimido 20 mg
+;;;;enfuvirtida, 108 mg
+;;;;enoxaparina 20 mg/0,2mL
+;;;;enoxaparina 40 mg/0,4mL
+;;;;enoxaparina 60 mg/0,6mL
+;;;;enoxaparina 80 mg/0,8mL
+;;;;enoxaparina 100 mg/1,0mL
+;;;;entacapona, comprimido 200 mg
+;;;;entecavir, comprimido 0,5 mg
+;;;;entecavir, comprimido 1 mg
+;;;;epinefrina, injetável, 1 mg/mL ampola
+;;;;eritromicina, comprimido 500 mg
+;;;;eritromicina 25 mg/mL frasco
+;;;;eritromicina 50 mg/mL frasco
+;;;;espinheira-santa cápsula(60 a 90mg )
+;;;;espiramicina, comprimido 1,5 MUI
+;;;;espironolactona, comprimido 25 mg
+;;;;espironolactona, comprimido 100 mg
+;;;;estreptomicina, injetável
+;;;;estreptoquinase,  250.000 UI frasco ampola
+;;;;estriol, creme vaginal 1 mg/g
+;;;;estrogênios conjugados, comprimido 0,3 mg
+;;;;estrogênios conjugados, creme vaginal 0,625 mg/g
+;;;;etambutol, comprimido 400 mg
+;;;;etanercepte, injetável, 25 mg frasco ampola
+;;;;etanercepte, injetável, 50 mg frasco
+;;;;etinilestradiol, comprimido 0,03 + 0,15mg
+;;;;etionamida, comprimido 250 mg
+;;;;etofibrato, cápsula 500 mg
+;;;;etossuximida, Solução oral, 50 mg/mL
+;;;;etravirina, comprimido 100 mg
+;;;;etravirina, comprimido 200 mg
+;;;;everolimo, comprimido 0,5 mg
+;;;;everolimo, comprimido 0,75 mg
+;;;;everolimo, comprimido 1 mg
+;;;;fenitoína sódica, comprimido 100 mg
+;;;;fenitoína sódica, injetável, 50 mg/mL ampola
+;;;;fenitoína sódica, suspensão oral, 20 mg/mL frasco
+;;;;fenobarbital, comprimido 100 mg
+;;;;fenobarbital, injetável, 100 mg/mL ampola
+;;;;fenobarbital, solução oral, 40 mg/mL frasco
+;;;;fenofibrato, cápsula 200 mg
+;;;;fenofibrato, cápsula de liberação retardada 250 mg
+;;;;fenoterol, 100 mcg/dose - frasco com 200 doses
+;;;;fenoximetilpenicilina potássica
+;;;;fibrinogênio, injetável, 1 g frasco- ampola
+;;;;filgrastim, injetável, 300 mcg frasco
+;;;;finasterida, comprimido 5 mg
+;;;;fingolimode, cápsula 0,5 mg
+;;;;flucitosina, cápsula 250 mg
+;;;;flucitosina, cápsula 500mg
+;;;;fluconazol, cápsula 100 mg
+;;;;fluconazol, cápsula 150 mg
+;;;;fluconazol, injetável, 2 mg/mL ampola
+;;;;fluconazol, suspensão oral, 10 mg/mL frasco
+;;;;fludrocortisona, comprimido 0,1 mg
+;;;;flumazenil, injetável, 0,1 mg/mL ampola
+;;;;fluoxetina, cápsula ou comprimido 20 mg
+;;;;formoterol, cápsula inalante ou pó inalante 12 mcg
+;;;;formoterol, 6 + 200 mcg
+;;;;formoterol , 12 + 400 mcg
+;;;;fosamprenavir, suspensão oral 50 mg/mL
+;;;;fosfato de cálcio tribásico, comprimido 1661,616mg
+;;;;fosfato de potássio, 0,03 + 0,1567 g/mL ampola
+;;;;Denominação genérica
+;;;;Fósforo Elementar, comprimido, 250 mg 
+;;;;Fósforo Elementar, 15mg de fósforo elementar/mL
+;;;;fumarato de Dimetila, cápsula 120 mg
+;;;;fumarato de Dimetila, cápsula 240 mg
+;;;;furosemida, comprimido 40 mg
+;;;;furosemida, injetável, 10 mg/mL ampola
+;;;;gabapentina, cápsula 300 mg
+;;;;gabapentina, cápsula 400 mg
+;;;;ganciclovir sódico, injetável, 1 mg/mL bolsa 250mL
+;;;;galantamina, cápsula de liberação prolongada 8 mg
+;;;;galantamina, cápsula de liberação prolongada 16 mg
+;;;;galantamina, cápsula de liberação prolongada 24 mg
+;;;;galsulfase, injetável, 5 mg Frasco
+;;;;genfibrozila, comprimido 600 mg
+;;;;genfibrozila, comprimido 900 mg
+;;;;gentamicina, pomada oftálmica 5 mg/g
+;;;;gentamicina, solução oftálmica, 5 mg/mL frasco
+;;;;glatirâmer, injetável, 20 mg  seringa preenchida
+;;;;glatirâmer, injetável, 40 mg seringa preenchida
+;;;;glecaprevir, comprimido, 100mg + 40mg
+;;;;glibenclamida, comprimido 5 mg
+;;;;glicerol, solução retal, 120 mg/mL frasco
+;;;;glicerol, supositório retal 72 mg
+;;;;gliclazida, comprimido prolongada30 mg
+;;;;gliclazida, comprimido prolongada  60 mg
+;;;;gliclazida, comprimido 80 mg
+;;;;glicose, injetável, 50 mg/mL (5%) ampola
+;;;;glicose, injetável, 100 mg/mL(10%) ampola
+;;;;glicose, injetável, 500 mg/mL (50%) ampola
+;;;;glutaral, solução 2%
+;;;;golimumabe, injetável, 50 mg seringa preenchida
+;;;;gosserrelina, injetável, 3,60 mg seringa preenchida
+;;;;gosserrelina, injetável, 10,80 mg seringa preenchida
+;;;;guaco, solução oral, tintura e xarope (0,5 a 5mg)
+;;;;haloperidol, comprimido 1 mg
+;;;;haloperidol, comprimido 5 mg
+;;;;haloperidol, injetável, 5 mg/mL ampola
+;;;;haloperidol, solução oral, 2 mg/mL frasco
+;;;;haloperidol, injetável, 50 mg/mL ampola
+;;;;hemitartarato de norepinefrina, 2 mg/mL ampola
+;;;;heparina sódica, injetável, 5.000 UI/0,25 mL ampola
+;;;;hidralazina, comprimido 25 mg
+;;;;hidralazina, comprimido 50 mg
+;;;;hidroclorotiazida, comprimido 12,5 mg
+;;;;hidroclorotiazida, comprimido 25 mg
+;;;;hidrocortisona, creme 10 mg/g (1%)
+;;;;hidrocortisona, injetável, 100 mg frasco- ampola
+;;;;hidrocortisona, injetável, 500 mg frasco- ampola
+;;;;hidroxicloroquina, comprimido 400 mg
+;;;;hidroxiureia, cápsula 500 mg
+;;;;hidroxocobalamina, injetável, 5 g frasco- ampola
+;;;;hipoclorito de sódio, 10 mg/mL (1%) frasco
+;;;;hipoclorito de sódio, 25 mg/mL (2,5%) frasco
+;;;;hipromelose, oftálmica, 3 mg/mL (0,3%) frasco
+;;;;hipromelose, oftálmica, 5 mg/mL (0,5%) frasco
+;;;;ibuprofeno, comprimido 200 mg
+;;;;ibuprofeno, comprimido 300 mg
+;;;;ibuprofeno, comprimido 600 mg
+;;;;ibuprofeno, suspensão oral, 50 mg/mL frasco
+;;;;icatibanto, injetável, 10 mg/mL
+;;;;idursulfase, injetável, 2 mg/ml frasco ampola 3mL
+;;;;iloprosta, solução para nebulização, 10 mcg/mL
+;;;;imatinibe, comprimido 100 mg
+;;;;imatinibe, comprimido 400 mg
+;;;;imiglucerase, injetável, 400 UI frasco ampola
+;;;;imiquimode, creme, 50mg/g
+;;;;imunoglobulina anti RH (D), injetável
+;;;;imunoglobulina, injetável, 150 UI/mL ampola
+;;;;imunoglobulina antitetânica, 250 UI/mL ampola
+;;;;imunoglobulina, 125 UI/2,5 ml ampola
+;;;;infliximabe, injetável, 100mg  ampola
+;;;;iodo + iodeto de potássio, (20 + 40) mg/mL frasco
+;;;;ipratrópio, solução para inalação oral 20 mcg/dose
+;;;;ipratrópio, solução para inalação 0,25 mg/mL
+;;;;isoflavona-de-soja comprimido 50 a 120 mg
+;;;;isoniazida, comprimido 100 mg
+;;;;isoniazida, comprimido 300 mg
+;;;;isossorbida, comprimido sublingual 5mg
+;;;;isossorbida, comprimido 20 mg
+;;;;isossorbida, comprimido 40 mg
+;;;;isotretinoína, cápsula 10 mg
+;;;;isotretinoína, cápsula 20 mg
+;;;;itraconazol, cápsula 100 mg
+;;;;itraconazol, solução oral, 10 mg/mL frasco
+;;;;Ivacaftor, comprimido 150mg
+;;;;ivermectina, comprimido 6 mg
+;;;;lactulose, xarope, 667 mg/ mL frasco
+;;;;lamivudina, comprimido 150 mg
+;;;;lamivudina, solução oral, 10 mg/mL frasco
+;;;;lamotrigina, comprimido 25 mg
+;;;;lamotrigina, comprimido 50 mg
+;;;;lamotrigina, comprimido 100 mg
+;;;;lancetas para punção digital, unidade
+;;;;lanreotida, injetável, 60 mg seringa preenchida
+;;;;lanreotida, injetável, 90 mg seringa preenchida
+;;;;lanreotida, injetável, 120 mg seringa preenchida
+;;;;l-asparaginase, injetável, 10.000 UI frasco ampola
+;;;;laronidase, injetável, 0,58 mg/mL frasco com 5 mL
+;;;;latanoprosta, 0,05mg/mL frasco 2,5mL
+;;;;ledipasvir + sofosbuvir, comprimido (90 + 400)mg
+;;;;leflunomida, comprimido 20 mg
+;;;;leuprorrelina, injetável, 3,75 mg frasco ampola
+;;;;leuprorrelina, injetável, 11,25 mg frasco ampola
+;;;;leuprorrelina, injetável,  45 mg frasco ampola
+;;;;levetiracetam, 100mg/mL frasco 100 ou 150mL
+;;;;levetiracetam, comprimido 250mg
+;;;;levetiracetam, comprimido 750mg
+;;;;levodopa + benserazida, comprimido 100 mg + 25 mg
+;;;;levodopa + benserazida, comprimido 200 mg + 50 mg
+;;;;levodopa + carbidopa, comprimido 200 mg + 50 mg
+;;;;levodopa + carbidopa, comprimido 250 mg + 25 mg
+;;;;levofloxacino, comprimido 250 mg
+;;;;levofloxacino, comprimido 500 mg
+;;;;levonorgestrel, comprimido 1,5 mg
+;;;;levonorgestrel, comprimido 0,75 mg
+;;;;levotiroxina sódica, comprimido 12,5 mcg
+;;;;levotiroxina sódica, comprimido 25 mcg
+;;;;levotiroxina sódica, comprimido 37,5 mcg
+;;;;levotiroxina sódica, comprimido 50 mcg
+;;;;levotiroxina sódica, comprimido 100 mcg
+;;;;linezolida, comprimido 600 mg
+;;;;linezolida, solução para infusão, 2 mg/mL frasco
+;;;;lopinavir + ritonavir, comprimido 100 mg + 25mg
+;;;;lopinavir + ritonavir, comprimido 200 mg + 50mg
+;;;;lopinavir + ritonavir, 80 mg/mL + 20 mg/mL frasco
+;;;;loratadina, comprimido 10 mg
+;;;;loratadina, xarope, 1 mg/mL frasco
+;;;;losartana potássica, comprimido 50 mg
+;;;;maraviroque, comprimido 150 mg
+;;;;medicamento homeopáticos
+;;;;medroxiprogesterona, comprimido 10 mg
+;;;;medroxiprogesterona, injetável, 50 mg/mL ampola
+;;;;medroxiprogesterona, injetável, 150 mg/mL ampola
+;;;;memantina, comprimido 10 mg
+;;;;mepolizumabe, 100mg frasco ampola
+;;;;mesalazina, comprimido 400 mg
+;;;;mesalazina, comprimido prolongada 500 mg
+;;;;mesalazina, comprimido 800 mg
+;;;;mesalazina, 10 mg/mL frasco com 100 mL
+;;;;mesalazina, supositório 250 mg
+;;;;mesalazina, supositório 500 mg
+;;;;mesalazina, supositório 1000 mg
+;;;;metadona, comprimido 5 mg
+;;;;metadona, comprimido 10 mg
+;;;;metadona, injetável, 10 mg/mL ampola 1 mL
+;;;;metformina, comprimido 500 mg
+;;;;metformina, comprimido 850 mg
+;;;;metildopa, comprimido 250 mg
+;;;;metilfenidato, comprimido imediata 10 mg
+;;;;metilfenidato, comprimido prolongada 20 mg
+;;;;metilfenidato, comprimido prolongada 30 mg
+;;;;metilfenidato, comprimido prolongada 40 mg
+;;;;metilprednisolona, injetável, 500 mg frasco ampola
+;;;;metoclopramida, comprimido 10 mg
+;;;;metoclopramida, injetável, 5 mg/mL ampola
+;;;;metoclopramida, solução oral, 4 mg/mL frasco
+;;;;metoprolol, comprimido prolongada 25 mg
+;;;;metoprolol, comprimido prolongada 50 mg
+;;;;metoprolol, comprimido prolongada 100 mg
+;;;;metoprolo, comprimido 100 mg
+;;;;metotrexato, comprimido 2,5 mg
+;;;;metotrexato, injetável, 25 mg/mL ampola de 2 mL
+;;;;metronidazol, comprimido 250 mg
+;;;;metronidazol, comprimido 400 mg
+;;;;metronidazol, gel vaginal 100 mg/g (10%)
+;;;;metronidazol suspensão oral 40 mg/mL
+;;;;micofenolato de mofetila, comprimido 500 mg
+;;;;micofenolato de sodio, comprimido 180 mg
+;;;;micofenolato de sodio, comprimido 360 mg
+;;;;miconazol, creme 20 mg/g (2%)
+;;;;midazolam, comprimido 15 mg
+;;;;midazolam, solução oral, 2 mg/mL frasco
+;;;;miglustate, cápsula 100 mg
+;;;;miltefosina, cápsula 10 mg
+;;;;miltefosina, cápsula 50 mg
+;;;;minociclina, comprimido 100 mg
+;;;;misoprostol, comprimido vaginal 25mcg
+;;;;misoprostol, comprimido vaginal 200mcg
+;;;;mometasona, suspensão nasal, spray 50 mcg
+;;;;montelucaste de sódio, grânulos orais 4 mg
+;;;;montelucaste de sódio, comprimido mastigável 4mg
+;;;;montelucaste de sódio, comprimido mastigável 5mg
+;;;;montelucaste de sódio, comprimido revestido 10mg
+;;;;morfina, cápsula de liberação controlada 30 mg
+;;;;morfina, cápsula de liberação controlada 60 mg
+;;;;morfina, cápsula de liberação controlada 100 mg 
+;;;;morfina, comprimido 10 mg
+;;;;morfina, comprimido 30 mg
+;;;;morfina, injetável, 10 mg/mL ampola de 1 mL
+;;;;morfina, solução oral, 10 mg/mL frasco de 60 mL
+;;;;moxifloxacino, comprimido 400 mg
+;;;;multivitaminas, solução oral, frasco
+;;;;multivitaminas, comprimido mastigáveis
+;;;;multivitaminas, cápsulas gelatinosas
+;;;;mupirocina, pomada, 2% tubo com 15g
+;;;;naloxona, injetável, 0,4 mg/mL ampola
+;;;;naproxeno, Comprimido 250mg
+;;;;naproxeno, Comprimido 500mg
+;;;;natalizumabe, injetável, 20 mg/mL frasco
+;;;;nevirapina, comprimido 200 mg
+;;;;nevirapina, suspensão oral 10 mg/ mL
+;;;;nicotina, adesivo transdérmico 7 mg
+;;;;nicotina, adesivo transdérmico 14 mg
+;;;;nicotina, adesivo transdérmico 21 mg
+;;;;nicotina, goma de mascar 2 mg
+;;;;nicotina, pastilha 2 mg
+;;;;nifedipino, cápsula ou comprimido 10 mg
+;;;;nilotinibe, comprimido 200 mg
+;;;;nistatina, suspensão oral, 100.000 UI/mL frasco
+;;;;suspensão oral, 100.000 UI/mL frasco
+;;;;nitrofurantoína, cápsula 100 mg
+;;;;suspensão oral, 5 mg/mL frasco
+;;;;noretisterona, comprimido 0,35 mg
+;;;;noretisterona + estradiol, 50 + 5 mg/mL ampola
+;;;;nortriptilina, cápsula 10 mg
+;;;;nortriptilina, cápsula 25 mg
+;;;;nortriptilina, cápsula 50 mg
+;;;;nortriptilina, cápsula 75 mg
+;;;;nusinersena, 2,4 mg/mL frasco-ampola com 5 mL
+;;;;Octreotida, injetável, 0,1 mg/mL ampola com 1 mL
+;;;;Octreotida, injetável, 10 mg frasco-ampola
+;;;;Octreotida, injetável, 20 mg frasco- ampola
+;;;;Octreotida, injetável, 30 mg frasco- ampola
+;;;;ofloxacino, comprimido 400 mg
+;;;;olanzapina, comprimido 5 mg
+;;;;olanzapina, comprimido 10 mg
+;;;;óleo mineral, óleo para uso oral
+;;;;omalizumabe, injetável, 150 mg frasco ampola
+;;;;omeprazol, cápsula 10 mg
+;;;;omeprazol, cápsula 20 mg
+;;;;omeprazol, comprimido 20 mg
+;;;;omeprazol magnésico, comprimido dispersível 10 mg
+;;;;ondansetrona, comprimido 4 mg
+;;;;ondansetrona, comprimido orodispersível 8 mg
+;;;;oseltamivir (fosfato de oseltamivir), cápsula 45 mg
+;;;;oseltamivir (fosfato de oseltamivir), cápsula 75 mg
+;;;;oxamniquina, suspensão oral, 50 mg/mL frasco
+;;;;oxibutinina, comprimido 5 mg
+;;;;oxibutinina, comprimido 10mg liberação prolongada
+;;;;palivizumabe, injetável, 50mg frasco ampola
+;;;;palivizumabe, injetável, 100mg frasco ampola
+;;;;pamidronato, injetável, 60 mg frasco ampola
+;;;;pancreatina, cápsula 10.000UI
+;;;;pancreatina, cápsula 25.000UI
+;;;;paracetamol, comprimido 500 mg
+;;;;paracetamol, solução oral, 200 mg/mL frasco
+;;;;paricalcitol, injetável, 5 mcg/mL ampola com 1 mL
+;;;;pasta d'água, pasta
+;;;;penicilamina, cápsula 250 mg
+;;;;pentamidina, injetável, 300 mg frasco- ampola
+;;;;pentoxifilina, comprimido 400 mg
+;;;;permanganato de potássio, comprimido 100 mg
+;;;;permanganato de potássio, pó, 100 mg frasco
+;;;;permetrina, loção 10 mg/g (1%)
+;;;;permetrina, loção 50 mg/g (5%)
+;;;;peróxido de benzoíla, gel 25 mg/g (2,5%)
+;;;;peróxido de benzoíla, gel 50 mg/g (5%)
+;;;;pertuzumabe, injetável, 420 mg Frasco
+;;;;pilocarpina, oftálmica, 20 mg/mL (2%)  frasco
+;;;;pirazinamida, comprimido dispersível 150 mg
+;;;;pirazinamida, comprimido 500 mg
+;;;;pirazinamida, solução oral, 30 mg/mL (3%) frasco
+;;;;piridostigmina, comprimido 60 mg
+;;;;piridoxina, comprimido 40 mg
+;;;;piridoxina, comprimido 100 mg
+;;;;pirimetamina, comprimido 25 mg
+;;;;plantago, pó (3 a 30 g - dose diária)
+;;;;podofilina, solução para uso tópico 100 mg/mL
+;;;;podofilotoxina, creme, 1,5 mg/g
+;;;;polivitamínico, comprimidos
+;;;;polivitamínico, solução oral (gotas)
+;;;;pralidoxima, injetável, 200 mg frasco- ampola
+;;;;pramipexol, comprimido 0,125 mg
+;;;;pramipexol, comprimido 0,25 mg
+;;;;pramipexol, comprimido 1 mg
+;;;;pravastatina, comprimido 10mg
+;;;;pravastatina, comprimido 20mg
+;;;;pravastatina, comprimido 40 mg
+;;;;praziquantel, comprimido 600 mg
+;;;;prednisolona, solução oral, 1 mg/mL frasco
+;;;;prednisolona, solução oral, 3 mg/mL frasco
+;;;;prednisona, comprimido 5 mg
+;;;;prednisona, comprimido 20 mg
+;;;;preservativo feminino, até 20 cm
+;;;;preservativo masculino, 160 mm x 49 mm
+;;;;preservativo masculino, 160 mm x 52 mm
+;;;;prilocaína + felipressina, injetável, 30 mg/mL
+;;;;primaquina, comprimido 5 mg
+;;;;primaquina, comprimido 15 mg
+;;;;primidona, comprimido 100 mg
+;;;;primidona, comprimido 250 mg 
+;;;;prometazina, comprimido 25 mg
+;;;;prometazina, injetável, 25 mg/mL ampola
+;;;;propafenona (cloridrato de, comprimido 150 mg
+;;;;propafenona), comprimido 300 mg
+;;;;propiltiouracila, comprimido 100 mg
+;;;;propranolol, comprimido 10 mg
+;;;;propranolol, comprimido 40 mg
+;;;;quetiapina, comprimido 25 mg
+;;;;quetiapina, comprimido 100 mg
+;;;;quetiapina, comprimido 200 mg
+;;;;quetiapina, comprimido 300 mg
+;;;;raloxifeno, comprimido 60 mg
+;;;;raltegravir potássico, comprimido 100 mg
+;;;;raltegravir potássico, comprimido 400 mg
+;;;;ranitidina, xarope, 15 mg/mL frasco
+;;;;rasagilina, comprimido 1 mg
+;;;;retinol, cápsula mole 100.000 UI
+;;;;retinol, cápsula mole 200.000 UI
+;;;;retinol, solução oral, 150.000 UI/mL frasco
+;;;;ribavirina, cápsula 250 mg
+;;;;rifabutina, cápsula 150 mg
+;;;;rifampicina, cápsula 300 mg
+;;;;rifampicina, suspensão oral 20mg/mL(2%), frasco
+;;;;rifampicina, comprimido 150 mg + 75mg
+;;;;rifampicina + isoniazida, comprimido 300 mg
+;;;;rifampicina + isoniazida, comprimido, 75 mg
+;;;;rifampicina, comprimido (75 + 50 + 150)mg
+;;;;rifampicina, comprimido (150 + 75 + 400 + 275)mg
+;;;;rifapentina, comprimido, 150mg
+;;;;riluzol, comprimido 50 mg
+;;;;risanquinumabe, 75mg/0,83mL frasco ampola
+;;;;risedronato, comprimido 35 mg
+;;;;risperidona, comprimido 1 mg
+;;;;risperidona, comprimido 2 mg
+;;;;ritonavir, comprimido 100 mg
+;;;;rituximabe, injetável, 100 mg frasco ampola
+;;;;rituximabe, injetável, 500 mg frasco ampola
+;;;;rivaroxabana, comprimido 15 mg
+;;;;rivastigmina, cápsula 1,5 mg
+;;;;rivastigmina, cápsula 3 mg
+;;;;rivastigmina, cápsula 4,5 mg
+;;;;rivastigmina, cápsula 6 mg
+;;;;rivastigmina, 2mg/mL frasco com 120 mL
+;;;;rivastigmina, adesivo transdérmico 9 mg
+;;;;rivastigmina, adesivo transdérmico 18 mg
+;;;;sacarato de hidróxido férrico, injetável, 20 mg/ml
+;;;;sacubitril + valsartana, comprimido 24 mg + 26mg
+;;;;sacubitril + valsartana, comprimido 49 mg + 51mg
+;;;;sacubitril + valsartana, comprimido 97 mg + 103mg
+;;;;salbutamol, aerossol oral, 100 mcg/dose
+;;;;salbutamol, solução para inalação, 5 mg/mL
+;;;;salbutamol, injetável, 0,5 mg/mL ampola
+;;;;salbutamol, 100 mcg/dose frasco com 200 doses
+;;;;salgueiro, comprimido, elixir e solução oral
+;;;;salmeterodose frasco com 120 doses
+;;;;salmeteroldose frasco com 60 doses
+;;;;sapropterina, comprimido 100 mg
+;;;;selegilina, comprimido 5 mg
+;;;;sevelamer, comprimido 800 mg
+;;;;sildenafila, comprimido 20 mg
+;;;;sildenafila, comprimido 25 mg
+;;;;sildenafila, comprimido 50 mg
+;;;;sinvastatina, comprimido 10 mg
+;;;;sinvastatina, comprimido 20 mg
+;;;;sinvastatina, comprimido 40 mg
+;;;;sirolimo, drágea 1 mg
+;;;;sirolimo, drágea 2 mg
+;;;;sirolimo, solução oral, 1 mg/mL frasco
+;;;;sofosbuvir, comprimido 400 mg
+;;;;sofosbuvir, comprimidos (400 + 100)mg
+;;;;solução salina hipertônica, injetável, 7% ampola
+;;;;somatropina, injetável, 4 UI frasco ampola
+;;;;somatropina, injetável, 12 UI frasco ampola
+;;;;somatropina, injetável, 16 UI frasco ampola 
+;;;;sulfadiazina, comprimido 500 mg
+;;;;sulfadiazina de prata, creme 10 mg/g (1%)
+;;;;sulfametoxazol, comprimido 400 mg + 80 mg
+;;;;sulfametoxazol, oral, (40 + 8) mg/mL frasco
+;;;;sulfametoxazol, injetável, (80 + 16 mg)/Ml ampola
+;;;;sulfassalazina, comprimido 500 mg
+;;;;sulfato de magnésio, pó para solução oral
+;;;;sulfato de magnésio, 0,81 mEq/mL Mg++ (10%)
+;;;;sulfato de magnésio, 4,05 mEq/mL Mg++ (50%)
+;;;;sulfato de zinco, comprimido mastigável 10 mg
+;;;;sulfato de zinco, xarope, 4 mg/mL frasco
+;;;;sulfato de zinco, injetável, 200 mcg/dose ampola
+;;;;sulfato ferroso, comprimido 40 mg
+;;;;sulfato ferroso, solução oral, 25 mg/mL frasco
+;;;;sulfato ferroso, xarope, 5 mg/mL frasco
+;;;;tacrolimo, cápsula 1 mg
+;;;;tacrolimo, cápsula 5 mg
+;;;;tacrolimo, injetável, 5 mg/mL frasco ampola
+;;;;tafamidis, cápsula 20 mg
+;;;;tafenoquina, comprimido 150 mg
+;;;;talidomida, comprimido 100 mg
+;;;;teclozana, comprimido 500 mg
+;;;;teclozana, suspensão oral, 10 mg/mL frasco
+;;;;teicoplanina, injetável, 400 mg frasco ampola
+;;;;tenecteplase, injetável, 30 mg frasco ampola
+;;;;tenecteplase, injetável, 40 mg frasco ampola
+;;;;tenecteplase, injetável, 50 mg frasco ampola
+;;;;tenofovir, comprimido 300 mg
+;;;;tenofovir, comprimido (300 + 200)mg
+;;;;tenofovir, comprimido (300 + 300)mg
+;;;;tenofovir, comprimido (300 + 300 + 600)mg 
+;;;;tenofovir, comprimido 25 mg
+;;;;teriflunomida, comprimido 14 mg
+;;;;terizidona, cápsula 250 mg
+;;;;tetraciclina, cápsula 500 mg
+;;;;tetraciclina, pomada oftálmica 10mg/g (1%)
+;;;;tiamazol, comprimido 5mg
+;;;;tiamazol, comprimido 10mg
+;;;;tiamina, comprimido 300 mg
+;;;;timolol, 2,5mg/mL (0,25%) frasco
+;;;;timolol, 5mg/mL (0,5%) frasco
+;;;;tiotrópiodose frasco com 4 mL (60 DOSES)
+;;;;tiotrópi frasco com 60 doses
+;;;;tipranavir, cápsula 250 mg
+;;;;tipranavir, solução oral, 100 mg/mL
+;;;;tirofibana, injetável, 0,25 mg/mL frasco ampola
+;;;;tobramicina, solução para inalação, 300mg frasco
+;;;;tobramicina, cápsula inalatória 28 mg
+;;;;tocilizumabe, 20 mg/mL frasco ampola com 4mL
+;;;;tofacitinibe, comprimido 5 mg
+;;;;tolterodina, cápsula prolongada 4 mg
+;;;;topiramato, comprimido 25 mg
+;;;;topiramato, comprimido 50 mg
+;;;;topiramato, comprimido 100 mg
+;;;;tramadol, comprimido 50 mg
+;;;;trastuzumabe, comprimido 150 mg
+;;;;travoprosta, 0,04 mg/mL frasco com 2,5 mL
+;;;;trientina, cápsula 250 mg
+;;;;triexifenidil, comprimido 5 mg 
+;;;;triptorrelina, injetável, 3,75 mg frasco ampola
+;;;;triptorrelina, injetável, 11,25 mg frasco ampola 
+;;;;umeclídio  frasco com 60 doses
+;;;;Upadacitinibe, comprimidos 15 mg
+;;;;Ustequinumabe, injetável, 45mg frasco ampola
+;;;;valaciclovir, comprimido 500 mg
+;;;;varfarina sódica, comprimido 1 mg
+;;;;varfarina sódica, comprimido 5 mg
+;;;;vedolizumabe, injetável, 300mg frasco
+;;;;verapamil, comprimido 80 mg
+;;;;verapamil, comprimido 120 mg
+;;;;verapamil, injetável, 2,5 mg/mL ampola
+;;;;vigabatrina, comprimido 500 mg
+;;;;voriconazol, injetável 200 mg, frasco- ampola
+;;;;zanamivir, pó  inalante oral 5 mg
+;;;;zidovudina, cápsula 100 mg
+;;;;zidovudina, solução oral, 10 mg/mL frasco
+;;;;zidovudina +, comprimido 300 mg +
+;;;;lamivudina, 150 mg
+;;;;ziprasidona, cápsula 40 mg
+;;;;ziprasidona, cápsula 80 mg

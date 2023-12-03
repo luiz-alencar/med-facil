@@ -93,8 +93,11 @@ class _requisicaoControllerState extends State<requisicaoController> {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(12))),
                         ),
-                        hint: const Text("Selecione o medicamento ",
-                            style: TextStyle(color: Colors.black)),
+                        hint: const Text(
+                          "Selecione o medicamento ",
+                          softWrap: true,
+                          style: TextStyle(color: Colors.black),
+                        ),
                         value: _selectedItem,
                         items: _items.map((item) {
                           return DropdownMenuItem(
@@ -252,15 +255,13 @@ class _requisicaoControllerState extends State<requisicaoController> {
   }
 
   Future<void> _fetchDataFromBack4App() async {
-    final query = QueryBuilder(ParseObject(
-        'Medicamentos')); // Substitua 'YourClassName' pelo nome da sua classe no Back4App
-
+    final query = QueryBuilder(ParseObject('Medicamentos'))..setLimit(1000);
     try {
       final response = await query.query();
       if (response.success && response.results != null) {
         setState(() {
           _items = response.results!
-              .map((obj) => obj['nomeCompleto'].toString())
+              .map((obj) => obj['nomeMedicamento'].toString())
               .toList();
         });
       } else {

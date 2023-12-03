@@ -74,7 +74,7 @@ class _MedicamentosListViewState extends State<MedicamentosListView> {
                       setState(() {
                         filteredMedicamento = medicamentos!
                             .where((medicamento) =>
-                                medicamento.get('nomeCompleto')
+                                medicamento.get('nomeMedicamento')
                                     .toLowerCase()
                                     .contains(text.toLowerCase()))
                             .toList();
@@ -94,7 +94,7 @@ class _MedicamentosListViewState extends State<MedicamentosListView> {
                           ? filteredMedicamento[index]
                           : medicamentos![index];
                       final varTitle =
-                          medicamento.get<String>('nomeCompleto') ?? '';
+                          medicamento.get<String>('nomeMedicamento') ?? '';
                       return ListTile(
                         title: Text(varTitle),
                       );
