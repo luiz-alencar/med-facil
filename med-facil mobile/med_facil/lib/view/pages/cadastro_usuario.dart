@@ -23,7 +23,7 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
                   //imagem
                   const TituloImagem(),
 
-                  //formulario
+                  //formulario de cadastro do usuario
                   cadastroController(),
                 ]),
           ),

@@ -84,6 +84,7 @@ class _exibirRelatorioPageState extends State<exibirRelatorioPage> {
                       .toList();
 
                   return ListView.builder(
+                    // exibe todos os remedios pedidos por usuarios normais, onde cada remedio terá sua quantidade somada junto do seu nome 
                     itemCount: filteredPedidos.length,
                     itemBuilder: (context, index) {
                       return ListTile(

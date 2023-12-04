@@ -31,6 +31,7 @@ class _MinhasRequisicoesPageState extends State<MinhasRequisicoesPage> {
     fetchPedidos();
   }
 
+  // aqui realiza toda a busca dos pedidos referente ao usuario que está logado
   Future<void> fetchPedidos() async {
     var currentUser = await ParseUser.currentUser();
 
@@ -104,7 +105,7 @@ class _MinhasRequisicoesPageState extends State<MinhasRequisicoesPage> {
                   ),
                 )
               else
-                // Exibição dinâmica dos pedidos
+                // Exibição dinâmica dos pedidos, onde cada pedido aparecera em um card especifico para ele.
                 for (int i = 0; i < pedidos.length; i++)
                   buildPedidoContainer(pedidos[i], i + 1),
         
@@ -147,7 +148,6 @@ class _MinhasRequisicoesPageState extends State<MinhasRequisicoesPage> {
                     return AlertDialog(
                       title: Text("Requisição $index"),
                       content: Container(
-                        width: 50,
                         height: 70, // Ajuste o tamanho conforme necessário
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,

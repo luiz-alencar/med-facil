@@ -29,7 +29,7 @@ class _MenuAdminPageState extends State<MenuAdminPage> {
           IconButton(
               onPressed:() => sair(),
               icon: const Icon(Icons.logout, color: Colors.white))
-        ], //Podemos utilizar a ação onPressed para chamar uma função
+        ], //Podemos utilizar a ação onPressed para chamar uma função nesse caso a função Sair
       ),
       body: Center(
           child: SizedBox(
@@ -44,6 +44,7 @@ class _MenuAdminPageState extends State<MenuAdminPage> {
                           width: 300,
                           height: 300,
                           child: GestureDetector(
+                            // função a qual irá redirecionar o admin para a pagina que mostra o relatorio dos medicamentos
                             onTap: () {
                               goToExibir(context);
                             },

@@ -57,7 +57,7 @@ class _MedicamentosDisponiveisPageState
 
 
               
-            //faz a lista dos medicamentos!
+            //faz a lista dos medicamentos! junto do campo de pesquisa o qual realiza a busca dos medicamentos listados pelo banco
             const Expanded(
               child: MedicamentosListView(),
             ),

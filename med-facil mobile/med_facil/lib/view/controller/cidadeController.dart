@@ -3,6 +3,8 @@ import 'package:med_facil/view/models/cidades.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 
 class CidadeController {
+
+  // realiza a busca de uma unica cidade
   Future<Cidade?> getCidade(String cidadeId) async {
     final queryBuilder = QueryBuilder<Cidade>(Cidade())
       ..whereEqualTo('nomeCidade', cidadeId);
@@ -17,6 +19,8 @@ class CidadeController {
     return null;
   }
 
+
+  // realiza a busca de uma lista contendo todas as cidades cadastradas no banco
   Future<List<Cidade>?> getAllCidades() async {
     final queryBuilder = QueryBuilder<Cidade>(Cidade());
 

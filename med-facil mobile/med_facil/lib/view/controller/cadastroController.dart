@@ -42,7 +42,7 @@ class _CadastroControllerState extends State<cadastroController> {
   Widget build(BuildContext context) {
     return
 
-        //formulario
+        //formulario para o preencimento de realização do cadastro
         Form(
       key: _formkey,
       child: Column(
@@ -104,6 +104,8 @@ class _CadastroControllerState extends State<cadastroController> {
               keyboardType: TextInputType.text),
           const SizedBox(height: 10),
 
+          // campo o qual realiza a busca e mostra as cidades disponiveis a ser selecionadas, e permite a seleção unitaria
+
           FutureBuilder<List<Cidade>?>(
             future: cidadeList,
             builder: (context, snapshot) {
@@ -138,6 +140,8 @@ class _CadastroControllerState extends State<cadastroController> {
               }
             },
           ),
+
+          // finalização do formulario com os ultimos campos
           const SizedBox(height: 10),
           TextFieldComponente(
               hintText: 'Nome usuário',
@@ -155,7 +159,7 @@ class _CadastroControllerState extends State<cadastroController> {
 
           const SizedBox(height: 20),
 
-          //botões
+          //botões de salvar e de retornar
           BotaoUniversal(
               buttonText: 'Salvar', onTapButton: () => novoUsuario()),
           const SizedBox(height: 10),
@@ -211,6 +215,7 @@ class _CadastroControllerState extends State<cadastroController> {
         });
   }
 
+  // função a qual realiza o cadastro do usuario junto ao banco, ou seja envia os dados direto para a tabela no banco
   void novoUsuario() async {
     if (!_formkey.currentState!.validate()) {
       return;

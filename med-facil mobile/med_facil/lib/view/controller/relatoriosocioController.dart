@@ -57,7 +57,7 @@ class _relatoriosocioControlerState extends State<relatoriosocioControler> {
                         height: 0)),
                 const SizedBox(height: 40),
 
-                //formulario
+                //aqui está criando o formulario o qual ira captar o relatorio socioeconomico
                 Form(
                   key: _formkey,
                   child: Column(
@@ -142,7 +142,9 @@ class _relatoriosocioControlerState extends State<relatoriosocioControler> {
               ]);
         });
   }
+  
 
+  // função a qual salvo o relatorio preenchino no banco
   void novo() async {
     if (!_formkey.currentState!.validate()) {
       return;
