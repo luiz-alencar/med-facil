@@ -16,7 +16,6 @@ class cadastroController extends StatefulWidget {
 }
 
 class _CadastroControllerState extends State<cadastroController> {
-
   final _formkey = GlobalKey<FormState>();
   final controllerUsername = TextEditingController();
   final controllerCPF = TextEditingController();
@@ -112,12 +111,6 @@ class _CadastroControllerState extends State<cadastroController> {
               switch (snapshot.connectionState) {
                 case ConnectionState.none:
                 case ConnectionState.waiting:
-                  return const Center(
-                    child: SizedBox(
-                        width: 100,
-                        height: 100,
-                        child: CircularProgressIndicator()),
-                  );
                 default:
                   final cidades = snapshot.data;
                   return DropdownButtonFormField<Cidade>(

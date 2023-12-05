@@ -195,12 +195,6 @@ class _UserScreenState extends State<UserScreen> {
                             switch (snapshot.connectionState) {
                               case ConnectionState.none:
                               case ConnectionState.waiting:
-                                return const Center(
-                                  child: SizedBox(
-                                      width: 100,
-                                      height: 100,
-                                      child: CircularProgressIndicator()),
-                                );
                               default:
                                 final cidades = snapshot.data;
                                 final cityName =

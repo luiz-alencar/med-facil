@@ -70,16 +70,17 @@ class _MedicamentosListViewState extends State<MedicamentosListView> {
                       // aqui realiza o estado da busca onde cada letra digitada e a junção delas serão usadas para fazer uma busca na lista que é retornada do banco, onde so aparecerao palavras com semelhança com o que foi escrito
                       setState(() {
                         filteredMedicamento = medicamentos!
-                            .where((medicamento) =>
-                                medicamento.get('nomeMedicamento')
-                                    .toLowerCase()
-                                    .contains(text.toLowerCase()))
+                            .where((medicamento) => medicamento
+                                .get('nomeMedicamento')
+                                .toLowerCase()
+                                .contains(text.toLowerCase()))
                             .toList();
                       });
                       // }, duration: Duration(milliseconds: 500));
                     },
                   ),
                 ),
+                const SizedBox(height: 2),
                 Expanded(
                   // aqui realiza a exposição da lista
                   child: ListView.builder(

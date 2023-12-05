@@ -33,75 +33,81 @@ class _exibirRelatorioPageState extends State<exibirRelatorioPage> {
                 icon: const Icon(Icons.house, color: Colors.white))
           ], //Podemos utilizar a ação onPressed para chamar uma função
         ),
-        body: Center(
-            child: Column(children: [
-          const Text('Relatório de Medicamentos ',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  color: Color(0xFF304D63),
-                  fontSize: 24,
-                  fontFamily: 'Palanquin Dark',
-                  fontWeight: FontWeight.w700,
-                  height: 2.5)),
-          Container(
-              width: 318,
-              decoration: const ShapeDecoration(
-                  shape: RoundedRectangleBorder(
-                      side: BorderSide(
-                          width: 1,
-                          strokeAlign: BorderSide.strokeAlignCenter)))),
-          const SizedBox(height: 40),
-          Expanded(
-            child: FutureBuilder<List<ParseObject>>(
-              future: buscarPedido(),
-              builder: (context, snapshot) {
-                if (snapshot.connectionState == ConnectionState.waiting) {
-                  return const Center(
-                    child: SizedBox(
-                        width: 200,
-                        height: 200,
-                        child: CircularProgressIndicator(
-                          color: Color(0xFF304D63),
-                        )),
-                  );
-                } else if (snapshot.hasError) {
-                  return Text('Erro: ${snapshot.error}');
-                } else {
-                  List<ParseObject> pedidos = snapshot.data!;
-                  // Agrupe os pedidos por remédio e some as quantidades
-                  Map<String, int> medicamentoQuantidades = {};
-                  for (var pedido in pedidos) {
-                    var remedio = pedido.get('remedio')?.toString() ?? 'Remedio Desconhecido';
-                    var quantidade = pedido.get('quantidade') as int;
-                    medicamentoQuantidades[remedio] =
-                        (medicamentoQuantidades[remedio] ?? 0) + quantidade;
+        body: Padding(
+          padding: const EdgeInsets.all(5.0),
+          child: Center(
+              child: Column(children: [
+            const Text('Relatório de Medicamentos ',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    color: Color(0xFF304D63),
+                    fontSize: 24,
+                    fontFamily: 'Palanquin Dark',
+                    fontWeight: FontWeight.w700,
+                    height: 2.5)),
+            Container(
+                width: 318,
+                decoration: const ShapeDecoration(
+                    shape: RoundedRectangleBorder(
+                        side: BorderSide(
+                            width: 1,
+                            strokeAlign: BorderSide.strokeAlignCenter)))),
+            const SizedBox(height: 20),
+            Expanded(
+              child: FutureBuilder<List<ParseObject>>(
+                future: buscarPedido(),
+                builder: (context, snapshot) {
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    return const Center(
+                      child: SizedBox(
+                          width: 200,
+                          height: 200,
+                          child: CircularProgressIndicator(
+                            color: Color(0xFF304D63),
+                          )),
+                    );
+                  } else if (snapshot.hasError) {
+                    return Text('Erro: ${snapshot.error}');
+                  } else {
+                    List<ParseObject> pedidos = snapshot.data!;
+                    // Agrupe os pedidos por remédio e some as quantidades
+                    Map<String, int> medicamentoQuantidades = {};
+                    for (var pedido in pedidos) {
+                      var remedio = pedido.get('remedio')?.toString() ??
+                          'Remedio Desconhecido';
+                      var quantidade = pedido.get('quantidade') as int;
+                      medicamentoQuantidades[remedio] =
+                          (medicamentoQuantidades[remedio] ?? 0) + quantidade;
+                    }
+
+                    // Crie uma lista de objetos contendo remedio e quantidade
+                    filteredPedidos = medicamentoQuantidades.entries
+                        .map((entry) => ParseObject('Pedido')
+                          ..set('remedio', entry.key)
+                          ..set('quantidade', entry.value))
+                        .toList();
+
+                    return ListView.builder(
+                      // exibe todos os remedios pedidos por usuarios normais, onde cada remedio terá sua quantidade somada junto do seu nome
+                      itemCount: filteredPedidos.length,
+                      itemBuilder: (context, index) {
+                        return ListTile(
+                          title: Text(
+                              '${filteredPedidos[index].get('remedio')} - Quantidade: ${filteredPedidos[index].get('quantidade')}'),
+                        );
+                      },
+                    );
                   }
-
-                  // Crie uma lista de objetos contendo remedio e quantidade
-                  filteredPedidos = medicamentoQuantidades.entries
-                      .map((entry) =>
-                          ParseObject('Pedido')..set('remedio', entry.key)..set('quantidade', entry.value))
-                      .toList();
-
-                  return ListView.builder(
-                    // exibe todos os remedios pedidos por usuarios normais, onde cada remedio terá sua quantidade somada junto do seu nome 
-                    itemCount: filteredPedidos.length,
-                    itemBuilder: (context, index) {
-                      return ListTile(
-                        title: Text(
-                            '${filteredPedidos[index].get('remedio')} - Quantidade: ${filteredPedidos[index].get('quantidade')}'),
-                      );
-                    },
-                  );
-                }
-              },
+                },
+              ),
             ),
-          ),
-          BotaoUniversal(
-              buttonText: 'Voltar',
-              onTapButton: () {
-                Navigator.of(context).pop();
-              })
-        ])));
+            const SizedBox(height: 20),
+            BotaoUniversal(
+                buttonText: 'Voltar',
+                onTapButton: () {
+                  Navigator.of(context).pop();
+                })
+          ])),
+        ));
   }
 }

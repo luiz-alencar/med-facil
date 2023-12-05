@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:med_facil/view/helpers/rout.helper.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 
-
 class MenuAdminPage extends StatefulWidget {
   const MenuAdminPage({super.key});
 
@@ -27,7 +26,7 @@ class _MenuAdminPageState extends State<MenuAdminPage> {
         ),
         actions: [
           IconButton(
-              onPressed:() => sair(),
+              onPressed: () => sair(),
               icon: const Icon(Icons.logout, color: Colors.white))
         ], //Podemos utilizar a ação onPressed para chamar uma função nesse caso a função Sair
       ),
@@ -159,12 +158,13 @@ class _MenuAdminPageState extends State<MenuAdminPage> {
                       ])))),
     );
   }
+
   void showSuccess(String message, TextStyle textStyle) {
     showDialog(
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-              title: const Text(""),
+              title: const Text("Obrigado!"),
               content: Text(message),
               actions: <Widget>[
                 TextButton(
@@ -192,13 +192,14 @@ class _MenuAdminPageState extends State<MenuAdminPage> {
               ]);
         });
   }
+
   void sair() async {
     final user = await ParseUser.currentUser() as ParseUser;
     var response = await user.logout();
 
     if (response.success) {
       showSuccess("Espero que tenha gostado da experiência!",
-      const TextStyle(fontSize: 20));
+          const TextStyle(fontSize: 20));
     } else {
       showError("Algo deu errado, tente novamente!");
     }
