@@ -87,6 +87,8 @@ class _requisicaoControllerState extends State<requisicaoController> {
                   child: Column(
                     children: [
                       //select 1
+                      //
+
                       DropdownButtonFormField(
                         decoration: const InputDecoration(
                           border: OutlineInputBorder(
@@ -95,14 +97,16 @@ class _requisicaoControllerState extends State<requisicaoController> {
                         ),
                         hint: const Text(
                           "Selecione o medicamento ",
-                          softWrap: true,
                           style: TextStyle(color: Colors.black),
                         ),
                         value: _selectedItem,
                         items: _items.map((item) {
                           return DropdownMenuItem(
                             value: item,
-                            child: Text(item),
+                            child: Text(
+                              item,
+                              style: const TextStyle(fontSize: 13),
+                            ),
                           );
                         }).toList(),
                         onChanged: (value) {
@@ -134,7 +138,8 @@ class _requisicaoControllerState extends State<requisicaoController> {
                         items: quant.map((valueItem) {
                           return DropdownMenuItem(
                               value: valueItem,
-                              child: Text(valueItem.toString()));
+                              child: Text(valueItem.toString(),
+                                  style: const TextStyle(fontSize: 13)));
                         }).toList(),
                       ),
 
@@ -159,7 +164,12 @@ class _requisicaoControllerState extends State<requisicaoController> {
                         },
                         items: use.map((valueItem) {
                           return DropdownMenuItem(
-                              value: valueItem, child: Text(valueItem));
+                            value: valueItem,
+                            child: Text(
+                              valueItem,
+                              style: const TextStyle(fontSize: 13),
+                            ),
+                          );
                         }).toList(),
                       ),
 
@@ -175,10 +185,11 @@ class _requisicaoControllerState extends State<requisicaoController> {
 
                       //botao 2
                       BotaoUniversal(
-                          buttonText: 'Voltar',
-                          onTapButton: () {
-                            Navigator.of(context).pop();
-                          })
+                        buttonText: 'Voltar',
+                        onTapButton: () {
+                          Navigator.of(context).pop();
+                        },
+                      ),
                     ],
                   ),
                 ),
